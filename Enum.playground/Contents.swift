@@ -2,7 +2,7 @@ import UIKit
 
 enum CompassPoint : CaseIterable{
     case north
-    case south 
+    case south
     case east
     case west
 }
@@ -27,7 +27,7 @@ enum Beverage: CaseIterable {
 for i in Beverage.allCases {
     print(i)
 }
- 
+
 
 enum Barcode {
     case upc (Int, Int, Int, Int)
@@ -73,4 +73,58 @@ if let somePlanet = Planet(rawValue: positiontoFind) {
 else {
     print("No planet at position \(positiontoFind)")
 }
-        
+
+
+
+
+
+class xyz {
+
+}
+
+var a = xyz()
+
+var arr2: [Any?] = []
+arr2.append(2)
+arr2.append("dsub")
+arr2.append(63.89)
+arr2.append(Int(57.76))
+arr2.append(xyz())
+
+
+var dictUser: [String : Any] = [:]
+dictUser["name"] = "abc"
+dictUser["age"] = 20
+dictUser["history"] = arr2
+
+
+var arr1: [Any?] = []
+arr1.append(2)
+arr1.append("dsub")
+arr1.append(63.89)
+arr1.append(Int(57.76))
+arr1.append(xyz())
+arr1.append(dictUser)
+
+for value in arr1 {
+    if let val = value as? [String : Any] {
+//        print(val)
+        if let val1 = val["history"] as? [Any] {
+            print(val1)
+
+            for i in val1 {
+                if let a = i as? Int {
+                    print("Int \(a)")
+                } else if let str = i as? String {
+                    print("String \(str)")
+                }else if let dub = i as? Double {
+                    print("Double \(dub)")
+                }else if let classs = i as? xyz {
+                    print("Class \(classs)")
+                }
+            }
+        }
+    }
+}
+
+ 
