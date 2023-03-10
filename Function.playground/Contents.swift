@@ -1,65 +1,62 @@
 import UIKit
 
 // function calling and syntax
-func student(name: String) -> String{
+func studentName(name: String) -> String {
     return name
 }
-print(student(name: "Rajan"))
-print(student(name: "Sagar"))
+studentName(name: "Sagar")
+studentName(name: "Priyanshu")
 
 
 // parameter and return value
-func multiplication(no1: Int, no2: Int) -> Int {
-    return no1 * no2
+func divison(num1: Double, num2: Double) -> Double {
+    return num1 / num2
 }
-print(multiplication(no1: 5, no2: 2))
+divison(num1: 10, num2: 3)
 
 
 // function without parameter
-func yourName() -> String {
-    return ("Sagar")
+func greet() {
+    print("Have a greate day")
 }
-print(yourName())
+greet()
 
 
 // return multiple value
-func ls(array:[Int]) -> (large:Int, small:Int) {
-    var l = array[0]
-    var s = array[0]
+func largeSmall(array: [Int]) -> (large: Int, small: Int) {
+    var large = array[0]
+    var small = array[0]
     
-    for i in array{
-        if i < s {
-            s = i
-        }
-        else if i > l{
-            l = i
+    for i in array {
+        if i > large {
+            large = i
+        } else if i < small {
+            small = i
         }
     }
-    return (l, s)
+    return (large, small)
 }
 
-let num = ls(array: [40,12,-5,78,98])
+let num = largeSmall(array: [40,12,-5,78,98])
 print("Largest number is: \(num.large) and smallest number is: \(num.small)")
 
 
 // without return values
-func summ(a:Int, b:Int){
-    var a = a + b
-    var b = a - b
-    print(a, b)
+func returnNum(no1: Int, no2: Int) {
+    print("no1 is \(no1) and no2 is \(no2)")
 }
 
-summ(a: 10, b: 5)
+returnNum(no1: 10, no2: 20)
 
 
 // array with optional return type
-func minMax(array:[Int]) -> (min:Int, max:Int)? {
+func minMax(array: [Int]) -> (min:Int, max:Int)? {
     if array.isEmpty { return nil }
     
     var curMin = array[0]
     var curMax = array[0]
     
-    for i in array[1..<array.count]{
+    for i in array {
         if i < curMin {
             curMin = i
         }
@@ -81,25 +78,24 @@ sample(num: 55)
 
 
 // external parameter
-func pow(first a: Int, second b: Int){
+func power(first a: Int, powerOf b: Int){
     var res = a
     for _ in 1..<b {
         res = res * a
     }
     print(res)
 }
-pow(first: 5, second: 3)
+power(first: 5, powerOf: 2)
 
 
 // variadic parameters
-func vari(_ members: Any...){
-   for i in members {
-      print(i)
-   }
+func variadic(members: Any...){
+    for i in members {
+        print(i)
+    }
 }
 
-vari(1,2,3,4)
-vari("Swift 4", "Enumerations", "Closures")
+variadic(members: "namer", 20, 54.15, [1, 2, 3, 4])
 
 
 // inout parameter
@@ -114,7 +110,7 @@ print("Swapped Number \(n1) and \(n2)")
 
 
 // void function -> won't return anything
-func input( ) {
+func input() {
     print("Swift is Owsmm")
 }
 input()
@@ -127,17 +123,23 @@ func sum (a:Int, b:Int) -> Int {
     return a + b
 }
 
-var addition: (Int, Int) -> Int = sum
+var addition = sum
+type(of: addition)
 
-print(addition(40,40))
+print(addition(40, 40))
+print(sum(a: 10, b: 5))
 
 
 // function as parameter and return type
-func another(addition: (Int, Int) -> Int, a:Int, b:Int){
+func addition(a: Int, b: Int) -> Int{
+    return a + b
+}
+
+func another(sum: (Int, Int) -> Int, a:Int, b:Int){
     print(addition(a,b))
 }
- 
-another(addition: sum(a:b:), a: 10, b: 20)
+
+another(sum: addition, a: 10, b: 20)
 
 
 // nested function
@@ -153,3 +155,58 @@ func calcDecrement(forDecrement total:Int) -> () -> Int{
 
 let decrem = calcDecrement(forDecrement: 30)
 print(decrem())
+
+
+func sumOfDouble(no1: Double, no2: Double) -> Double {
+    return (no1 + no2)
+}
+print(sumOfDouble(no1: 1.0, no2: 1.0))
+
+
+func greet(person: String) -> String {
+    let greeting = "Hello, " + person + "!"
+    return greeting
+}
+
+func greetAgain(person: String) -> String {
+    return "Hello again, " + person + "!"
+}
+
+func greet(person: String, alreadyGreeted: Bool) -> String {
+    if alreadyGreeted {
+        return greetAgain(person: person)
+    } else {
+        return greet(person: person)
+    }
+}
+
+greet(person: "Sagar", alreadyGreeted: false)
+greet(person: "Rajan", alreadyGreeted: true)
+
+
+// defer
+
+func captureTest() {
+   var fullName = "VIrat Kohli"
+   defer {
+       print(fullName)
+   }
+   fullName = "Virat kohli"
+   print(fullName)
+}
+captureTest()
+
+func mulDefer() {
+    defer { print("first")}
+    defer { print("Second")}
+    defer { print("Third")}
+    defer { print("fourth")}
+    return print("Function")
+}
+mulDefer()
+
+for i in 1...3 {
+    print ("In \(i)")
+    defer { print ("Deferred \(i)") }
+    print ("Out \(i)")
+}
