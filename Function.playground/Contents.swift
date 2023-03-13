@@ -248,4 +248,172 @@ func outerFunction(name: String) {
 outerFunction(name: "Sean")
 
 
+// Calculator function as return
+ func calculator(operation: String) -> ((Double, Double) -> Void)? {
+     func summation(number1: Double, number2: Double) -> Void {
+         print(number1 + number2)
+     }
+     func substraction(number1: Double, number2: Double) -> Void {
+         print(number1 - number2)
+     }
+     func multiplication(number1: Double, number2: Double) -> Void {
+         print(number1 * number2)
+     }
+     func division(number1: Double, number2: Double) -> Void {
+         print(number1 / number2)
+     }
+     
+     switch operation {
+     case "+":
+         return summation
+     case "-":
+         return substraction
+     case "*":
+         return multiplication
+     case "/":
+         return division
+     default:
+         print("Default value")
+         return nil
+     }
+ }
+let operate = calculator(operation: "+")
+operate?(10,11)
+
+
+func powers(toPowerOf num: Int) -> (String) -> Int {
+    func square(squareString number: String) -> Int {
+        var temp = selfNumber(selfNumber: number)
+        temp *= temp
+        return temp
+    }
+
+    func cube(cubeString number: String) -> Int {
+        var temp = selfNumber(selfNumber: number)
+        temp = temp * square(squareString: String(temp))
+        return temp
+    }
+    
+    func selfNumber(selfNumber number: String) -> Int {
+        return Int(number) ?? 0
+    }
+    
+    if num == 2 {
+        return square
+    } else if num == 3 {
+        return cube
+    } else {
+        return selfNumber
+    }
+}
+
+// doing cube of 2
+let toPower = powers(toPowerOf: 3)
+print(toPower("2"))
+
+// doing square of 2
+print(powers(toPowerOf: 2)("2"))
+
+
+// function as parameter
+func add(number1: Double, number2: Double) -> Double {
+    return number1 + number2
+}
+func operate(x: Double, y: Double, function: (Double, Double) -> Double) {
+   print(function(x, y))
+}
+
+operate(x: 1, y: 2, function: add)
+operate(x: 10, y: 20, function: add)
+
+
+// function as parameter
+func additions(a: Int, b: Int) -> Int {
+    return a + b
+}
+func subtraction(a: Int, b: Int) -> Int {
+    return a - b
+}
+func multiply(a: Int, b: Int) -> Int {
+    return a * b
+}
+func division(a: Int, b: Int) -> Int {
+    return a / b
+}
+func calculate(a: Int, b: Int, operation: (Int, Int) -> Int) {
+    let result = operation(a, b)
+    print(result)
+}
+ 
+calculate(a: 10, b: 20, operation: multiply(a:b:))
+
+
+// variadic functions as parameter
+func newVariable(num: Int...) -> [Int] {
+    return num
+}
+
+func varAsPara(name: String, function: (Int...) -> [Int]) {
+    if name == "Sagar" {
+        print(function(3,6,4,5,4))
+    }
+}
+
+varAsPara(name: "Sagar", function: newVariable)
+
+
+// variadic function with parameter as function in variadic
+
+func variadicFunction(add: (() -> ())..., sub: (() -> ())...) {
+    type(of: add)
+    type(of: sub)
+    for each in add {
+        type(of: each)
+        each()
+    }
+
+    for each in sub {
+        type(of: each)
+        each()
+    }
+}
+
+func additionOne() {
+    print("Addition One")
+}
+func additionTwo() {
+    print("Addition Two")
+}
+
+func subtractOne() {
+    print("Subtract One")
+
+}
+func subtractTwo() {
+    print("Subtract Two")
+
+}
+
+variadicFunction(add: additionOne, additionTwo, sub: subtractOne,subtractTwo)
+
+
+func variElement(func1: ((Int...) -> [Int])..., func2: ((Int) -> Int)...){
+    for i in func1 {
+        i(8,9,10)
+    }
+    for j in func2 {
+        j(10)
+    }
+}
+
+func num1(num1: Int...) -> [Int] {
+    print("Num1 is called")
+    return num1
+}
+func num2(num2: Int) -> Int {
+    print("Num2 is called")
+    return num2
+}
+
+variElement(func1: num1, func2: num2(num2:))
 
