@@ -210,3 +210,42 @@ for i in 1...3 {
     defer { print ("Deferred \(i)") }
     print ("Out \(i)")
 }
+
+
+// multiple variadic parameters
+ func countGoals(times: Int..., players: String...) {
+   for i in times {
+     print("times \(i)")
+   }
+   for j in players {
+     print("players \(j)")
+   }
+ }
+ countGoals(times: 18, 33, 55, 90, players: "Dani", "Jamie", "Roy")
+
+
+// inout variadic function
+// func updateValues(_ values: inout Int...) {
+//     for i in 0..<values.count {
+//         values[i] *= 2
+//     }
+// }
+// var a = 1
+// var b = 2
+// var c = 3
+// updateValues(&a, &b, &c)
+// print(a, b, c) // Output: 2 4 6
+
+
+// Variadic nested function
+func outerFunction(name: String) {
+    func innerFunction(_ numbers: Int...) {
+        let sum = numbers.reduce(0, +)
+        print("Inner function: The sum of \(name)'s numbers is \(sum)")
+    }
+    innerFunction(1, 2, 3)
+}
+outerFunction(name: "Sean")
+
+
+
