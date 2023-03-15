@@ -489,3 +489,32 @@ class Second {
 
 var firstObject = First()
 firstObject.printSecond()
+
+
+
+// closure backward data parsing
+class List {
+    func printDetail() {
+        var detail = Detail()
+        detail.someData()
+    }
+    
+    func returnData(closure: () -> String) {
+        print(closure())
+    }
+}
+
+class Detail {
+    var name: String = "Sagar"
+    var age: Int = 20
+    
+    func someData() {
+        var list = List()
+        list.returnData(closure: {
+            return "Name is \(name) and age is \(age)"
+        })
+    }
+}
+
+var list = List()
+list.printDetail()
