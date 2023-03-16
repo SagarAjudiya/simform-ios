@@ -417,3 +417,18 @@ func num2(num2: Int) -> Int {
 
 variElement(func1: num1, func2: num2(num2:))
 
+
+// inline function
+@inline(__always)
+func addNumbers(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+//addNumbers(a: 1, b: 2)
+
+func newNum() -> Int {
+    addNumbers(a: 25, b: 27)
+    return 5
+}
+
+print(newNum())

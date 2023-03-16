@@ -89,3 +89,47 @@ if tenEighty === alsoTenEighty {
 } else {
     print("Different reference")
 }
+
+class Bicycle {
+    var name: String
+    var gears: Int
+    
+    init(name: String, gears: Int) {
+        self.name = name
+        self.gears = gears
+    }
+}
+
+var bike1 = Bicycle(name: "BMW", gears: 2)
+
+print("Name: \(bike1.name), Gears: \( bike1.gears) ")
+
+bike1.gears = 11
+bike1.name = "Mountain Bike"
+
+print("Name: \(bike1.name), Gears: \( bike1.gears) ")
+
+
+
+struct Person {
+    var name: String = "Rohit"
+    var age: Int = 35
+}
+
+var person1 = Person(name: "Kyle", age: 19)
+var person2 = Person(name: "Virat", age: 33)
+var person3 = Person()
+
+print("Name: \(person1.name) and Age: \( person1.age)")
+print("Name: \(person2.name) and Age: \( person2.age)")
+print("Name: \(person3.name) and Age: \( person3.age)")
+
+// lazy var
+struct StudentList {
+    var rollNumber: Int
+    var name: String
+    lazy var uniqueId: String = {"ID_\(name)_\(rollNumber)"}()
+}
+
+var sagar = StudentList(rollNumber: 1, name: "Sagar")
+print(sagar.uniqueId)

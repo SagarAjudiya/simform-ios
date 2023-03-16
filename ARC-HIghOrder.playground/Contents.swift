@@ -276,3 +276,28 @@ let paraSplit = paragraph.split{
     $0 == "." || $0 == "!"
 }
 print(paraSplit)
+
+
+
+func acceptNum(closure: ((Int) -> Bool) = { num in
+    num % 10 == 0
+}) {
+    for i in 0...100 {
+        if closure(i) {
+            print(i)
+        }
+    }
+}
+
+acceptNum()
+
+acceptNum(closure: { num in
+    num % 10 == 0
+})
+
+acceptNum(closure: { num in
+    num % 2 == 0
+})
+
+
+
