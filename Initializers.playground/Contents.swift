@@ -331,9 +331,11 @@ class Food {
     var name: String
     
     init(name: String) {
+        print(4)
         self.name = name
     }
     convenience init() {
+        print(1)
         self.init(name: "[Unnmaed]")
     }
 }
@@ -349,20 +351,24 @@ class RecipeIngredient: Food {
     var quntity: Int
     
     init(name: String, quntity: Int) {
+        print(3)
         self.quntity = quntity
         super.init(name: name)
     }
     
     override convenience init(name: String) {
+        print(2)
         self.init(name: name, quntity: 1)
     }
 }
 
 let oneMysteryItem = RecipeIngredient()
 oneMysteryItem.name
+oneMysteryItem.quntity
 
 let oneBacon = RecipeIngredient(name: "Bacon")
 oneBacon.name
+oneMysteryItem.quntity
 
 let sixEggs = RecipeIngredient(name: "Eggs", quntity: 6)
 sixEggs.name
@@ -390,3 +396,232 @@ breakfastList[0].purchased = true
 for i in breakfastList {
     print(i.description)
 }
+
+
+// failable initializers
+
+let wholeNumber: Double = 12345.0
+let pi = 3.1415
+
+if let valueMaintained = Int(exactly: wholeNumber) {
+    print("\(wholeNumber) conversion to Int maintains value of \(valueMaintained)")
+}
+
+let valueChanged = Int(exactly: pi)
+
+if valueChanged == nil {
+    print("\(pi) conversion to Int doesn't maintain value \(valueChanged)")
+}
+
+struct Animal {
+    let species: String
+    init?(species: String){
+        if species.isEmpty { return nil}
+        self.species = species
+    }
+}
+
+let someAnimal = Animal(species: "Monkey")
+someAnimal?.species
+type(of: someAnimal)
+
+if let monkey = someAnimal {
+    print("An animal was initialized with a species of \(monkey.species)")
+}
+
+let emptyAnimal = Animal(species: "")
+emptyAnimal?.species
+type(of: emptyAnimal)
+
+
+// failable initlizers for enum
+
+enum TemperatureUnit {
+    case kelvin, celsius, fahrenheit
+    
+    init?(symbol: Character){
+        switch symbol {
+        case "K":
+            self = .kelvin
+        case "C":
+            self = .celsius
+        case "F":
+            self = .fahrenheit
+        default:
+            return nil
+        }
+    }
+}
+
+let fahrenheitUnit = TemperatureUnit(symbol: "C")
+if fahrenheitUnit != nil {
+    print("This is a defined temperature unit, so initialization succeeded.")
+} else {
+    print("Invalid input")
+}
+
+
+// failable initialization for enum with raw value
+
+enum TemperatureUnit1: Character {
+    case kelvin = "K", celsius = "C", fahrenheit = "F"
+}
+
+let fahUnit = TemperatureUnit1(rawValue: "f")
+if fahUnit != nil {
+    print("This is a defined temperature unit, so initialization succeeded.")
+} else {
+    print("Unknown Input found")
+}
+
+
+// propagation of initialization failure
+
+class Product {
+    let name: String
+    
+    init?(name: String) {
+        if name.isEmpty {return nil}
+        self.name = name
+    }
+}
+
+class CartItem: Product {
+    let quantity: Int
+    
+    init?(name: String, quantity: Int) {
+        if quantity < 1 {
+            return nil
+        }
+        self.quantity = quantity
+        super.init(name: name)
+    }
+}
+
+if let twoSocks = CartItem(name: "Sock`", quantity: 2) {
+    print("Item: \(twoSocks.name), quantity: \(twoSocks.quantity)")
+}
+
+if let zeroShirts = CartItem(name: "shirt", quantity: 0) {
+    print("Item: \(zeroShirts.name), quantity: \(zeroShirts.quantity)")
+} else {
+    print("Unable to initialize zero shirts")
+}
+
+if let oneUnnamed = CartItem(name: "", quantity: 1) {
+    print("Item: \(oneUnnamed.name), quantity: \(oneUnnamed.quantity)")
+} else {
+    print("Unable to initialize one unnamed product")
+}
+
+
+// overriding a failable initializers
+
+class Document {
+    var name: String?
+    
+    init() {}
+    
+    init?(name: String) {
+        if name.isEmpty { return nil}
+        self.name = name
+    }
+}
+
+class AutomaticallyNamedDocument: Document {
+    
+    override init() {
+        super.init()
+        self.name = "[Untitled]"
+    }
+    
+    override init(name: String) {
+        super.init()
+        if name.isEmpty {
+            self.name = "[Untitled]"
+        } else {
+            self.name = name
+        }
+    }
+}
+
+class UntitledDocument: Document {
+    override init() {
+        super.init(name: "[Untitled]")!
+    }
+}
+
+// init! failable initializer
+
+//You can delegate from init? to init! and vice versa, and you can override init? with init! and vice versa. You can also delegate from init to init!, although doing so will trigger an assertion if the init! initializer causes initialization to fail.
+
+
+// required initializers
+
+class SomeClass1 {
+    required init (msg: String) {
+        print(msg)
+    }
+}
+
+class SomeSubClass1: SomeClass1 {
+    required init(msg: String) {
+        print("someSubClass1")
+        super.init(msg: msg)
+    }
+}
+
+var obj = SomeSubClass1(msg: "Sagar")
+
+
+class classA {
+    required init() {
+        var a = 10
+        print(a)
+    }
+}
+class classB: classA {
+    required init() {
+        var b = 30
+        print(b)
+    }
+}
+
+let objA = classA()
+let objB = classB()
+
+
+// setting default property value with a closure or function
+
+// default property value
+class SomeClass {
+    let someProperty: String = {
+        return ""
+    }()
+}
+
+struct ChessBoard {
+    let boardColors: [Bool] = {
+        var temporaryBoard: [Bool] = []
+        var isBlack = false
+        
+        for i in 1...8 {
+            for j in 1...8 {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        return temporaryBoard
+    }()
+    
+    func squareIsBlackAt(row: Int, column: Int) -> Bool {
+        return boardColors[(row * 8) + column]
+    }
+
+}
+
+let board = ChessBoard()
+print(board.squareIsBlackAt(row: 0, column: 1))
+print(board.squareIsBlackAt(row: 7, column: 7))
+
