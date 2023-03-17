@@ -128,8 +128,43 @@ let pizza1 = Pizza.medium(inches: 12)
 print(pizza1)
 
 
+// check enum type
+
+enum Day: Int {
+    case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
+}
+
+var sunday = Day.sunday.rawValue
+if 1 == Day.sunday.rawValue {
+    print("print monday")
+}
 
 
+
+enum DayAssociated {
+    case sunday(Int), monday(Int, String), tuesday(String), wednesday, thursday, friday, saturday
+}
+var sun = DayAssociated.sunday(10)
+print(sun)
+
+var mon = DayAssociated.monday(12, "Mon")
+print(mon)
+
+switch mon {
+case .sunday(let i):
+    print("Sunday", i)
+case .monday(let i, let j):
+    print("monday", i, j)
+default:
+    print("default case")
+}
+
+
+if case .sunday(let i) = mon {
+    print(i)
+} else {
+    print("not match")
+}
 
 
 
