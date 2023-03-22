@@ -49,7 +49,34 @@ class Cricketer {
 
 var cricketer = Cricketer()
 cricketer.name
+
+// Override
+
+// we can override computed properties
+// we can't override stored properties
+class University {
+    var num = 10
+    var cost: Int {
+        return 5000
+    }
+}
  
+class Fee: University {
+//    override var num: Int = 20
+    override var cost: Int {
+        return 1000
+    }
+}
+
+var uni = University()
+uni.cost
+uni.num = 20
+uni.num
+
+var amount = Fee()
+amount.cost
+amount.num
+
 // final in global
 
 //static var name = "Sagar"
@@ -295,12 +322,13 @@ class Sumation {
     var a = 0
     var sum: Int {
         get {
+            print("get is called")
             print(a)
 //            return sum // recurcive
             return a
         }
         set {
-//            print()
+            print("set is called")
             print(newValue)
         }
     }
@@ -332,55 +360,59 @@ ageObj.age = 20
 closureOfAge()
 
 
+class Addition {
+    init(sum: Int) {
+        self.sum = sum
+    }
+    var a = 0
+    var sum: Int {
+        willSet {
+            print(newValue)
+            print("willSet is called")
+        }
+        didSet {
+            print(oldValue)
+            print("didSet is called")
+        }
+    }
+
+}
+
+var addition = Addition(sum: 5)
+addition.sum
+print(addition.sum)
+addition.sum = 500
 
 
 
 
 
 
+class A {
+    lazy var name: String = "Sagar"
 
+    init(name: String) {
+        self.name = name
+    }
+    deinit {
+        print("A denit")
+    }
+}
 
+class B: A {
 
+    func printName() {
+        print(self.name)
+    }
 
+    deinit {
+        print("B deinit")
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-
-//class A {
-//    lazy var name: String
-//
-//    deinit {
-//        print("A denit")
-//    }
-//}
-//
-//class B: A {
-//
-//    func printName() {
-//        print(name = "Sagar")
-//    }
-//
-//    deinit {
-//        Swift.print("B init")
-//    }
-//}
-//
-//var b = B.printName()
-
+var b: B? = B(name: "gdub")
+b?.printName()
+b = nil
 
 
 //
