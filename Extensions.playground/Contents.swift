@@ -124,14 +124,54 @@ func printIntegerKinds(numbers: [Int]) {
     for number in numbers {
         switch number.kind {
         case .negative:
-            print("-", terminator: "")
+            print("-", terminator: " ")
         case .zero:
-            print("0", terminator: "")
+            print("0", terminator: " ")
         case .positive:
-            print("+", terminator: "")
+            print("+", terminator: " ")
         }
     }
     print("")
 }
 
 printIntegerKinds(numbers: [3, 19, -27, 0, -6, 0, 7])
+
+
+class Temperature {
+    var celsius: Double = 0
+    
+    func setTemperature(celsius: Double) {
+        self.celsius = celsius
+        print("Celsius:",celsius)
+    }
+}
+
+extension Temperature {
+    func convert() {
+        var fahrenheit = (celsius * 1.8) + 32
+        print("fahrenheit",fahrenheit)
+    }
+}
+
+let temp1 = Temperature()
+temp1.setTemperature(celsius: 16)
+
+temp1.convert()
+
+// computed properties
+class Circle {
+  var radius: Double = 0
+}
+
+extension Circle {
+  var area: Double {
+    return 3.14 * radius * radius
+  }
+}
+
+let circle1 = Circle()
+circle1.radius = 5
+print("Area:", circle1.area)
+
+
+// protocol extension
