@@ -113,3 +113,35 @@ print(street as Any)
 
 
 
+struct Addition {
+    let adds: Int
+    subscript(i: Int) -> Int {
+        return adds + 1
+    }
+}
+
+let addition = Addition(adds: 45)
+print(addition[10])
+
+
+struct College {
+    var  branches = ["CSE", "ECE", "IT"]
+    subscript(index: Int) -> String {
+        get {
+            print("get is called")
+            return branches[index]
+        }
+        set {
+            print("Set is called")
+            branches[index] = newValue
+        }
+    }
+}
+
+var clg = College()
+clg[0]
+clg[0] = "MECH"
+clg[0]
+
+
+// set and retrive values by index without need of separate method
