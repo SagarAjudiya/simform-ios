@@ -175,3 +175,28 @@ print("Area:", circle1.area)
 
 
 // protocol extension
+
+protocol Brake {
+  func applyBrake()
+}
+
+class Car: Brake {
+  var speed: Int = 0
+
+  func applyBrake() {
+    print("Brake Applied")
+  }
+}
+
+extension Brake {
+  func stop() {
+    print("Engine Stopped")
+  }
+}
+
+let car1 = Car()
+car1.speed = 61
+print("Speed:", car1.speed)
+
+car1.applyBrake()
+car1.stop()
