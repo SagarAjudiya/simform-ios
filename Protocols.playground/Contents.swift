@@ -449,4 +449,191 @@ class TowardsZeroSource: CounterDataSource {
 counter.count = -4
 counter.dataSource = TowardsZeroSource()
 
-for _ in 1...5
+for _ in 1...5 {
+    counter.increment()
+    print(counter.count)
+}
+
+
+// protocol extension
+
+extension RandomNumberGenerator {
+    func randomBool() -> Bool {
+        return random() > 0.5
+    }
+}
+
+let generator1 = LinearCongruentialGenerator()
+print("Here's a random number: \(generator1.random())")
+print("And here's a random Boolean: \(generator1.randomBool())")
+
+
+// providing default implementation
+
+extension PrettyTextRepresentable {
+    var prettyTextualDescription: String {
+        return textualDescription
+    }
+}
+
+// adding constraints to protocol extension
+
+extension Collection where Element: Equatable {
+    func allEqual() -> Bool {
+        for element in self {
+            if element != self.first {
+                return false
+            }
+        }
+        return true
+    }
+}
+
+let equalNumbers = [100, 100, 100, 100, 100]
+print(equalNumbers.allEqual())
+
+let differentNumbers = [100, 100, 200, 100, 200]
+print(differentNumbers.allEqual())
+
+
+// adding variable to extension
+
+class Car {
+    var name: String
+    var model: String
+    var price = 100
+    
+    init(name: String,  model: String) {
+        self.name = name
+        self.model = model
+    }
+}
+
+var car = Car(name: "Swift", model: "Dzire")
+
+extension Car {
+//    var price: Int {
+//        return 200
+//    }
+    var onRoad: Int {
+        return 1000000
+    }
+    
+    func showDetails() {
+        print("Car name \(name), Model is \(model), Price is \(onRoad)")
+    }
+}
+
+var car1 = Car(name: "i20", model: "2011")
+car1.onRoad
+car1.showDetails()
+
+car.showDetails()
+
+
+// multiple inheritance thtough protocol
+
+protocol Sound {
+    func makeSound()
+}
+
+extension Sound {
+    func makeSound() {
+        print("Can Sound")
+    }
+}
+
+protocol Flyable {
+    func fly()
+}
+
+extension Flyable {
+    func fly() {
+        print("Can Fly")
+    }
+}
+
+class Airplane: Flyable {
+    
+}
+
+class Sparrow: Flyable, Sound {
+    
+}
+
+let airplane = Airplane()
+airplane.fly()
+
+let sparrow = Sparrow()
+sparrow.fly()
+sparrow.makeSound()
+
+
+protocol ProtocolA {
+    func method1()
+}
+
+extension ProtocolA {
+    func method1() {
+        print("Method from ProtocolA")
+    }
+}
+
+protocol ProtocolB {
+    func method()
+}
+
+extension ProtocolB {
+    func method() {
+        print("Method from ProtocolB")
+    }
+}
+
+class MyClass: ProtocolA, ProtocolB {
+
+}
+ var myClass = MyClass()
+myClass.method()
+myClass.method1()
+
+
+// pass data through delegate
+
+class ClassOne {
+    var data: String = "myData"
+    weak var myDelegate: ProtoDelegate?
+  
+    func onPass() {
+        myDelegate?.passData(dataClass: self)
+    }
+    deinit {
+        print("Class One Deinit")
+    }
+}
+
+protocol ProtoDelegate: AnyObject {
+    func passData(dataClass: ClassOne)
+}
+
+class ClassTwo: ProtoDelegate {
+    var recivedData: String?
+    func passData(dataClass: ClassOne) {
+        recivedData = dataClass.data
+    }
+
+    deinit {
+        print("Class Two Deinit")
+    }
+}
+
+func makeCall() {
+    var clsOne = ClassOne()
+    var delegate = ClassTwo()
+    clsOne.myDelegate = delegate
+    clsOne.onPass()
+    print(delegate.recivedData ?? "")
+
+}
+
+makeCall()
+
