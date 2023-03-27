@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class CustomView: UIView {
+    
+    // MARK: Outlet variable
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
     
@@ -21,6 +23,7 @@ class CustomView: UIView {
         
 }
 
+// MARK: Protocol TextTransferDelegate
 protocol TextTransferDelegate: AnyObject {
     func transferText(text: String)
 }
