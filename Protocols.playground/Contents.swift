@@ -637,3 +637,108 @@ func makeCall() {
 
 makeCall()
 
+
+// Delegate
+
+protocol TextDelegate: AnyObject {
+    func newValue(name: String)
+}
+
+class Task {
+    
+    weak var delegate: TextDelegate?
+    
+    func doTask(fullName: String) {
+        delegate?.newValue(name: fullName)
+            
+    }
+}
+
+class Worker: TextDelegate {
+    
+    func newValue(name: String) {
+        print("FullName id \(name)")
+    }
+}
+
+var task = Task()
+var worker = Worker()
+task.delegate = worker
+task.doTask(fullName: "Sagar")
+
+
+// Optional Protocol
+
+@objc protocol MyProtocol {
+    func nonOptionalMethod()
+    @objc optional func optionalMethod()
+}
+
+class ThisClass: MyProtocol {
+    
+    func nonOptionalMethod() {
+        print("This is non optional method")
+    }
+    
+}
+
+
+// Optional protocol methods
+
+@objc protocol MyOptionalProtocol {
+    @objc optional func myOptionalTaskOne()
+    @objc optional func myOptionalTaskTwo()
+    func myTaskOne()
+    func myTaskTwo()
+}
+
+class AllMethods: MyOptionalProtocol {
+    
+    func myTaskOne() {
+        print("method myTaskOne")
+    }
+    
+    func myTaskTwo() {
+        print("method myTaskTwo")
+    }
+    
+    func myOptionalTaskOne() {
+        print("method myOptionalTaskOne")
+    }
+    
+    func myOptionalTaskTwo() {
+        print("method myOptionalTaskTwo")
+    }
+    
+}
+
+var allMethods = AllMethods()
+allMethods.myOptionalTaskTwo()
+
+class NonOptionalMethod: MyOptionalProtocol {
+    
+    func myTaskOne() {
+        print("method myTaskOne")
+
+    }
+    
+    func myTaskTwo() {
+        print("method myTaskTwo")
+
+    }
+    
+}
+
+
+// through extension
+extension MyOptionalProtocol {
+    
+    func myOptionalTaskOne() {
+        print("method myOptionalTaskOne in extension")
+    }
+    
+    func myOptionalTaskTwo() {
+        print("method myOptionalTaskTwo in extension")
+    }
+}
+
