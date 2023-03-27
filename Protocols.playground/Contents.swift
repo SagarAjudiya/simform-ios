@@ -602,7 +602,7 @@ myClass.method1()
 class ClassOne {
     var data: String = "myData"
     weak var myDelegate: ProtoDelegate?
-  
+    
     func onPass() {
         myDelegate?.passData(dataClass: self)
     }
