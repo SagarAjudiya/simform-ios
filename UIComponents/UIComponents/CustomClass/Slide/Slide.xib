@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="UIComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zik-Ng-XvE">
+                    <rect key="frame" x="47.333333333333343" y="79" width="298.33333333333326" height="298.33333333333331"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zik-Ng-XvE" secondAttribute="height" multiplier="1:1" id="LP6-PM-vUc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjE-3F-mIK">
+                    <rect key="frame" x="47.333333333333343" y="427.33333333333331" width="298.33333333333326" height="28.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-fH-ALr">
+                    <rect key="frame" x="47.333333333333343" y="505.99999999999994" width="298.33333333333326" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zik-Ng-XvE" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.35" id="0RR-OI-Dxf"/>
+                <constraint firstItem="GjE-3F-mIK" firstAttribute="leading" secondItem="zik-Ng-XvE" secondAttribute="leading" id="4cB-Aw-vfV"/>
+                <constraint firstItem="zik-Ng-XvE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="5r9-qT-1PA"/>
+                <constraint firstItem="zik-Ng-XvE" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6DQ-oA-kAy"/>
+                <constraint firstItem="NKK-fH-ALr" firstAttribute="top" secondItem="GjE-3F-mIK" secondAttribute="bottom" constant="50" id="YUJ-Dc-LQd"/>
+                <constraint firstItem="GjE-3F-mIK" firstAttribute="top" secondItem="zik-Ng-XvE" secondAttribute="bottom" constant="50" id="awU-i4-xls"/>
+                <constraint firstItem="NKK-fH-ALr" firstAttribute="trailing" secondItem="GjE-3F-mIK" secondAttribute="trailing" id="dVw-ep-WuY"/>
+                <constraint firstItem="NKK-fH-ALr" firstAttribute="leading" secondItem="GjE-3F-mIK" secondAttribute="leading" id="nMk-Cp-652"/>
+                <constraint firstItem="GjE-3F-mIK" firstAttribute="trailing" secondItem="zik-Ng-XvE" secondAttribute="trailing" id="rom-Eb-dBo"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="zik-Ng-XvE" id="HBb-F4-KWe"/>
+                <outlet property="labelDesc" destination="NKK-fH-ALr" id="pOP-Dt-hgQ"/>
+                <outlet property="labelTitle" destination="GjE-3F-mIK" id="JFy-m1-4rz"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kmG-T8-eDL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TaskViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNa-e3-s2u">
+                                <rect key="frame" x="250.66666666666666" y="123.99999999999999" width="98.666666666666657" height="34.333333333333329"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sagar">
+                                    <color key="baseForegroundColor" red="1" green="0.48819423779999999" blue="0.30320780539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectRadioBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Meb-Fa-amc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTL-LA-Kah">
+                                <rect key="frame" x="250.66666666666666" y="178.33333333333334" width="98.666666666666657" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rajan">
+                                    <color key="baseForegroundColor" red="1" green="0.48819423779999999" blue="0.30320780539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectRadioBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JSt-zp-WjI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-X9-1Yi">
+                                <rect key="frame" x="250.66666666666666" y="233.33333333333334" width="98.666666666666657" height="35.000000000000028"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Priyanshu">
+                                    <color key="baseForegroundColor" red="1" green="0.48819423779999999" blue="0.30320780539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectRadioBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uju-13-nl3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ili-mL-Xbh">
+                                <rect key="frame" x="270" y="344" width="60.333333333333314" height="35"/>
+                                <color key="tintColor" red="1" green="0.64718125579999997" blue="0.8135657999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="India"/>
+                                <connections>
+                                    <action selector="selectCheckBox:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GH9-TU-U1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-We-nlY">
+                                <rect key="frame" x="183.33333333333334" y="344" width="76.666666666666657" height="35"/>
+                                <color key="tintColor" red="1" green="0.64718125579999997" blue="0.8135657999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Chaina"/>
+                                <connections>
+                                    <action selector="selectCheckBox:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nhy-a1-dKe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYB-TI-Yg2">
+                                <rect key="frame" x="340.33333333333331" y="344" width="70.333333333333314" height="35"/>
+                                <color key="tintColor" red="1" green="0.64718125579999997" blue="0.8135657999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Japan"/>
+                                <connections>
+                                    <action selector="selectCheckBox:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="U96-z4-2Kk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oYB-TI-Yg2" firstAttribute="top" secondItem="Ili-mL-Xbh" secondAttribute="top" id="03d-t8-g8d"/>
+                            <constraint firstItem="zTL-LA-Kah" firstAttribute="top" secondItem="BNa-e3-s2u" secondAttribute="bottom" constant="20" id="1Ce-8H-HJB"/>
+                            <constraint firstItem="jjc-We-nlY" firstAttribute="top" secondItem="Ili-mL-Xbh" secondAttribute="top" id="6GD-ZQ-kV2"/>
+                            <constraint firstItem="Ili-mL-Xbh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="300" id="B56-Nz-kPi"/>
+                            <constraint firstItem="BNa-e3-s2u" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Csa-J7-qbo"/>
+                            <constraint firstItem="BNa-e3-s2u" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="GfQ-zf-PqN"/>
+                            <constraint firstItem="Ili-mL-Xbh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="SBY-v8-jH6"/>
+                            <constraint firstItem="zTL-LA-Kah" firstAttribute="trailing" secondItem="BNa-e3-s2u" secondAttribute="trailing" id="YBM-5c-40z"/>
+                            <constraint firstItem="Ili-mL-Xbh" firstAttribute="leading" secondItem="jjc-We-nlY" secondAttribute="trailing" constant="10" id="a7b-qy-amP"/>
+                            <constraint firstItem="zTL-LA-Kah" firstAttribute="leading" secondItem="BNa-e3-s2u" secondAttribute="leading" id="aDc-JU-2E7"/>
+                            <constraint firstItem="yBZ-X9-1Yi" firstAttribute="top" secondItem="zTL-LA-Kah" secondAttribute="bottom" constant="20" id="bE3-Z3-B58"/>
+                            <constraint firstItem="yBZ-X9-1Yi" firstAttribute="leading" secondItem="zTL-LA-Kah" secondAttribute="leading" id="eEZ-K2-PwK"/>
+                            <constraint firstItem="yBZ-X9-1Yi" firstAttribute="trailing" secondItem="zTL-LA-Kah" secondAttribute="trailing" id="enM-Vu-O7a"/>
+                            <constraint firstItem="oYB-TI-Yg2" firstAttribute="leading" secondItem="Ili-mL-Xbh" secondAttribute="trailing" constant="10" id="nsy-m2-zTn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p1T-sy-J27"/>
+                    <connections>
+                        <outletCollection property="btnRadio" destination="BNa-e3-s2u" collectionClass="NSMutableArray" id="16m-FM-C64"/>
+                        <outletCollection property="btnRadio" destination="zTL-LA-Kah" collectionClass="NSMutableArray" id="ev8-P3-YiU"/>
+                        <outletCollection property="btnRadio" destination="yBZ-X9-1Yi" collectionClass="NSMutableArray" id="SST-mN-kuy"/>
+                        <outletCollection property="btnCheckBox" destination="Ili-mL-Xbh" collectionClass="NSMutableArray" id="EeG-V1-icw"/>
+                        <outletCollection property="btnCheckBox" destination="oYB-TI-Yg2" collectionClass="NSMutableArray" id="noG-b0-uVK"/>
+                        <outletCollection property="btnCheckBox" destination="jjc-We-nlY" collectionClass="NSMutableArray" id="kvD-Wh-h4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.33587786259534" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zYf-AA-RsC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kmG-T8-eDL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9qi-4M-u4H">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="h06-eE-CeY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7A-Im-mid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
