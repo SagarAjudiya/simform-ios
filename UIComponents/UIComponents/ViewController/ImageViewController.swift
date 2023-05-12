@@ -15,7 +15,6 @@ class ImageViewController: BaseViewController {
     @IBOutlet private weak var imgOriginal: UIImageView!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
               
@@ -24,7 +23,6 @@ class ImageViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupView() {
         imgSelect.addBlur()
         imgSelect.makeRoundImage()
@@ -58,7 +56,6 @@ class ImageViewController: BaseViewController {
     }
         
     // MARK: IBActions
-    
     @IBAction func selectImgBtnTapped(_ sender: UIButton) {
         selectImgTapped()
         progress.stopAnimating()

@@ -11,8 +11,6 @@ extension UIImageView {
  
     // MARK: Circle Image
     func makeRoundImage() {
-        self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.systemPink.cgColor
         self.layer.cornerRadius = self.frame.size.height / 2
         self.clipsToBounds = true
     }

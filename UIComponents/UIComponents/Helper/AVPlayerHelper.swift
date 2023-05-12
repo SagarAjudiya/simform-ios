@@ -13,7 +13,6 @@ class AVPlayerHelper {
     private init() {}
     
     // MARK: Variables
-    
     static let shared = AVPlayerHelper()
     
     let playerViewController = AVPlayerViewController()

@@ -10,7 +10,6 @@ import UIKit
 class SegmentViewController: BaseViewController {
 
     // MARK: IBOutlet
-    
     @IBOutlet private weak var lblSegmentIndex: UILabel!
     @IBOutlet private weak var lblPageIndex: UILabel!
     @IBOutlet private weak var lblStepperCount: UILabel!
@@ -18,7 +17,6 @@ class SegmentViewController: BaseViewController {
     @IBOutlet private weak var imgView: UIImageView!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +24,6 @@ class SegmentViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // segment target
@@ -55,7 +52,6 @@ class SegmentViewController: BaseViewController {
     }
         
     // MARK: IBAction
-    
     @IBAction func segmentValue(_ sender: UISegmentedControl) {
         lblSegmentIndex.text = "Selected: \(sender.selectedSegmentIndex)"
         print("Segment", sender.selectedSegmentIndex)

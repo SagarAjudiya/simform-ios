@@ -10,7 +10,6 @@ import UIKit
 class TabBarViewController: UITabBarController {
 
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +19,6 @@ class TabBarViewController: UITabBarController {
 }
 
 // MARK: Extension TabBarViewController
-
 extension TabBarViewController: UITabBarControllerDelegate {
     
     // MARK: TabBar Delegate

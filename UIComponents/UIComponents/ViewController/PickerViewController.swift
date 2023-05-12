@@ -10,18 +10,15 @@ import UIKit
 class PickerViewController: BaseViewController {
 
     // MARK: IBOutlets
-    
     @IBOutlet private weak var imgView: UIImageView!
     @IBOutlet private weak var btnChangeImage: UIButton!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // MARK: IBActions
-
     @IBAction func btnChangeImageTap(_ sender: UIButton) {
         openPickerView()
     }

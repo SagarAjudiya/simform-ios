@@ -10,7 +10,6 @@ import UIKit
 class TextFieldViewController: BaseViewController {
     
     // MARK: IBOutlets
-
     @IBOutlet private weak var tfUsername: UITextField!
     @IBOutlet private weak var tfEmail: UITextField!
     @IBOutlet private weak var tfPhone: UITextField!
@@ -18,7 +17,6 @@ class TextFieldViewController: BaseViewController {
     @IBOutlet private weak var btnSubmit: UIButton!
     
     // MARK: Life Cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +24,6 @@ class TextFieldViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // delegate of textfields
@@ -58,10 +55,13 @@ class TextFieldViewController: BaseViewController {
     }
 
     // MARK: IBActions
-    
     @IBAction func emailValidation(_ sender: UITextField) {
         let isValidEmail = Validator.shared.isEmailValid(email: sender.text)
-        sender.borderColor = isValidEmail ? .clear : .red
+        if isValidEmail {
+            sender.setBorderColor(color: .clear)
+        } else {
+            sender.setBorderColor(color: .red)
+        }
     }
     
     @IBAction func btnSubmitClick(_ sender: UIButton) {
@@ -76,7 +76,6 @@ class TextFieldViewController: BaseViewController {
 }
 
 // MARK: Extension TextFieldViewController
-
 extension TextFieldViewController: UITextFieldDelegate {
     
     // MARK: TextField Delegate

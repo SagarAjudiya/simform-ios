@@ -18,11 +18,11 @@ class Validator {
     func validation(textFields: UITextField...) {
         for textField in textFields {
             if textField.text?.isEmpty ?? true {
-                textField.borderWidth = 0.50
-                textField.borderColor = UIColor.red
+                textField.setBorderWidth(width: 0.50)
+                textField.setBorderColor(color: UIColor.red)
                 textField.placeholder = "This field is mandatory"
             } else {
-                textField.borderColor = UIColor.clear
+                textField.setBorderColor(color: UIColor.clear)
             }
         }
     }

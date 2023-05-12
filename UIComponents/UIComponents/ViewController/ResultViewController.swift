@@ -10,14 +10,12 @@ import UIKit
 class ResultViewController: BaseViewController {
 
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
     
     // MARK: SetUp Views
-
     func setupViews() {
         view.backgroundColor = .yellow
     }
