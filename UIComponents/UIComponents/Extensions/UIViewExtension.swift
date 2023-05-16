@@ -10,52 +10,54 @@ import UIKit
 
 extension UIView {
     
-    // MARK: Corner Radius
-    @IBInspectable var cornerRadius: CGFloat {
-        get { return layer.cornerRadius }
-        set {
-              layer.cornerRadius = newValue
-              layer.masksToBounds = (newValue > 0)
-        }
-    }
+    /// All @IBInspectable is for learning purpose..
     
-    // MARK: Shadow Radius
-    @IBInspectable var shadowRadius: CGFloat {
-        get { return layer.shadowRadius }
-        set { layer.shadowRadius = newValue }
-    }
-    
-    // MARK: Shadow Color
-    @IBInspectable var shadowColor: UIColor? {
-        get {
-            guard let cgColor = layer.shadowColor else {
-                return nil
-            }
-            return UIColor(cgColor: cgColor)
-        }
-        set { layer.shadowColor = newValue?.cgColor }
-    }
-    
-    // MARK: Border Color
-    @IBInspectable var borderColor: UIColor? {
-        get {
-            guard let cgColor = layer.borderColor else {
-                return nil
-            }
-            return UIColor(cgColor: cgColor)
-        }
-        set { layer.borderColor = newValue?.cgColor }
-    }
-
-    // MARK: Border Width
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
+//    // MARK: Corner Radius
+//    @IBInspectable var cornerRadius: CGFloat {
+//        get { return layer.cornerRadius }
+//        set {
+//              layer.cornerRadius = newValue
+//              layer.masksToBounds = (newValue > 0)
+//        }
+//    }
+//
+//    // MARK: Shadow Radius
+//    @IBInspectable var shadowRadius: CGFloat {
+//        get { return layer.shadowRadius }
+//        set { layer.shadowRadius = newValue }
+//    }
+//
+//    // MARK: Shadow Color
+//    @IBInspectable var shadowColor: UIColor? {
+//        get {
+//            guard let cgColor = layer.shadowColor else {
+//                return nil
+//            }
+//            return UIColor(cgColor: cgColor)
+//        }
+//        set { layer.shadowColor = newValue?.cgColor }
+//    }
+//
+//    // MARK: Border Color
+//    @IBInspectable var borderColor: UIColor? {
+//        get {
+//            guard let cgColor = layer.borderColor else {
+//                return nil
+//            }
+//            return UIColor(cgColor: cgColor)
+//        }
+//        set { layer.borderColor = newValue?.cgColor }
+//    }
+//
+//    // MARK: Border Width
+//    @IBInspectable var borderWidth: CGFloat {
+//        get {
+//            return layer.borderWidth
+//        }
+//        set {
+//            layer.borderWidth = newValue
+//        }
+//    }
     
     // MARK: Gredient Color
     func applyGredient(colors: [UIColor], locations: [NSNumber]? = nil) {
@@ -92,10 +94,16 @@ extension UIView {
         layer.borderColor = color.cgColor
     }
     
-    // MARK: BoederWidth
+    // MARK: BorderWidth
     func setBorderWidth(width: CGFloat) {
         layer.borderWidth = width
     }
 
+    // MARK: RoundView
+    func makeRoundView() {
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.clipsToBounds = true
+    }
+    
 }
 

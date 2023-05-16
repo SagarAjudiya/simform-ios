@@ -11,13 +11,11 @@ import WebKit
 class WebKitViewController: BaseViewController {
 
     // MARK: IBOutlet
-    
     @IBOutlet private weak var webView: WKWebView!
     @IBOutlet private weak var progress: UIActivityIndicatorView!
     @IBOutlet private weak var searchBar: UISearchBar!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +24,6 @@ class WebKitViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // increase progressview size
@@ -58,7 +55,6 @@ class WebKitViewController: BaseViewController {
 }
 
 // MARK: Extension WebKitViewController
-
 extension WebKitViewController: WKNavigationDelegate, WKUIDelegate {
     
     // MARK: WebView Delegates
@@ -108,7 +104,7 @@ extension WebKitViewController: WKNavigationDelegate, WKUIDelegate {
 extension WebKitViewController: UISearchBarDelegate {
     
     // MARK: SearchView Delegate
-    
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(#function)
         print(searchText)

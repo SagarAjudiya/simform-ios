@@ -10,13 +10,11 @@ import Foundation
 struct Student {
     
     // MARK: Variable
-    
     var name: String
     var age: Int
     var education: String
     
     // MARK: Array of Students
-    
     static let studentData: [Student] = [
         Student(name: "Sagar", age: 21, education: "BE"),
         Student(name: "Rajan", age: 22, education: "BTech"),

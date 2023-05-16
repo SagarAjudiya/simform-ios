@@ -13,7 +13,6 @@ class ImagePickerHelper: NSObject {
     private override init() {}
     
     // MARK: Variables
-    
     static let shared = ImagePickerHelper()
     
     private let imagePicker = UIImagePickerController()
@@ -22,7 +21,6 @@ class ImagePickerHelper: NSObject {
     private var cancelHandler: (() -> Void)? = nil
     
     // MARK: Open and Select Images From Photos
-    
     func pick(_ sender: UIView, viewController: UIViewController, completionHandler: @escaping (_ image: UIImage?, _ cImage: UIImage?) -> Void, cancelHandler: @escaping () -> Void) {
         
         self.viewController = viewController
@@ -33,7 +31,6 @@ class ImagePickerHelper: NSObject {
     }
     
     // MARK: Create Dialog And Open PhotoPicker
-    
     private func createDialogAndOpenPicker() {
         
         // create alert dialog
@@ -56,7 +53,6 @@ class ImagePickerHelper: NSObject {
     }
     
     // MARK: Open and Show ImagePicker
-    
     private func showImgPicker(selectFrom: UIImagePickerController.SourceType) {
         
         guard UIImagePickerController.isSourceTypeAvailable(selectFrom) else {
@@ -79,7 +75,6 @@ class ImagePickerHelper: NSObject {
 typealias ImageAndUINavigationDelegate = UINavigationControllerDelegate & UIImagePickerControllerDelegate
 
 // MARK: Extension ImagePickerHelper
-
 extension ImagePickerHelper: ImageAndUINavigationDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

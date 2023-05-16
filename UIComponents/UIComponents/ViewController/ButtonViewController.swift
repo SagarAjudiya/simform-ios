@@ -10,7 +10,6 @@ import UIKit
 class ButtonViewController: BaseViewController {
 
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +17,6 @@ class ButtonViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // Add Button Programetically

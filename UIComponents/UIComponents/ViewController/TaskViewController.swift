@@ -10,12 +10,10 @@ import UIKit
 class TaskViewController: BaseViewController {
 
     // MARK: Outlets
-    
     @IBOutlet private var btnRadio: [UIButton]!
     @IBOutlet private var btnCheckBox: [UIButton]!
     
     // MARK: Life Cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +21,6 @@ class TaskViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // Label Overlapping

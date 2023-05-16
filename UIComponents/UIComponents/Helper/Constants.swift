@@ -8,7 +8,6 @@
 struct Constant {
     
     // MARK: String Constant
-    
     struct String {
         static let placeHolderTxt = "Write your text here"
         static let rewinding = "Rewinding"
@@ -16,8 +15,19 @@ struct Constant {
         static let pausing = "Pausing"
         static let forwarding = "Forwarding"
         static let url = "https://www.youtube.com/watch?v=S1QcTFzNSOo&ab_channel=CodingXpert"
+        static let allDocuments = "All Documents"
+        static let searchHolder = "Search Document"
+        static let expandText = "Swift is a high-level general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community. First released in 2014,[10] Swift was developed as a replacement for Apple's earlier programming language Objective-C, as Objective-C had been largely unchanged since the early 1980s and lacked modern language features. Swift works with Apple's Cocoa and Cocoa Touch frameworks, and a key aspect of Swift's design was the ability to interoperate with the huge body of existing Objective-C code developed for Apple products over the previous decades. It was built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms,[11] it uses the Objective-C runtime library, which allows C, Objective-C, C++ and Swift code to run within one program."
+        static let myName = "I'm Sagar"
+        static let done = "Done"
+        static let edit = "Edit"
+        static let delete = "Delete"
+        static let changeName = "Change Name"
+        static let cancel = "Cancel"
+        static let ok = "Ok"
+        static let seeLess = "See Less"
+        static let seeMore = "See More"
     }
-    
      
     static let htmlString = """
         <!DOCTYPE html>

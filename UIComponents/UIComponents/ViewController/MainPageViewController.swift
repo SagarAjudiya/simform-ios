@@ -10,14 +10,13 @@ import UIKit
 class MainPageViewController: UIPageViewController {
     
     // MARK: Variables
-    
     // array of ViewControllers
     private lazy var orderedViewController: [UIViewController] = [viewControllerWith(name: "BlueViewController"), viewControllerWith(name: "RedViewController")]
+    
     private var currentIndex: Int = 0
     private var pageControl = UIPageControl()
 
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +24,6 @@ class MainPageViewController: UIPageViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         self.delegate = self
         self.dataSource = self
@@ -62,7 +60,6 @@ class MainPageViewController: UIPageViewController {
 }
 
 // MARK: Extension MainPageViewController
-
 extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     // MARK: Delegates

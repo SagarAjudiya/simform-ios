@@ -12,7 +12,6 @@ class PageControlViewController: BaseViewController {
     private var slides = [Slide]()
     
     // MARK: IBOutlets
-    
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var pageControl: UIPageControl!
     @IBOutlet private weak var contentView: UIView!
@@ -20,7 +19,6 @@ class PageControlViewController: BaseViewController {
     @IBOutlet private weak var btnNext: UIButton!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,7 +28,6 @@ class PageControlViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         slides = createSlides()
         setupSlideScrollView(slides: slides)
@@ -55,7 +52,6 @@ class PageControlViewController: BaseViewController {
     }
     
     // MARK: IBAction
-    
     @IBAction func pageCtrlChange(_ sender: UIPageControl) {
         let current = sender.currentPage
         scrollView.setContentOffset(CGPoint(x: current * Int(view.frame.size.width), y: 0), animated: true)
@@ -104,7 +100,6 @@ class PageControlViewController: BaseViewController {
 }
 
 // MARK: Extension PageControlViewController
-
 extension PageControlViewController: UIScrollViewDelegate {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

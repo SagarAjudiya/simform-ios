@@ -10,19 +10,16 @@ import UIKit
 class SearchViewController: BaseViewController {
 
     // MARK: View Controller lifecycle
-
     private let searchController = UISearchController(searchResultsController: ResultViewController())
     private let scopeBtn = SearchScope.allCases.map { $0.rawValue }
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         title = "Search"
         searchController.searchResultsUpdater = self
@@ -34,7 +31,6 @@ class SearchViewController: BaseViewController {
 }
 
 // MARK: Extension SearchViewController
-
 extension SearchViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {

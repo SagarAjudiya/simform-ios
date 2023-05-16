@@ -20,7 +20,6 @@ class PHImagePickerHelper {
     private var videoCompletionHandler: ((_ url: URL) -> UIViewController?)? = nil
     
     // MARK: Open and Select Images From Photos
-    
     func pick(_ sender: UIViewController, imageCompletionHandler: @escaping (_ image: UIImage) -> Void, videoCompletionHandler: @escaping (_ url: URL) -> UIViewController?) {
         
         self.imageCompletionHandler = imageCompletionHandler
@@ -37,7 +36,6 @@ class PHImagePickerHelper {
     }
     
     // MARK: Set Image In View
-    
     private func setImageInView(_ result: PHPickerResult) {
         
         print("deal with image")
@@ -52,7 +50,6 @@ class PHImagePickerHelper {
     }
     
     // MARK: Set Video in AVPlayer
-    
     private func setVideoView(_ result: PHPickerResult) {
         
         print("deal with video")
@@ -74,7 +71,6 @@ class PHImagePickerHelper {
 }
 
 // MARK: Extension PHImagePickerHelper
-
 extension PHImagePickerHelper: PHPickerViewControllerDelegate {
     
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {

@@ -10,7 +10,6 @@ import UIKit
 class TextViewController: BaseViewController {
 
     // MARK: IBOutlets
-    
     @IBOutlet private weak var tvOutlet: UITextView!
     @IBOutlet private weak var tvHeight: NSLayoutConstraint!
     @IBOutlet private weak var switchIsOn: UISwitch!
@@ -22,7 +21,6 @@ class TextViewController: BaseViewController {
     @IBOutlet private weak var lblInView: UILabel!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -30,7 +28,6 @@ class TextViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-
     private func setupViews() {
         
         // Dyanmic Height TV
@@ -76,7 +73,6 @@ class TextViewController: BaseViewController {
     }
     
     // MARK: IBActions
-    
     @IBAction func switchClick(_ sender: UISwitch) {
         print(sender.isOn)
     }
@@ -89,7 +85,6 @@ class TextViewController: BaseViewController {
 }
 
 // MARK: Extension TextViewController
-
 extension TextViewController: UITextViewDelegate {
     
     // MARK: TextView Delegate

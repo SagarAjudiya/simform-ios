@@ -10,11 +10,9 @@ import UIKit
 class LabelViewController: BaseViewController {
 
     // MARK: IBOutlet
-
     @IBOutlet private weak var lblHello: UILabel!
     
     // MARK: View Controller lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +20,6 @@ class LabelViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-    
     private func setupViews() {
         
         // change label property programetically  // -> For Reference purpose
