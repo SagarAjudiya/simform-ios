@@ -107,3 +107,11 @@ extension UIView {
     
 }
 
+extension UIView {
+    
+    /// For all cell identifiers
+     class var identifier: String {
+        return String(describing: self)
+    }
+    
+}

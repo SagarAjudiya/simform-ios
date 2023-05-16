@@ -28,7 +28,7 @@ class TableViewController: BaseViewController {
     private func setupViews() {
         tblView.delegate = self
         tblView.dataSource = self
-        tblView.register(UINib(nibName: LanguageCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: LanguageCell.cellIdentifier)
+        tblView.register(UINib(nibName: LanguageCell.identifier, bundle: nil), forCellReuseIdentifier: LanguageCell.identifier)
     }
     
     // MARK: IBActions
@@ -48,7 +48,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let lan = Languages.langList[indexPath.row]
-        guard let cell = tblView.dequeueReusableCell(withIdentifier: LanguageCell.cellIdentifier) as? LanguageCell else {
+        guard let cell = tblView.dequeueReusableCell(withIdentifier: LanguageCell.identifier) as? LanguageCell else {
             return UITableViewCell()
         }
         cell.imgViewCell.image = UIImage(named: lan.langImg ?? "")

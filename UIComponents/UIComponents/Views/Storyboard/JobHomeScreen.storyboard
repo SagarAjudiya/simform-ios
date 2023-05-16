@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Job Home Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="JobHomeScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="JobHomeScreenViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ng9-Gr-oEU">
+                                <rect key="frame" x="0.0" y="71" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53I-MJ-Qcn">
+                                        <rect key="frame" x="24" y="0.0" width="100" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rifat Sarkar 👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLT-2M-HWe">
+                                        <rect key="frame" x="24" y="19" width="145.66666666666666" height="25.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessman" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-cU-yUJ">
+                                        <rect key="frame" x="319" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" name="jgreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="BCO-wZ-zRv"/>
+                                            <constraint firstAttribute="width" secondItem="l8l-cU-yUJ" secondAttribute="height" multiplier="1:1" id="Den-Pn-z7i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jdotRed" translatesAutoresizingMaskIntoConstraints="NO" id="BGJ-66-wzY">
+                                        <rect key="frame" x="358.66666666666669" y="-2" width="12.333333333333314" height="12.666666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BGJ-66-wzY" secondAttribute="height" multiplier="1:1" id="MmI-51-wG8"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="jbg"/>
+                                <constraints>
+                                    <constraint firstItem="wLT-2M-HWe" firstAttribute="top" secondItem="53I-MJ-Qcn" secondAttribute="bottom" constant="2" id="Csn-pQ-CO6"/>
+                                    <constraint firstItem="l8l-cU-yUJ" firstAttribute="top" secondItem="ng9-Gr-oEU" secondAttribute="top" id="Ebv-ol-Nrg"/>
+                                    <constraint firstItem="wLT-2M-HWe" firstAttribute="leading" secondItem="53I-MJ-Qcn" secondAttribute="leading" id="NpE-HA-Lbv"/>
+                                    <constraint firstItem="BGJ-66-wzY" firstAttribute="height" secondItem="l8l-cU-yUJ" secondAttribute="height" multiplier="0.25" id="SOe-M7-S7T"/>
+                                    <constraint firstAttribute="trailing" secondItem="l8l-cU-yUJ" secondAttribute="trailing" constant="24" id="VTO-LR-bzH"/>
+                                    <constraint firstItem="l8l-cU-yUJ" firstAttribute="top" secondItem="BGJ-66-wzY" secondAttribute="top" constant="2" id="Vtw-6e-RIV"/>
+                                    <constraint firstItem="53I-MJ-Qcn" firstAttribute="leading" secondItem="ng9-Gr-oEU" secondAttribute="leading" constant="24" id="brE-zO-seD"/>
+                                    <constraint firstItem="BGJ-66-wzY" firstAttribute="trailing" secondItem="l8l-cU-yUJ" secondAttribute="trailing" constant="2" id="dSX-Xj-hTQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="l8l-cU-yUJ" secondAttribute="bottom" id="qST-Hz-PAF"/>
+                                    <constraint firstItem="53I-MJ-Qcn" firstAttribute="top" secondItem="ng9-Gr-oEU" secondAttribute="top" id="v6G-dM-bSN"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qse-V2-eVT">
+                                <rect key="frame" x="0.0" y="163" width="393" height="655"/>
+                                <color key="backgroundColor" name="jbg"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="c9f-pL-iXp" customClass="JobHomeHeader" customModule="UIComponents" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search a job or position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-LX-K7K">
+                                            <rect key="frame" x="24" y="0.0" width="285" height="44"/>
+                                            <color key="backgroundColor" name="jgreybg"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-cN-UmB" userLabel="Filter">
+                                            <rect key="frame" x="325" y="0.0" width="44" height="44"/>
+                                            <color key="backgroundColor" name="jgreybg"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="RoK-x0-mG2"/>
+                                                <constraint firstAttribute="width" secondItem="fFp-cN-UmB" secondAttribute="height" multiplier="1:1" id="yN3-3q-KUQ"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="jfilter"/>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsearch" translatesAutoresizingMaskIntoConstraints="NO" id="Mir-Ya-5ya">
+                                            <rect key="frame" x="36" y="0.0" width="20" height="44"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="jbg"/>
+                                    <constraints>
+                                        <constraint firstItem="fFp-cN-UmB" firstAttribute="top" secondItem="c9f-pL-iXp" secondAttribute="top" id="0WG-GI-e7b"/>
+                                        <constraint firstItem="fFp-cN-UmB" firstAttribute="leading" secondItem="d1s-LX-K7K" secondAttribute="trailing" constant="16" id="1Tf-PL-fxN"/>
+                                        <constraint firstItem="Mir-Ya-5ya" firstAttribute="bottom" secondItem="d1s-LX-K7K" secondAttribute="bottom" id="DfY-nq-y20"/>
+                                        <constraint firstAttribute="trailing" secondItem="fFp-cN-UmB" secondAttribute="trailing" constant="24" id="L0Q-ph-stO"/>
+                                        <constraint firstItem="d1s-LX-K7K" firstAttribute="top" secondItem="fFp-cN-UmB" secondAttribute="top" id="UYs-V5-NkC"/>
+                                        <constraint firstItem="d1s-LX-K7K" firstAttribute="bottom" secondItem="fFp-cN-UmB" secondAttribute="bottom" id="ho8-rA-6Xf"/>
+                                        <constraint firstItem="Mir-Ya-5ya" firstAttribute="top" secondItem="d1s-LX-K7K" secondAttribute="top" id="jGy-bg-ScV"/>
+                                        <constraint firstAttribute="bottom" secondItem="fFp-cN-UmB" secondAttribute="bottom" id="pyU-yV-iED"/>
+                                        <constraint firstItem="Mir-Ya-5ya" firstAttribute="leading" secondItem="d1s-LX-K7K" secondAttribute="leading" constant="12" id="rnC-Tb-7F8"/>
+                                        <constraint firstItem="d1s-LX-K7K" firstAttribute="leading" secondItem="c9f-pL-iXp" secondAttribute="leading" constant="24" id="v4j-vQ-7yZ"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JobHomeScreenCell" id="BeV-aY-bnA">
+                                        <rect key="frame" x="0.0" y="94" width="393" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BeV-aY-bnA" id="WV8-9p-85Y" customClass="JobHomeScreenCell" customModule="UIComponents" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="jbg"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="qse-V2-eVT" secondAttribute="bottom" id="4tk-Gj-0Te"/>
+                            <constraint firstItem="ng9-Gr-oEU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="DzC-P7-8xn"/>
+                            <constraint firstItem="qse-V2-eVT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Gns-XE-uaa"/>
+                            <constraint firstItem="ng9-Gr-oEU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NL8-zo-Cpu"/>
+                            <constraint firstItem="qse-V2-eVT" firstAttribute="top" secondItem="ng9-Gr-oEU" secondAttribute="bottom" constant="42" id="NSZ-QY-AVA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ng9-Gr-oEU" secondAttribute="trailing" id="QLp-eJ-B0x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qse-V2-eVT" secondAttribute="trailing" id="Tmd-st-QeB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFilter" destination="fFp-cN-UmB" id="4u1-0R-WHP"/>
+                        <outlet property="imgProfile" destination="l8l-cU-yUJ" id="nYw-S0-aga"/>
+                        <outlet property="redDot" destination="BGJ-66-wzY" id="JU7-ro-NBl"/>
+                        <outlet property="searchField" destination="d1s-LX-K7K" id="4VF-jw-wkz"/>
+                        <outlet property="tblView" destination="qse-V2-eVT" id="pE1-hv-G3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="businessman" width="50" height="47"/>
+        <image name="jdotRed" width="10" height="10"/>
+        <image name="jfilter" width="15" height="16"/>
+        <image name="jsearch" width="20" height="20"/>
+        <namedColor name="jbg">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="jgreen">
+            <color red="0.054901960784313725" green="0.61568627450980395" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="jgreybg">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
