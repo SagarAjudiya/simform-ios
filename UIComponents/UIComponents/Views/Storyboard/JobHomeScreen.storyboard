@@ -71,7 +71,7 @@
                                             <rect key="frame" x="24" y="0.0" width="285" height="44"/>
                                             <color key="backgroundColor" name="jgreybg"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFp-cN-UmB" userLabel="Filter">
                                             <rect key="frame" x="325" y="0.0" width="44" height="44"/>

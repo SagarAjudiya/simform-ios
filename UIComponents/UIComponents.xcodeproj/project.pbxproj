@@ -66,6 +66,7 @@
 		1B90D12C2A0A1DFE002A04A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90D12B2A0A1DFE002A04A0 /* Constants.swift */; };
 		1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B92EB8329F944FE00A03E6F /* Task.storyboard */; };
 		1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92EB8529F9461100A03E6F /* TaskViewController.swift */; };
+		1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */; };
 		1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05BC2A149761004F53AA /* ClcLangCell.swift */; };
 		1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05BD2A149761004F53AA /* ClcLangCell.xib */; };
 		1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */; };
@@ -73,6 +74,8 @@
 		1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05C72A14D265004F53AA /* ClcJobViewCell.swift */; };
 		1BAB918829FFF3D700384BFF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB918729FFF3D700384BFF /* ImageViewController.swift */; };
 		1BB03C452A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB03C442A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib */; };
+		1BB03C4C2A1CEF3000AAC4B1 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */; };
+		1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */; };
 		1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE892E29FB831E0039B667 /* TextViewController.swift */; };
 		1BBE893229FB8AE90039B667 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE893129FB8AE90039B667 /* CustomTextField.swift */; };
 		1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */; };
@@ -111,6 +114,7 @@
 		1BE703602A09473A002E3F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7035F2A09473A002E3F17 /* Main.storyboard */; };
 		1BEAEF602A1CD02500A57747 /* FeaturedViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */; };
 		1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */; };
+		1BF2674A2A1E5ED500DFE47C /* HoriScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */; };
 		1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */; };
 		1BF4C0EB2A0510BF00BB1D93 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0EA2A0510BF00BB1D93 /* BlueViewController.swift */; };
 		1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0EC2A0510EE00BB1D93 /* RedViewController.swift */; };
@@ -180,6 +184,7 @@
 		1B90D12B2A0A1DFE002A04A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1B92EB8329F944FE00A03E6F /* Task.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		1B92EB8529F9461100A03E6F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskViewController.swift; path = UIComponents/ViewController/TaskViewController.swift; sourceTree = SOURCE_ROOT; };
+		1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		1BAA05BC2A149761004F53AA /* ClcLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcLangCell.swift; sourceTree = "<group>"; };
 		1BAA05BD2A149761004F53AA /* ClcLangCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClcLangCell.xib; sourceTree = "<group>"; };
 		1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobScreen.storyboard; sourceTree = "<group>"; };
@@ -187,6 +192,8 @@
 		1BAA05C72A14D265004F53AA /* ClcJobViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcJobViewCell.swift; sourceTree = "<group>"; };
 		1BAB918729FFF3D700384BFF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		1BB03C442A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobHomeScreenCell.xib; sourceTree = "<group>"; };
+		1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1BBE892E29FB831E0039B667 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1BBE893129FB8AE90039B667 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +232,7 @@
 		1BE7035F2A09473A002E3F17 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewCell.xib; sourceTree = "<group>"; };
 		1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClcJobViewCell.xib; sourceTree = "<group>"; };
+		1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriScrollViewController.swift; sourceTree = "<group>"; };
 		1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		1BF4C0EA2A0510BF00BB1D93 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		1BF4C0EC2A0510EE00BB1D93 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
@@ -462,6 +470,8 @@
 				1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */,
 				1BAA05C22A14CA6A004F53AA /* JobScreenViewController.swift */,
 				1BD91EE92A1B42AE0047DD07 /* JobHomeScreenViewController.swift */,
+				1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */,
+				1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -553,6 +563,7 @@
 				1B5A336A2A0A9D1A0020F763 /* UITextViewExtension.swift */,
 				1B44E2B52A0B738900BA32D5 /* UIImageViewExtension.swift */,
 				1BD963212A120D1600B0B014 /* UIButtonExtension.swift */,
+				1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -588,6 +599,7 @@
 				1B2EA9582A0E39600094E2B5 /* HomeScreen.storyboard */,
 				1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */,
 				1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */,
+				1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -682,6 +694,7 @@
 				1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */,
 				1BD91EE02A1B371D0047DD07 /* Poppins-Black.ttf in Resources */,
 				1B30A7622A12914D00B26A30 /* Images.xcassets in Resources */,
+				1BB03C4C2A1CEF3000AAC4B1 /* ScrollView.storyboard in Resources */,
 				1B2EA94E2A0E36C00094E2B5 /* Avenir-Roman.otf in Resources */,
 				1BD91EE32A1B371D0047DD07 /* Poppins-Italic.ttf in Resources */,
 				1B89708629F8DEB90090CD4C /* Assets.xcassets in Resources */,
@@ -715,10 +728,12 @@
 				1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */,
 				1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */,
 				1B8EDBEB2A090FAC00651BFD /* Validator.swift in Sources */,
+				1BF2674A2A1E5ED500DFE47C /* HoriScrollViewController.swift in Sources */,
 				1B5A33632A0A70240020F763 /* PickerViewController.swift in Sources */,
 				1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */,
 				1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */,
 				1B90D12A2A0A1500002A04A0 /* BaseViewController.swift in Sources */,
+				1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */,
 				1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */,
 				1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */,
 				1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */,
@@ -730,6 +745,7 @@
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
 				1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */,
