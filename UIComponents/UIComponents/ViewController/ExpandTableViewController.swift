@@ -39,7 +39,7 @@ extension ExpandTableViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ExpandTableViewCell.cellIdentifier, for: indexPath) as? ExpandTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ExpandTableViewCell.identifier, for: indexPath) as? ExpandTableViewCell else {
             return UITableViewCell()
         }
         

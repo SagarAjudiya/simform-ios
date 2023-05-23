@@ -7,6 +7,7 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1057,7 +1058,7 @@ ttps://www.swift.org/documentation/
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-zA-Yxu">
-                                <rect key="frame" x="0.0" y="103" width="430" height="795"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExpandTableViewCell" id="M4F-zN-93b" customClass="ExpandTableViewCell" customModule="UIComponents" customModuleProvider="target">
@@ -1157,6 +1158,52 @@ ttps://www.swift.org/documentation/
             </objects>
             <point key="canvasLocation" x="-1024.1860465116279" y="1319.7424892703864"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="p7W-Hu-w7q">
+            <objects>
+                <viewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8wD-ue-v6Y" customClass="CollectionViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1o0-ha-OEz">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="11b-9U-lG3">
+                                <rect key="frame" x="10" y="69" width="410" height="329"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hf2-GJ-McF">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="U9U-IA-MgN" customClass="CollectionViewCell" customModule="UIComponents" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zd2-Iy-qiG">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nbk-hG-hZ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="11b-9U-lG3" firstAttribute="leading" secondItem="nbk-hG-hZ9" secondAttribute="leading" constant="10" id="EL4-3b-B5Y"/>
+                            <constraint firstItem="11b-9U-lG3" firstAttribute="top" secondItem="nbk-hG-hZ9" secondAttribute="top" constant="10" id="I7u-H7-Q29"/>
+                            <constraint firstItem="nbk-hG-hZ9" firstAttribute="trailing" secondItem="11b-9U-lG3" secondAttribute="trailing" constant="10" id="bvX-aG-Mqd"/>
+                            <constraint firstItem="nbk-hG-hZ9" firstAttribute="bottom" secondItem="11b-9U-lG3" secondAttribute="bottom" constant="500" id="vPo-KB-AXS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="11b-9U-lG3" id="VxZ-g3-rpy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFY-pq-OjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-315" y="1320"/>
+        </scene>
         <!--Image View Controller-->
         <scene sceneID="osD-jI-gZo">
             <objects>
@@ -1248,7 +1295,7 @@ ttps://www.swift.org/documentation/
                                     <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnHomeScreenTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="xrx-VM-hMY"/>
+                                    <action selector="btnHomeScreenTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="Uoe-Br-2fN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQf-Cf-l31">
@@ -1257,7 +1304,34 @@ ttps://www.swift.org/documentation/
                                     <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="ISO-nQ-JEv" kind="show" id="C1u-bF-Nvb"/>
+                                    <action selector="btnExpandTableViewTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="JJB-o5-sfY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95U-Uc-BpH">
+                                <rect key="frame" x="30" y="320.33333333333331" width="370" height="34.333333333333314"/>
+                                <buttonConfiguration key="configuration" style="filled" title="CollectionView" cornerStyle="medium">
+                                    <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnCollectionViewTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="gcd-Jf-7fz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMz-0a-t9Q">
+                                <rect key="frame" x="30" y="369.66666666666669" width="370" height="34.333333333333314"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Job Screen" cornerStyle="medium">
+                                    <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnJobScreenTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="9MH-P0-FEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZB-0T-hcz">
+                                <rect key="frame" x="30" y="419" width="370" height="34.333333333333314"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Job Home Screen" cornerStyle="medium">
+                                    <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnJobHomeScreenTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="MLF-Sr-rSh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1265,9 +1339,16 @@ ttps://www.swift.org/documentation/
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nQf-Cf-l31" firstAttribute="leading" secondItem="eDo-DV-qXQ" secondAttribute="leading" id="6Vw-wO-tWu"/>
+                            <constraint firstItem="zMz-0a-t9Q" firstAttribute="top" secondItem="95U-Uc-BpH" secondAttribute="bottom" constant="15" id="9Nw-Ed-FWe"/>
+                            <constraint firstItem="95U-Uc-BpH" firstAttribute="leading" secondItem="nQf-Cf-l31" secondAttribute="leading" id="Air-A3-KF4"/>
                             <constraint firstItem="eDo-DV-qXQ" firstAttribute="trailing" secondItem="ITd-l0-BFw" secondAttribute="trailing" id="Hmb-NL-Tzx"/>
+                            <constraint firstItem="zMz-0a-t9Q" firstAttribute="leading" secondItem="95U-Uc-BpH" secondAttribute="leading" id="IAf-6Q-nzi"/>
                             <constraint firstItem="eDo-DV-qXQ" firstAttribute="leading" secondItem="ITd-l0-BFw" secondAttribute="leading" id="IQR-IO-1Zy"/>
+                            <constraint firstItem="LZB-0T-hcz" firstAttribute="trailing" secondItem="zMz-0a-t9Q" secondAttribute="trailing" id="JEQ-su-KpX"/>
+                            <constraint firstItem="LZB-0T-hcz" firstAttribute="top" secondItem="zMz-0a-t9Q" secondAttribute="bottom" constant="15" id="Nso-qe-qqE"/>
+                            <constraint firstItem="95U-Uc-BpH" firstAttribute="top" secondItem="nQf-Cf-l31" secondAttribute="bottom" constant="15" id="Skv-8Y-7z2"/>
                             <constraint firstItem="stg-ue-fVS" firstAttribute="top" secondItem="ww0-hW-D9W" secondAttribute="top" constant="20" id="TEq-yE-xf0"/>
+                            <constraint firstItem="LZB-0T-hcz" firstAttribute="leading" secondItem="zMz-0a-t9Q" secondAttribute="leading" id="Xab-HY-N13"/>
                             <constraint firstItem="ITd-l0-BFw" firstAttribute="top" secondItem="stg-ue-fVS" secondAttribute="bottom" constant="15" id="Yet-lS-dY5"/>
                             <constraint firstItem="nQf-Cf-l31" firstAttribute="top" secondItem="eDo-DV-qXQ" secondAttribute="bottom" constant="15" id="dGv-rH-aWx"/>
                             <constraint firstItem="ww0-hW-D9W" firstAttribute="trailing" secondItem="stg-ue-fVS" secondAttribute="trailing" constant="30" id="ibX-9h-1di"/>
@@ -1275,18 +1356,16 @@ ttps://www.swift.org/documentation/
                             <constraint firstItem="ITd-l0-BFw" firstAttribute="trailing" secondItem="stg-ue-fVS" secondAttribute="trailing" id="laG-KB-c1V"/>
                             <constraint firstItem="stg-ue-fVS" firstAttribute="leading" secondItem="ww0-hW-D9W" secondAttribute="leading" constant="30" id="lu8-Sz-1Wp"/>
                             <constraint firstItem="nQf-Cf-l31" firstAttribute="trailing" secondItem="eDo-DV-qXQ" secondAttribute="trailing" id="rYQ-It-s4h"/>
+                            <constraint firstItem="zMz-0a-t9Q" firstAttribute="trailing" secondItem="95U-Uc-BpH" secondAttribute="trailing" id="wJ7-sc-KYK"/>
                             <constraint firstItem="eDo-DV-qXQ" firstAttribute="top" secondItem="ITd-l0-BFw" secondAttribute="bottom" constant="15" id="xkk-lw-THC"/>
+                            <constraint firstItem="95U-Uc-BpH" firstAttribute="trailing" secondItem="nQf-Cf-l31" secondAttribute="trailing" id="zou-dD-0QO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yzN-8a-nR8"/>
-                    <connections>
-                        <outlet property="btnExpandTableView" destination="nQf-Cf-l31" id="tK3-M1-nfF"/>
-                        <outlet property="btnHomeScreen" destination="eDo-DV-qXQ" id="HjY-0F-Yb4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWk-SE-rum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2517" y="-807"/>
+            <point key="canvasLocation" x="-2496" y="-834"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZuT-a8-Mcm">

@@ -61,7 +61,7 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.cellIdentifier, for: indexPath) as? HomeCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell else {
             return UITableViewCell()
         }
         cell.delegate = self
@@ -80,7 +80,7 @@ extension HomeScreenViewController: HomeCellDelegate {
 
     func btnApprovalDtapped(cell: HomeCell) {
         guard let indexPath = tblView.indexPath(for: cell) else { return }
-        searchResult[indexPath.row].isApproved.toggle()
+        searchResult[indexPath.row].isApproved.toggleState()
         tblView.reloadRows(at: [indexPath], with: .fade)
     }
 
@@ -99,4 +99,10 @@ extension HomeScreenViewController: UITextFieldDelegate {
             tblView.reloadData()
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

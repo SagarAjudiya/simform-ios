@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */; };
 		1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */; };
+		1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B60A82A179EEE00CE4A1A /* Font.swift */; };
+		1B283E222A1C707900940978 /* JobHomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283E202A1C707900940978 /* JobHomeScreenCell.swift */; };
+		1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283E242A1C8FC100940978 /* TableHeader.swift */; };
+		1B283E272A1C901100940978 /* TableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B283E262A1C901100940978 /* TableHeader.xib */; };
 		1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA92B2A0E00600094E2B5 /* TableViewController.swift */; };
 		1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA92D2A0E02400094E2B5 /* Languages.swift */; };
 		1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA9312A0E17010094E2B5 /* Print.swift */; };
@@ -38,11 +43,16 @@
 		1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */; };
 		1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BA2A0BA96500BA32D5 /* Student.swift */; };
 		1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */; };
+		1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590782A1B9A9900C29C2D /* HeaderView.xib */; };
+		1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */; };
+		1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */; };
 		1B5A33632A0A70240020F763 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A33622A0A70240020F763 /* PickerViewController.swift */; };
 		1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A33642A0A8C990020F763 /* PHImagePickerHelper.swift */; };
 		1B5A33672A0A9A520020F763 /* ImagePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A33662A0A9A520020F763 /* ImagePickerHelper.swift */; };
 		1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A33682A0A9BD80020F763 /* UITextFieldExtension.swift */; };
 		1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A336A2A0A9D1A0020F763 /* UITextViewExtension.swift */; };
+		1B5B3A282A13B32100DDCB82 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */; };
+		1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */; };
 		1B89707D29F8DEB80090CD4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707C29F8DEB80090CD4C /* AppDelegate.swift */; };
 		1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707E29F8DEB80090CD4C /* SceneDelegate.swift */; };
 		1B89708629F8DEB90090CD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B89708529F8DEB90090CD4C /* Assets.xcassets */; };
@@ -56,11 +66,38 @@
 		1B90D12C2A0A1DFE002A04A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90D12B2A0A1DFE002A04A0 /* Constants.swift */; };
 		1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B92EB8329F944FE00A03E6F /* Task.storyboard */; };
 		1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92EB8529F9461100A03E6F /* TaskViewController.swift */; };
+		1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05BC2A149761004F53AA /* ClcLangCell.swift */; };
+		1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05BD2A149761004F53AA /* ClcLangCell.xib */; };
+		1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */; };
+		1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05C22A14CA6A004F53AA /* JobScreenViewController.swift */; };
+		1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05C72A14D265004F53AA /* ClcJobViewCell.swift */; };
 		1BAB918829FFF3D700384BFF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB918729FFF3D700384BFF /* ImageViewController.swift */; };
+		1BB03C452A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB03C442A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib */; };
 		1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE892E29FB831E0039B667 /* TextViewController.swift */; };
 		1BBE893229FB8AE90039B667 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE893129FB8AE90039B667 /* CustomTextField.swift */; };
 		1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */; };
 		1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C972A03854300C4DC4B /* TabViewController.swift */; };
+		1BD91BDC2A14E6CC00F953A5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */; };
+		1BD91ED32A1B371D0047DD07 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC12A1B371D0047DD07 /* Poppins-ExtraLight.ttf */; };
+		1BD91ED42A1B371D0047DD07 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC22A1B371D0047DD07 /* Poppins-ThinItalic.ttf */; };
+		1BD91ED52A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC32A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf */; };
+		1BD91ED62A1B371D0047DD07 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC42A1B371D0047DD07 /* Poppins-BoldItalic.ttf */; };
+		1BD91ED72A1B371D0047DD07 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC52A1B371D0047DD07 /* Poppins-Light.ttf */; };
+		1BD91ED82A1B371D0047DD07 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC62A1B371D0047DD07 /* Poppins-Medium.ttf */; };
+		1BD91ED92A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC72A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf */; };
+		1BD91EDA2A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC82A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf */; };
+		1BD91EDB2A1B371D0047DD07 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EC92A1B371D0047DD07 /* Poppins-ExtraBold.ttf */; };
+		1BD91EDC2A1B371D0047DD07 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECA2A1B371D0047DD07 /* Poppins-BlackItalic.ttf */; };
+		1BD91EDD2A1B371D0047DD07 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECB2A1B371D0047DD07 /* Poppins-Regular.ttf */; };
+		1BD91EDE2A1B371D0047DD07 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECC2A1B371D0047DD07 /* Poppins-LightItalic.ttf */; };
+		1BD91EDF2A1B371D0047DD07 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECD2A1B371D0047DD07 /* Poppins-Bold.ttf */; };
+		1BD91EE02A1B371D0047DD07 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECE2A1B371D0047DD07 /* Poppins-Black.ttf */; };
+		1BD91EE12A1B371D0047DD07 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ECF2A1B371D0047DD07 /* Poppins-Thin.ttf */; };
+		1BD91EE22A1B371D0047DD07 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ED02A1B371D0047DD07 /* Poppins-SemiBold.ttf */; };
+		1BD91EE32A1B371D0047DD07 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ED12A1B371D0047DD07 /* Poppins-Italic.ttf */; };
+		1BD91EE42A1B371D0047DD07 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91ED22A1B371D0047DD07 /* Poppins-MediumItalic.ttf */; };
+		1BD91EE62A1B38900047DD07 /* JobHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */; };
+		1BD91EEA2A1B42AE0047DD07 /* JobHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91EE92A1B42AE0047DD07 /* JobHomeScreenViewController.swift */; };
 		1BD963202A11EB6000B0B014 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9631F2A11EB6000B0B014 /* MainScreenViewController.swift */; };
 		1BD963222A120D1600B0B014 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD963212A120D1600B0B014 /* UIButtonExtension.swift */; };
 		1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDA93D629FA499F00ED2031 /* TextFieldViewController.swift */; };
@@ -72,15 +109,22 @@
 		1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3CB562A0F7C820067D2F4 /* HomeScreenViewController.swift */; };
 		1BE3E54B2A08B6B90068BA7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3E54A2A08B6B90068BA7D /* UIViewExtension.swift */; };
 		1BE703602A09473A002E3F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7035F2A09473A002E3F17 /* Main.storyboard */; };
+		1BEAEF602A1CD02500A57747 /* FeaturedViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */; };
+		1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */; };
 		1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */; };
 		1BF4C0EB2A0510BF00BB1D93 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0EA2A0510BF00BB1D93 /* BlueViewController.swift */; };
 		1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4C0EC2A0510EE00BB1D93 /* RedViewController.swift */; };
-		1BF52AE02A137EE9003B350C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF52ADF2A137EE9003B350C /* BaseTableViewCell.swift */; };
 		1BF52AE32A139687003B350C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF52AE22A139687003B350C /* Color.swift */; };
+		1BF52AE62A13ACFF003B350C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF52AE52A13ACFF003B350C /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerHelper.swift; sourceTree = "<group>"; };
+		1B1B60A82A179EEE00CE4A1A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1B283E202A1C707900940978 /* JobHomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeScreenCell.swift; sourceTree = "<group>"; };
+		1B283E242A1C8FC100940978 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
+		1B283E262A1C901100940978 /* TableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeader.xib; sourceTree = "<group>"; };
 		1B2EA92B2A0E00600094E2B5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1B2EA92D2A0E02400094E2B5 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		1B2EA9312A0E17010094E2B5 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
@@ -111,11 +155,16 @@
 		1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B44E2BA2A0BA96500BA32D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		1B5590782A1B9A9900C29C2D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeHeader.swift; sourceTree = "<group>"; };
+		1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHomeHeader.xib; sourceTree = "<group>"; };
 		1B5A33622A0A70240020F763 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		1B5A33642A0A8C990020F763 /* PHImagePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePickerHelper.swift; sourceTree = "<group>"; };
 		1B5A33662A0A9A520020F763 /* ImagePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerHelper.swift; sourceTree = "<group>"; };
 		1B5A33682A0A9BD80020F763 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		1B5A336A2A0A9D1A0020F763 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewCell.swift; sourceTree = "<group>"; };
 		1B89707929F8DEB80090CD4C /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B89707C29F8DEB80090CD4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B89707E29F8DEB80090CD4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,11 +180,38 @@
 		1B90D12B2A0A1DFE002A04A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1B92EB8329F944FE00A03E6F /* Task.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		1B92EB8529F9461100A03E6F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskViewController.swift; path = UIComponents/ViewController/TaskViewController.swift; sourceTree = SOURCE_ROOT; };
+		1BAA05BC2A149761004F53AA /* ClcLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcLangCell.swift; sourceTree = "<group>"; };
+		1BAA05BD2A149761004F53AA /* ClcLangCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClcLangCell.xib; sourceTree = "<group>"; };
+		1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobScreen.storyboard; sourceTree = "<group>"; };
+		1BAA05C22A14CA6A004F53AA /* JobScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobScreenViewController.swift; sourceTree = "<group>"; };
+		1BAA05C72A14D265004F53AA /* ClcJobViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcJobViewCell.swift; sourceTree = "<group>"; };
 		1BAB918729FFF3D700384BFF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1BB03C442A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobHomeScreenCell.xib; sourceTree = "<group>"; };
 		1BBE892E29FB831E0039B667 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1BBE893129FB8AE90039B667 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
 		1BD31C972A03854300C4DC4B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1BD91EC12A1B371D0047DD07 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1BD91EC22A1B371D0047DD07 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EC32A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EC42A1B371D0047DD07 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EC52A1B371D0047DD07 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		1BD91EC62A1B371D0047DD07 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		1BD91EC72A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EC82A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EC92A1B371D0047DD07 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1BD91ECA2A1B371D0047DD07 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1BD91ECB2A1B371D0047DD07 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		1BD91ECC2A1B371D0047DD07 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		1BD91ECD2A1B371D0047DD07 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		1BD91ECE2A1B371D0047DD07 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		1BD91ECF2A1B371D0047DD07 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		1BD91ED02A1B371D0047DD07 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		1BD91ED12A1B371D0047DD07 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		1BD91ED22A1B371D0047DD07 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobHomeScreen.storyboard; sourceTree = "<group>"; };
+		1BD91EE92A1B42AE0047DD07 /* JobHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeScreenViewController.swift; sourceTree = "<group>"; };
 		1BD9631F2A11EB6000B0B014 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		1BD963212A120D1600B0B014 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		1BDA93D629FA499F00ED2031 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
@@ -147,11 +223,13 @@
 		1BE3CB562A0F7C820067D2F4 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		1BE3E54A2A08B6B90068BA7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1BE7035F2A09473A002E3F17 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewCell.xib; sourceTree = "<group>"; };
+		1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClcJobViewCell.xib; sourceTree = "<group>"; };
 		1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		1BF4C0EA2A0510BF00BB1D93 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		1BF4C0EC2A0510EE00BB1D93 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		1BF52ADF2A137EE9003B350C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		1BF52AE22A139687003B350C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1BF52AE52A13ACFF003B350C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +243,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B283E2A2A1CCD9200940978 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB03C462A1CE33600AAC4B1 /* JobScreen */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		1B283E2B2A1CCDC500940978 /* JobHomeTableSectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1B283E242A1C8FC100940978 /* TableHeader.swift */,
+				1B283E262A1C901100940978 /* TableHeader.xib */,
+			);
+			path = JobHomeTableSectionHeader;
+			sourceTree = "<group>";
+		};
+		1B283E2C2A1CCDF800940978 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B283E2E2A1CCE2100940978 /* CollectionCell */,
+				1B283E2D2A1CCE0000940978 /* TableCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B283E2D2A1CCE0000940978 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3CB522A0F76CD0067D2F4 /* HomeCell.swift */,
+				1BDE63AF2A13410400E02701 /* ExpandTableViewCell.swift */,
+				1B2EA9332A0E28250094E2B5 /* LanguageCell */,
+				1B645DD12A1CE2CB008C7B2C /* JobScreen */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		1B283E2E2A1CCE2100940978 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA05BB2A14972A004F53AA /* ClcLangCell */,
+				1B283E2F2A1CCE3400940978 /* JobScreen */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		1B283E2F2A1CCE3400940978 /* JobScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA05C72A14D265004F53AA /* ClcJobViewCell.swift */,
+				1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */,
+				1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */,
+				1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */,
+			);
+			path = JobScreen;
+			sourceTree = "<group>";
+		};
 		1B2EA9332A0E28250094E2B5 /* LanguageCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,12 +309,13 @@
 			path = LanguageCell;
 			sourceTree = "<group>";
 		};
-		1B2EA93E2A0E36C00094E2B5 /* Font */ = {
+		1B2EA93E2A0E36C00094E2B5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1BD91EC02A1B371D0047DD07 /* Poppins */,
 				1B2EA93F2A0E36C00094E2B5 /* avenir */,
 			);
-			path = Font;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		1B2EA93F2A0E36C00094E2B5 /* avenir */ = {
@@ -208,6 +344,7 @@
 				1B2EA92D2A0E02400094E2B5 /* Languages.swift */,
 				1BE3CB542A0F7A900067D2F4 /* Home.swift */,
 				1BDE63B12A13432B00E02701 /* ExpandableView.swift */,
+				1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +365,33 @@
 				1B8EDBF22A093EC900651BFD /* ActivityIndicator.xib */,
 			);
 			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		1B55907B2A1BB03000C29C2D /* JobHomeTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */,
+				1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */,
+			);
+			path = JobHomeTableHeader;
+			sourceTree = "<group>";
+		};
+		1B645DD12A1CE2CB008C7B2C /* JobScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BB03C442A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib */,
+				1B283E202A1C707900940978 /* JobHomeScreenCell.swift */,
+			);
+			path = JobScreen;
+			sourceTree = "<group>";
+		};
+		1B7676BC2A1B99C60038E93B /* JobScreenClcHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */,
+				1B5590782A1B9A9900C29C2D /* HeaderView.xib */,
+			);
+			path = JobScreenClcHeader;
 			sourceTree = "<group>";
 		};
 		1B89707029F8DEB80090CD4C = {
@@ -295,6 +459,9 @@
 				1B2EA92B2A0E00600094E2B5 /* TableViewController.swift */,
 				1BE3CB562A0F7C820067D2F4 /* HomeScreenViewController.swift */,
 				1BDE63AD2A133B2100E02701 /* ExpandTableViewController.swift */,
+				1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */,
+				1BAA05C22A14CA6A004F53AA /* JobScreenViewController.swift */,
+				1BD91EE92A1B42AE0047DD07 /* JobHomeScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -310,6 +477,8 @@
 				1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */,
 				1B2EA9312A0E17010094E2B5 /* Print.swift */,
 				1BF52AE22A139687003B350C /* Color.swift */,
+				1BF52AE52A13ACFF003B350C /* Utility.swift */,
+				1B1B60A82A179EEE00CE4A1A /* Font.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -322,15 +491,58 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
+		1BAA05BB2A14972A004F53AA /* ClcLangCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA05BC2A149761004F53AA /* ClcLangCell.swift */,
+				1BAA05BD2A149761004F53AA /* ClcLangCell.xib */,
+			);
+			path = ClcLangCell;
+			sourceTree = "<group>";
+		};
+		1BB03C462A1CE33600AAC4B1 /* JobScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B55907B2A1BB03000C29C2D /* JobHomeTableHeader */,
+				1B7676BC2A1B99C60038E93B /* JobScreenClcHeader */,
+				1B283E2B2A1CCDC500940978 /* JobHomeTableSectionHeader */,
+			);
+			path = JobScreen;
+			sourceTree = "<group>";
+		};
 		1BBE893029FB8AA40039B667 /* CustomClass */ = {
 			isa = PBXGroup;
 			children = (
-				1BF52AE12A1392B8003B350C /* Cell */,
 				1B44E2BD2A0BC04700BA32D5 /* ActivityIndicator */,
 				1B44E2BC2A0BC02B00BA32D5 /* Slide */,
 				1BBE893129FB8AE90039B667 /* CustomTextField.swift */,
 			);
 			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		1BD91EC02A1B371D0047DD07 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				1BD91EC12A1B371D0047DD07 /* Poppins-ExtraLight.ttf */,
+				1BD91EC22A1B371D0047DD07 /* Poppins-ThinItalic.ttf */,
+				1BD91EC32A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf */,
+				1BD91EC42A1B371D0047DD07 /* Poppins-BoldItalic.ttf */,
+				1BD91EC52A1B371D0047DD07 /* Poppins-Light.ttf */,
+				1BD91EC62A1B371D0047DD07 /* Poppins-Medium.ttf */,
+				1BD91EC72A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf */,
+				1BD91EC82A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf */,
+				1BD91EC92A1B371D0047DD07 /* Poppins-ExtraBold.ttf */,
+				1BD91ECA2A1B371D0047DD07 /* Poppins-BlackItalic.ttf */,
+				1BD91ECB2A1B371D0047DD07 /* Poppins-Regular.ttf */,
+				1BD91ECC2A1B371D0047DD07 /* Poppins-LightItalic.ttf */,
+				1BD91ECD2A1B371D0047DD07 /* Poppins-Bold.ttf */,
+				1BD91ECE2A1B371D0047DD07 /* Poppins-Black.ttf */,
+				1BD91ECF2A1B371D0047DD07 /* Poppins-Thin.ttf */,
+				1BD91ED02A1B371D0047DD07 /* Poppins-SemiBold.ttf */,
+				1BD91ED12A1B371D0047DD07 /* Poppins-Italic.ttf */,
+				1BD91ED22A1B371D0047DD07 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
 			sourceTree = "<group>";
 		};
 		1BE3E5492A08B6700068BA7D /* Extensions */ = {
@@ -352,7 +564,7 @@
 				1B89708529F8DEB90090CD4C /* Assets.xcassets */,
 				1B30A75F2A1290F200B26A30 /* Colors.xcassets */,
 				1B30A7612A12914C00B26A30 /* Images.xcassets */,
-				1B2EA93E2A0E36C00094E2B5 /* Font */,
+				1B2EA93E2A0E36C00094E2B5 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -360,6 +572,8 @@
 		1BF4C0EF2A05416100BB1D93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1B283E2C2A1CCDF800940978 /* Cell */,
+				1B283E2A2A1CCD9200940978 /* HeaderView */,
 				1BF4C0F02A05418600BB1D93 /* Storyboard */,
 			);
 			path = Views;
@@ -372,27 +586,10 @@
 				1BE7035F2A09473A002E3F17 /* Main.storyboard */,
 				1B92EB8329F944FE00A03E6F /* Task.storyboard */,
 				1B2EA9582A0E39600094E2B5 /* HomeScreen.storyboard */,
+				1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */,
+				1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		1BF52AE12A1392B8003B350C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1BF52AE42A13A66E003B350C /* BaseCell */,
-				1B2EA9332A0E28250094E2B5 /* LanguageCell */,
-				1BE3CB522A0F76CD0067D2F4 /* HomeCell.swift */,
-				1BDE63AF2A13410400E02701 /* ExpandTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		1BF52AE42A13A66E003B350C /* BaseCell */ = {
-			isa = PBXGroup;
-			children = (
-				1BF52ADF2A137EE9003B350C /* BaseTableViewCell.swift */,
-			);
-			path = BaseCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,26 +651,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B2EA9522A0E36C00094E2B5 /* AvenirLTStd-HeavyOblique.otf in Resources */,
+				1B283E272A1C901100940978 /* TableHeader.xib in Resources */,
+				1BD91EE42A1B371D0047DD07 /* Poppins-MediumItalic.ttf in Resources */,
+				1BD91EE12A1B371D0047DD07 /* Poppins-Thin.ttf in Resources */,
 				1BE703602A09473A002E3F17 /* Main.storyboard in Resources */,
 				1B2EA9592A0E39600094E2B5 /* HomeScreen.storyboard in Resources */,
 				1B2EA9572A0E36C00094E2B5 /* AvenirLTStd-Book.otf in Resources */,
 				1B302E132A010AED00C8674D /* Slide.xib in Resources */,
+				1BD91EDE2A1B371D0047DD07 /* Poppins-LightItalic.ttf in Resources */,
+				1BEAEF602A1CD02500A57747 /* FeaturedViewCell.xib in Resources */,
+				1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */,
+				1BD91ED82A1B371D0047DD07 /* Poppins-Medium.ttf in Resources */,
+				1BD91ED42A1B371D0047DD07 /* Poppins-ThinItalic.ttf in Resources */,
 				1B2EA9562A0E36C00094E2B5 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				1B30A7602A1290F200B26A30 /* Colors.xcassets in Resources */,
 				1B89708929F8DEB90090CD4C /* LaunchScreen.storyboard in Resources */,
+				1BD91ED62A1B371D0047DD07 /* Poppins-BoldItalic.ttf in Resources */,
+				1BD91ED92A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				1B2EA93B2A0E2BB60094E2B5 /* LanguageCell.xib in Resources */,
+				1BD91EE22A1B371D0047DD07 /* Poppins-SemiBold.ttf in Resources */,
 				1B2EA94F2A0E36C00094E2B5 /* AvenirLTStd-Medium.otf in Resources */,
 				1B2EA9512A0E36C00094E2B5 /* AvenirLTStd-Heavy.otf in Resources */,
 				1B2EA9532A0E36C00094E2B5 /* AvenirLTStd-Light.otf in Resources */,
+				1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */,
+				1BD91EDC2A1B371D0047DD07 /* Poppins-BlackItalic.ttf in Resources */,
+				1BD91EDA2A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				1BD91ED32A1B371D0047DD07 /* Poppins-ExtraLight.ttf in Resources */,
 				1B2EA9502A0E36C00094E2B5 /* AvenirLTStd-LightOblique.otf in Resources */,
 				1B2EA94C2A0E36C00094E2B5 /* AvenirLTStd-Oblique.otf in Resources */,
 				1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */,
+				1BD91EE02A1B371D0047DD07 /* Poppins-Black.ttf in Resources */,
 				1B30A7622A12914D00B26A30 /* Images.xcassets in Resources */,
 				1B2EA94E2A0E36C00094E2B5 /* Avenir-Roman.otf in Resources */,
+				1BD91EE32A1B371D0047DD07 /* Poppins-Italic.ttf in Resources */,
 				1B89708629F8DEB90090CD4C /* Assets.xcassets in Resources */,
+				1BB03C452A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib in Resources */,
+				1BD91EE62A1B38900047DD07 /* JobHomeScreen.storyboard in Resources */,
+				1BD91ED72A1B371D0047DD07 /* Poppins-Light.ttf in Resources */,
+				1BD91EDD2A1B371D0047DD07 /* Poppins-Regular.ttf in Resources */,
+				1BD91ED52A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */,
 				1B2EA94D2A0E36C00094E2B5 /* AvenirLTStd-BookOblique.otf in Resources */,
+				1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */,
 				1B2EA9552A0E36C00094E2B5 /* AvenirLTStd-Black.otf in Resources */,
+				1BD91EDF2A1B371D0047DD07 /* Poppins-Bold.ttf in Resources */,
+				1BD91EDB2A1B371D0047DD07 /* Poppins-ExtraBold.ttf in Resources */,
 				1B2EA9542A0E36C00094E2B5 /* AvenirLTStd-BlackOblique.otf in Resources */,
+				1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */,
 				1B8EDBF32A093EC900651BFD /* ActivityIndicator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,8 +713,10 @@
 				1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */,
 				1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */,
 				1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */,
+				1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */,
 				1B8EDBEB2A090FAC00651BFD /* Validator.swift in Sources */,
 				1B5A33632A0A70240020F763 /* PickerViewController.swift in Sources */,
+				1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */,
 				1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */,
 				1B90D12A2A0A1500002A04A0 /* BaseViewController.swift in Sources */,
 				1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */,
@@ -498,12 +724,17 @@
 				1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */,
 				1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */,
 				1B89707D29F8DEB80090CD4C /* AppDelegate.swift in Sources */,
+				1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */,
 				1B3A4E9829FFBA9300488999 /* SegmentViewController.swift in Sources */,
+				1BF52AE62A13ACFF003B350C /* Utility.swift in Sources */,
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
 				1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */,
+				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
+				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
 				1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */,
 				1BE3CB532A0F76CD0067D2F4 /* HomeCell.swift in Sources */,
@@ -518,16 +749,21 @@
 				1B302E112A010AC600C8674D /* Slide.swift in Sources */,
 				1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */,
 				1B44E2B62A0B738900BA32D5 /* UIImageViewExtension.swift in Sources */,
+				1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */,
+				1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */,
 				1B302E152A01215900C8674D /* WebKitViewController.swift in Sources */,
 				1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */,
+				1BD91BDC2A14E6CC00F953A5 /* HeaderView.swift in Sources */,
+				1B283E222A1C707900940978 /* JobHomeScreenCell.swift in Sources */,
 				1BE3E54B2A08B6B90068BA7D /* UIViewExtension.swift in Sources */,
 				1BAB918829FFF3D700384BFF /* ImageViewController.swift in Sources */,
 				1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */,
 				1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */,
 				1B2EA93A2A0E2BB60094E2B5 /* LanguageCell.swift in Sources */,
 				1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */,
-				1BF52AE02A137EE9003B350C /* BaseTableViewCell.swift in Sources */,
+				1BD91EEA2A1B42AE0047DD07 /* JobHomeScreenViewController.swift in Sources */,
 				1BD963222A120D1600B0B014 /* UIButtonExtension.swift in Sources */,
+				1B5B3A282A13B32100DDCB82 /* CollectionViewController.swift in Sources */,
 				1BF4C0EB2A0510BF00BB1D93 /* BlueViewController.swift in Sources */,
 				1BF52AE32A139687003B350C /* Color.swift in Sources */,
 				1BBE893229FB8AE90039B667 /* CustomTextField.swift in Sources */,

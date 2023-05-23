@@ -20,7 +20,25 @@ struct Languages {
         Languages(langImg: "javascript", langName: "JavaScript"),
         Languages(langImg: "python", langName: "Python"),
         Languages(langImg: "go", langName: "Go"),
-        Languages(langImg: "html", langName: "HTML")
+        Languages(langImg: "html", langName: "HTML"),
+        Languages(langImg: "swift", langName: "Swift"),
+        Languages(langImg: "java", langName: "Java"),
+        Languages(langImg: "javascript", langName: "JavaScript"),
+        Languages(langImg: "python", langName: "Python"),
+        Languages(langImg: "go", langName: "Go"),
+        Languages(langImg: "html", langName: "HTML"),
+        Languages(langImg: "swift", langName: "Swift"),
+        Languages(langImg: "java", langName: "Java"),
+        Languages(langImg: "javascript", langName: "JavaScript"),
+        Languages(langImg: "python", langName: "Python"),
+        Languages(langImg: "go", langName: "Go"),
+        Languages(langImg: "html", langName: "HTML"),
+        Languages(langImg: "swift", langName: "Swift"),
+        Languages(langImg: "java", langName: "Java"),
+        Languages(langImg: "javascript", langName: "JavaScript"),
+        Languages(langImg: "python", langName: "Python"),
+        Languages(langImg: "go", langName: "Go"),
+        Languages(langImg: "html", langName: "HTML"),
     ]
     
 }

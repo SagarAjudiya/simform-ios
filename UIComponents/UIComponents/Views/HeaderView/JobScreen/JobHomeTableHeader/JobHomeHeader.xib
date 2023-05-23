@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JobHomeHeader" customModule="UIComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a job or position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paJ-Pd-nRo">
+                    <rect key="frame" x="24" y="59" width="180.33333333333334" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-6G-oeL">
+                    <rect key="frame" x="252" y="59" width="52" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sPc-6G-oeL" secondAttribute="height" multiplier="1:1" id="RhI-qp-A0e"/>
+                        <constraint firstAttribute="height" constant="48" id="dWd-bV-F4t"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="jfilter"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsearch" translatesAutoresizingMaskIntoConstraints="NO" id="heo-94-Xtb">
+                    <rect key="frame" x="50" y="75" width="20" height="20"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sPc-6G-oeL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="paJ-Pd-nRo" secondAttribute="trailing" constant="16" id="1cr-CR-ySX"/>
+                <constraint firstItem="paJ-Pd-nRo" firstAttribute="top" secondItem="sPc-6G-oeL" secondAttribute="top" id="7s7-lj-LgF"/>
+                <constraint firstItem="paJ-Pd-nRo" firstAttribute="bottom" secondItem="heo-94-Xtb" secondAttribute="bottom" constant="16" id="EBT-Le-Dps"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sPc-6G-oeL" secondAttribute="bottom" id="O9K-lz-jvE"/>
+                <constraint firstItem="heo-94-Xtb" firstAttribute="leading" secondItem="paJ-Pd-nRo" secondAttribute="leading" constant="26" id="Zhr-cf-3q2"/>
+                <constraint firstItem="paJ-Pd-nRo" firstAttribute="bottom" secondItem="sPc-6G-oeL" secondAttribute="bottom" id="dZh-ju-YZ0"/>
+                <constraint firstItem="heo-94-Xtb" firstAttribute="top" secondItem="paJ-Pd-nRo" secondAttribute="top" constant="16" id="gVT-YD-Vhh"/>
+                <constraint firstItem="sPc-6G-oeL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lg1-fJ-3qf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sPc-6G-oeL" secondAttribute="trailing" constant="24" id="uy9-Sz-vyW"/>
+                <constraint firstItem="paJ-Pd-nRo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="zpf-AK-cSg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-18.320610687022899" y="-244.36619718309859"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jfilter" width="15" height="16"/>
+        <image name="jsearch" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

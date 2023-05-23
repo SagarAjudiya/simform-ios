@@ -10,8 +10,6 @@ import UIKit
 class MainScreenViewController: BaseViewController {
 
     // MARK: IBOutlets
-    @IBOutlet weak private var btnHomeScreen: UIButton!
-    @IBOutlet weak private var btnExpandTableView: UIButton!
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
@@ -21,9 +19,24 @@ class MainScreenViewController: BaseViewController {
     
     // MARK: IBActions
     @IBAction func btnHomeScreenTapped(_ sender: UIButton) {
-        let homeScreenSB = UIStoryboard(name: "HomeScreen", bundle: nil)
-        let homeScreenVC = homeScreenSB.instantiateViewController(withIdentifier: "HomeScreenViewController")
-        navigationController?.pushViewController(homeScreenVC, animated: true)
+        Utility.changeVC(self, "HomeScreen", "HomeScreenViewController")
+    }
+    
+    @IBAction func btnExpandTableViewTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "Main", "ExpandTableViewController")
+    }
+    
+    
+    @IBAction func btnCollectionViewTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "Main", "CollectionViewController")
+    }
+    
+    @IBAction func btnJobScreenTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "JobScreen", "JobScreenViewController")
+    }
+    
+    @IBAction func btnJobHomeScreenTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "JobHomeScreen", "JobHomeScreenViewController")
     }
     
 }
