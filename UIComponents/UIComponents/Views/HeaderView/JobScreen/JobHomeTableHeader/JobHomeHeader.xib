@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,12 +15,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a job or position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paJ-Pd-nRo">
-                    <rect key="frame" x="24" y="59" width="180.33333333333334" height="52"/>
+                    <rect key="frame" x="24" y="59" width="180.33333333333334" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-6G-oeL">
-                    <rect key="frame" x="252" y="59" width="52" height="52"/>
+                    <rect key="frame" x="256" y="59" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="sPc-6G-oeL" secondAttribute="height" multiplier="1:1" id="RhI-qp-A0e"/>
                         <constraint firstAttribute="height" constant="48" id="dWd-bV-F4t"/>
@@ -29,16 +29,15 @@
                     <buttonConfiguration key="configuration" style="plain" image="jfilter"/>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsearch" translatesAutoresizingMaskIntoConstraints="NO" id="heo-94-Xtb">
-                    <rect key="frame" x="50" y="75" width="20" height="20"/>
+                    <rect key="frame" x="50" y="75" width="20" height="16"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="jbg"/>
             <constraints>
                 <constraint firstItem="sPc-6G-oeL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="paJ-Pd-nRo" secondAttribute="trailing" constant="16" id="1cr-CR-ySX"/>
                 <constraint firstItem="paJ-Pd-nRo" firstAttribute="top" secondItem="sPc-6G-oeL" secondAttribute="top" id="7s7-lj-LgF"/>
                 <constraint firstItem="paJ-Pd-nRo" firstAttribute="bottom" secondItem="heo-94-Xtb" secondAttribute="bottom" constant="16" id="EBT-Le-Dps"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sPc-6G-oeL" secondAttribute="bottom" id="O9K-lz-jvE"/>
                 <constraint firstItem="heo-94-Xtb" firstAttribute="leading" secondItem="paJ-Pd-nRo" secondAttribute="leading" constant="26" id="Zhr-cf-3q2"/>
                 <constraint firstItem="paJ-Pd-nRo" firstAttribute="bottom" secondItem="sPc-6G-oeL" secondAttribute="bottom" id="dZh-ju-YZ0"/>
                 <constraint firstItem="heo-94-Xtb" firstAttribute="top" secondItem="paJ-Pd-nRo" secondAttribute="top" constant="16" id="gVT-YD-Vhh"/>
@@ -53,8 +52,8 @@
     <resources>
         <image name="jfilter" width="15" height="16"/>
         <image name="jsearch" width="20" height="20"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="jbg">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -43,11 +43,16 @@ class HomeScreenViewController: BaseViewController {
         btnNotification.makeRoundBtn()
         btnSort.makeRoundBtn()
         imgProfile.makeRoundImage()
+        searchField.returnKeyType = .search
         searchField.setLeftPaddingTF(padding: imgSearch.frame.width + 15.0)
         searchField.makeRoundView()
         searchField.attributedPlaceholder = NSAttributedString(
             string: Constant.String.searchHolder,
             attributes: [.foregroundColor: UIColor.white])
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
@@ -96,8 +101,8 @@ extension HomeScreenViewController: UITextFieldDelegate {
             searchResult = Home.homeData
         } else {
             searchResult = Home.homeData.filter { $0.request.lowercased().contains(search.lowercased()) }
-            tblView.reloadData()
         }
+        tblView.reloadData()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

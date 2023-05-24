@@ -28,8 +28,14 @@ class JobHomeScreenViewController: BaseViewController {
         setupViews()
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: SetUp Views
     private func setupViews() {
+        searchField.delegate = self
+        
         setupTableView()
         
         redDot.makeRoundImage()
@@ -98,4 +104,14 @@ extension JobHomeScreenViewController: UITableViewDelegate, UITableViewDataSourc
         TableConst.heightForHeaderInSection
     }
             
+}
+
+// MARK: Extension JobHomeScreenViewController
+extension JobHomeScreenViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

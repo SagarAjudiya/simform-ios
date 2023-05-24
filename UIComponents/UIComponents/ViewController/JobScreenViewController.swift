@@ -49,9 +49,15 @@ class JobScreenViewController: BaseViewController {
         lblresult.textColor = Color.jGreen
         lineView.backgroundColor = Color.jBlack
         
+        searchField.delegate = self
         searchField.setLeftPaddingTF(padding: 18)
         searchField.setRightPaddingTF(padding: 30)
         searchField.borderStyle = .none
+        searchField.returnKeyType = .search
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
@@ -128,6 +134,16 @@ extension JobScreenViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         CGSize(width: (collectionView.bounds.width - CellConst.padding), height: CellConst.cvHeaderHeight)
+    }
+    
+}
+
+// MARK: Extension JobScreenViewController
+extension JobScreenViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }

@@ -16,6 +16,7 @@ class MainScreenViewController: BaseViewController {
         super.viewDidLoad()
 
     }
+//    ScrollViewController
     
     // MARK: IBActions
     @IBAction func btnHomeScreenTapped(_ sender: UIButton) {
@@ -37,6 +38,10 @@ class MainScreenViewController: BaseViewController {
     
     @IBAction func btnJobHomeScreenTapped(_ sender: UIButton) {
         Utility.changeVC(self, "JobHomeScreen", "JobHomeScreenViewController")
+    }
+    
+    @IBAction func btnScrollViewTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "ScrollView", "ScrollViewController")
     }
     
 }

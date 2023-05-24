@@ -17,8 +17,8 @@ struct Home {
     
     static var homeData = [
         Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.approved),
-        Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.awaitingApproval),
-        Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.approved),
+        Home(id: "745AF6", request: "Best Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.awaitingApproval),
+        Home(id: "745AF6", request: "Rest Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.approved),
         Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.awaitingApproval),
         Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.approved),
         Home(id: "745AF6", request: "Test Request Compliance Approval", submitBy: "DavisBaptista@domain.name", type: "Request", date: "Jan 01, 2020", isApproved: ApproveStatus.approved),
