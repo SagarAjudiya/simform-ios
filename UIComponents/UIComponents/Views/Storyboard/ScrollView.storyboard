@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-lJ-Yby" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="706.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="454.66666666666669"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eKF-3u-3X6">
-                                                <rect key="frame" x="30" y="20" width="333" height="686.33333333333337"/>
+                                                <rect key="frame" x="30" y="20" width="333" height="414.66666666666669"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGa-t4-dJq">
                                                         <rect key="frame" x="0.0" y="0.0" width="333" height="34.333333333333336"/>
@@ -99,42 +99,12 @@
                                                             <segue destination="k2n-dn-iEP" kind="show" id="GmZ-sV-dWp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idW-11-4te">
-                                                        <rect key="frame" x="0.0" y="434.66666666666663" width="333" height="34.333333333333314"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="TabBar" cornerStyle="medium">
-                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-LF-kJj">
-                                                        <rect key="frame" x="0.0" y="489" width="333" height="34.333333333333371"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="StackView" cornerStyle="medium">
-                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqq-pQ-Rmy">
-                                                        <rect key="frame" x="0.0" y="543.33333333333337" width="333" height="34.333333333333371"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="PageViewController" cornerStyle="medium">
-                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnh-Py-pAT">
-                                                        <rect key="frame" x="0.0" y="597.66666666666663" width="333" height="34.333333333333371"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="PHPicker" cornerStyle="medium">
-                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWb-xs-pDA">
-                                                        <rect key="frame" x="0.0" y="652" width="333" height="34.333333333333371"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="medium">
-                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="eKF-3u-3X6" secondAttribute="bottom" id="2dJ-in-SnV"/>
+                                            <constraint firstAttribute="bottom" secondItem="eKF-3u-3X6" secondAttribute="bottom" constant="20" id="2dJ-in-SnV"/>
                                             <constraint firstItem="eKF-3u-3X6" firstAttribute="top" secondItem="Goc-lJ-Yby" secondAttribute="top" constant="20" id="5eu-v8-vee"/>
                                             <constraint firstAttribute="trailing" secondItem="eKF-3u-3X6" secondAttribute="trailing" constant="30" id="Gtj-DR-QnN"/>
                                             <constraint firstItem="eKF-3u-3X6" firstAttribute="leading" secondItem="Goc-lJ-Yby" secondAttribute="leading" constant="30" id="cGU-gi-RCF"/>

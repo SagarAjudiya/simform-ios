@@ -72,7 +72,7 @@ extension ExpandTableViewController: UITableViewDelegate, UITableViewDataSource 
 }
 
 // MARK: Extension ExpandTableViewController
-extension ExpandTableViewController: ExpandTableViewCellDelegate {
+extension ExpandTableViewController: ExpandTableViewCellDelegateProtocol {
     
     func btnMoreTapped(cell: ExpandTableViewCell) {
         guard let indexPath = tblViewExpand.indexPath(for: cell) else { return }

@@ -9,6 +9,7 @@ struct Constant {
     
     // MARK: String Constant
     struct String {
+        
         static let placeHolderTxt = "Write your text here"
         static let rewinding = "Rewinding"
         static let playing = "Playing"
@@ -23,6 +24,7 @@ struct Constant {
         static let myName = "I'm Sagar"
         static let done = "Done"
         static let edit = "Edit"
+        static let insert = "Insert"
         static let delete = "Delete"
         static let changeName = "Change Name"
         static let cancel = "Cancel"
@@ -32,6 +34,17 @@ struct Constant {
         static let popular = "Popular Jobs"
         static let recommanded = "Recommanded Jobs"
         static let featured = "Featured Jobs"
+        
+    }
+    
+    // MARK: Storyboard Constant
+    struct StoryBoard {
+        
+        static let homeScreen = "HomeScreen"
+        static let jobScreen = "JobScreen"
+        static let jobHomeScreen = "JobHomeScreen"
+        static let task = "Task"
+        
     }
      
     static let htmlString = """

@@ -34,7 +34,7 @@ class HomeScreenViewController: BaseViewController {
     
     // MARK: SetUp Views
     private func setupViews() {
-        navigationController?.isNavigationBarHidden = true
+//        navigationController?.isNavigationBarHidden = true
         tblView.delegate = self
         tblView.dataSource = self
         searchField.delegate = self

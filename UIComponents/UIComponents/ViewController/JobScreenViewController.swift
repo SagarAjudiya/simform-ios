@@ -60,6 +60,16 @@ class JobScreenViewController: BaseViewController {
         self.view.endEditing(true)
     }
     
+    // MARK: IBActions
+    @IBAction func btnBackTapped(_ sender: UIButton) {
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnClearTapped(_ sender: UIButton) {
+        searchField.text = ""
+    }
+    
 }
 
 // MARK: Extension JobScreenViewController

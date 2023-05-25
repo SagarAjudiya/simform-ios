@@ -12,6 +12,7 @@ class TableViewController: BaseViewController {
     // MARK: IBOutlets
     @IBOutlet weak private var tblView: UITableView!
     @IBOutlet weak var btnEdit: UIBarButtonItem!
+    @IBOutlet weak var btnAdd: UIBarButtonItem!
     
     // MARK: Variables
     private let sectionTitles = ["Programming", "Regional", "Local", "International"]
@@ -32,9 +33,17 @@ class TableViewController: BaseViewController {
     }
     
     // MARK: IBActions
-    @IBAction func btnEditTapped(_ sender: Any) {
+    @IBAction func btnEditTapped(_ sender: UIBarButtonItem) {
         tblView.isEditing = !tblView.isEditing
         btnEdit.title = (tblView.isEditing ? Constant.String.done : Constant.String.edit)
+    }
+    
+    @IBAction func btnAddTapped(_ sender: UIBarButtonItem) {
+        Languages.langList.append(Languages(langImg: "swift", langName: "Add By Me"))
+        tblView.performBatchUpdates({
+        tblView.insertRows(at: [IndexPath(row: Languages.langList.count - 1, section: 0)], with: .automatic)
+        })
+        tblView.reloadRows(at: [IndexPath(row: Languages.langList.count - 1, section: 0)], with: .automatic)
     }
     
 }
@@ -92,14 +101,17 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 
-        let edit = UIContextualAction(style: .normal, title: Constant.String.edit) { _, _, _ in
-            /// implement in fature
+        let insert = UIContextualAction(style: .normal, title: Constant.String.insert) { _, _, _ in
+            Languages.langList.append(Languages.langList[indexPath.row])
+            self.tblView.insertRows(at: [indexPath], with: .fade)
         }
+        
         let delete = UIContextualAction(style: .destructive, title: Constant.String.delete) { _, _, _ in
             Languages.langList.remove(at: indexPath.row)
             self.tblView.deleteRows(at: [indexPath], with: .fade)
         }
-        let swipeConfig = UISwipeActionsConfiguration(actions: [delete, edit])
+        
+        let swipeConfig = UISwipeActionsConfiguration(actions: [delete, insert])
         return swipeConfig
     }
     
