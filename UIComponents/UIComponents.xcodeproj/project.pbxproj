@@ -43,6 +43,9 @@
 		1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */; };
 		1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BA2A0BA96500BA32D5 /* Student.swift */; };
 		1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */; };
+		1B4A42D82A1FC0AF00C663DF /* PickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */; };
+		1B4A42DA2A1FC31A00C663DF /* PickScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */; };
+		1B4A42DC2A1FC44F00C663DF /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */; };
 		1B4E674E2A1F20C5006442F7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */; };
 		1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */; };
 		1B4E67542A1F9127006442F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67532A1F9127006442F7 /* Image.swift */; };
@@ -70,6 +73,9 @@
 		1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B92EB8329F944FE00A03E6F /* Task.storyboard */; };
 		1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92EB8529F9461100A03E6F /* TaskViewController.swift */; };
 		1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */; };
+		1BA446F22A20817E00B63689 /* PickChangeRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */; };
+		1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F32A20BD3D00B63689 /* DatePickerController.swift */; };
+		1BA446F62A20CC0000B63689 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F52A20CC0000B63689 /* DateExtension.swift */; };
 		1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05BC2A149761004F53AA /* ClcLangCell.swift */; };
 		1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05BD2A149761004F53AA /* ClcLangCell.xib */; };
 		1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */; };
@@ -162,6 +168,9 @@
 		1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B44E2BA2A0BA96500BA32D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerView.storyboard; sourceTree = "<group>"; };
+		1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScrollViewController.swift; sourceTree = "<group>"; };
+		1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
 		1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
 		1B4E67532A1F9127006442F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -191,6 +200,9 @@
 		1B92EB8329F944FE00A03E6F /* Task.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
 		1B92EB8529F9461100A03E6F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskViewController.swift; path = UIComponents/ViewController/TaskViewController.swift; sourceTree = SOURCE_ROOT; };
 		1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickChangeRowViewController.swift; sourceTree = "<group>"; };
+		1BA446F32A20BD3D00B63689 /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
+		1BA446F52A20CC0000B63689 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1BAA05BC2A149761004F53AA /* ClcLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcLangCell.swift; sourceTree = "<group>"; };
 		1BAA05BD2A149761004F53AA /* ClcLangCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClcLangCell.xib; sourceTree = "<group>"; };
 		1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobScreen.storyboard; sourceTree = "<group>"; };
@@ -359,6 +371,7 @@
 				1BE3CB542A0F7A900067D2F4 /* Home.swift */,
 				1BDE63B12A13432B00E02701 /* ExpandableView.swift */,
 				1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */,
+				1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -479,6 +492,9 @@
 				1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */,
 				1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */,
 				1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */,
+				1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */,
+				1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */,
+				1BA446F32A20BD3D00B63689 /* DatePickerController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -572,6 +588,7 @@
 				1B44E2B52A0B738900BA32D5 /* UIImageViewExtension.swift */,
 				1BD963212A120D1600B0B014 /* UIButtonExtension.swift */,
 				1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */,
+				1BA446F52A20CC0000B63689 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -609,6 +626,7 @@
 				1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */,
 				1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */,
 				1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */,
+				1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -720,6 +738,7 @@
 				1BD91EDB2A1B371D0047DD07 /* Poppins-ExtraBold.ttf in Resources */,
 				1B2EA9542A0E36C00094E2B5 /* AvenirLTStd-BlackOblique.otf in Resources */,
 				1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */,
+				1B4A42D82A1FC0AF00C663DF /* PickerView.storyboard in Resources */,
 				1B4E674E2A1F20C5006442F7 /* TabBar.storyboard in Resources */,
 				1B8EDBF32A093EC900651BFD /* ActivityIndicator.xib in Resources */,
 			);
@@ -734,12 +753,14 @@
 			files = (
 				1BDE63B02A13410400E02701 /* ExpandTableViewCell.swift in Sources */,
 				1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */,
+				1BA446F62A20CC0000B63689 /* DateExtension.swift in Sources */,
 				1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */,
 				1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */,
 				1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */,
 				1B8EDBEB2A090FAC00651BFD /* Validator.swift in Sources */,
 				1BF2674A2A1E5ED500DFE47C /* HoriScrollViewController.swift in Sources */,
 				1B5A33632A0A70240020F763 /* PickerViewController.swift in Sources */,
+				1BA446F22A20817E00B63689 /* PickChangeRowViewController.swift in Sources */,
 				1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */,
 				1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */,
 				1B90D12A2A0A1500002A04A0 /* BaseViewController.swift in Sources */,
@@ -755,6 +776,7 @@
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */,
 				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
@@ -762,6 +784,7 @@
 				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
 				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
+				1B4A42DC2A1FC44F00C663DF /* PickerModel.swift in Sources */,
 				1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */,
 				1B4E67542A1F9127006442F7 /* Image.swift in Sources */,
 				1BE3CB532A0F76CD0067D2F4 /* HomeCell.swift in Sources */,
@@ -776,6 +799,7 @@
 				1B302E112A010AC600C8674D /* Slide.swift in Sources */,
 				1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */,
 				1B44E2B62A0B738900BA32D5 /* UIImageViewExtension.swift in Sources */,
+				1B4A42DA2A1FC31A00C663DF /* PickScrollViewController.swift in Sources */,
 				1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */,
 				1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */,
 				1B302E152A01215900C8674D /* WebKitViewController.swift in Sources */,

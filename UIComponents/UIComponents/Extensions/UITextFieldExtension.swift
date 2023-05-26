@@ -81,3 +81,30 @@ extension UITextField {
     }
     
 }
+
+// MARK: Extension For Open DatePicker
+extension UITextField {
+    
+    func setDatePickerAsInputViewFor(target: Any, selector: Selector) {
+        
+        let datePicker = UIDatePicker()
+        datePicker.sizeToFit()
+        datePicker.preferredDatePickerStyle = .inline
+        datePicker.datePickerMode = .dateAndTime
+        self.inputView = datePicker
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let cancel = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(tapCancel))
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done = UIBarButtonItem(title: "Done", style: .done, target: nil, action: selector)
+        
+        toolBar.setItems([cancel,flexibleSpace, done], animated: false)
+        self.inputAccessoryView = toolBar
+    }
+    
+    @objc func tapCancel() {
+        self.resignFirstResponder()
+    }
+    
+}

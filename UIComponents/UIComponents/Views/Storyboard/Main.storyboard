@@ -1369,13 +1369,24 @@ ttps://www.swift.org/documentation/
                                     <action selector="btnTabBarTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="w64-jC-dfI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-Rf-9eg">
+                                <rect key="frame" x="30" y="616.33333333333337" width="370" height="34.333333333333371"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PickerView" cornerStyle="medium">
+                                    <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPickerView:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="NWT-x1-TF0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ww0-hW-D9W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5SY-O0-hgA" firstAttribute="top" secondItem="LZB-0T-hcz" secondAttribute="bottom" constant="15" id="1Yl-co-shh"/>
+                            <constraint firstItem="aex-Rf-9eg" firstAttribute="leading" secondItem="o2e-hW-kaF" secondAttribute="leading" id="3dM-To-SBC"/>
                             <constraint firstItem="o2e-hW-kaF" firstAttribute="top" secondItem="lPx-wX-BZ4" secondAttribute="bottom" constant="15" id="5fa-rt-nlV"/>
                             <constraint firstItem="nQf-Cf-l31" firstAttribute="leading" secondItem="eDo-DV-qXQ" secondAttribute="leading" id="6Vw-wO-tWu"/>
+                            <constraint firstItem="aex-Rf-9eg" firstAttribute="top" secondItem="o2e-hW-kaF" secondAttribute="bottom" constant="15" id="7Rh-Hc-Iye"/>
                             <constraint firstItem="zMz-0a-t9Q" firstAttribute="top" secondItem="95U-Uc-BpH" secondAttribute="bottom" constant="15" id="9Nw-Ed-FWe"/>
                             <constraint firstItem="95U-Uc-BpH" firstAttribute="leading" secondItem="nQf-Cf-l31" secondAttribute="leading" id="Air-A3-KF4"/>
                             <constraint firstItem="eDo-DV-qXQ" firstAttribute="trailing" secondItem="ITd-l0-BFw" secondAttribute="trailing" id="Hmb-NL-Tzx"/>
@@ -1396,6 +1407,7 @@ ttps://www.swift.org/documentation/
                             <constraint firstItem="ITd-l0-BFw" firstAttribute="trailing" secondItem="stg-ue-fVS" secondAttribute="trailing" id="laG-KB-c1V"/>
                             <constraint firstItem="stg-ue-fVS" firstAttribute="leading" secondItem="ww0-hW-D9W" secondAttribute="leading" constant="30" id="lu8-Sz-1Wp"/>
                             <constraint firstItem="5SY-O0-hgA" firstAttribute="leading" secondItem="LZB-0T-hcz" secondAttribute="leading" id="or4-6K-f0V"/>
+                            <constraint firstItem="aex-Rf-9eg" firstAttribute="trailing" secondItem="o2e-hW-kaF" secondAttribute="trailing" id="pXF-sw-rBn"/>
                             <constraint firstItem="nQf-Cf-l31" firstAttribute="trailing" secondItem="eDo-DV-qXQ" secondAttribute="trailing" id="rYQ-It-s4h"/>
                             <constraint firstItem="o2e-hW-kaF" firstAttribute="leading" secondItem="lPx-wX-BZ4" secondAttribute="leading" id="tx6-wm-hsw"/>
                             <constraint firstItem="zMz-0a-t9Q" firstAttribute="trailing" secondItem="95U-Uc-BpH" secondAttribute="trailing" id="wJ7-sc-KYK"/>
