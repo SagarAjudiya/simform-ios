@@ -16,7 +16,6 @@ class MainScreenViewController: BaseViewController {
         super.viewDidLoad()
 
     }
-//    ScrollViewController
     
     // MARK: IBActions
     @IBAction func btnHomeScreenTapped(_ sender: UIButton) {
@@ -44,4 +43,13 @@ class MainScreenViewController: BaseViewController {
         Utility.changeVC(self, "ScrollView", "ScrollViewController")
     }
     
+    @IBAction func btnTabBarProTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "TabBar", "TabMainViewController")
+    }
+
+    @IBAction func btnTabBarTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "TabBar", "TabBar")
+
+    }
+
 }

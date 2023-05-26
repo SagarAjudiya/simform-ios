@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: Protocol ExpandTableViewCellDelegate
-protocol ExpandTableViewCellDelegate: AnyObject {
+protocol ExpandTableViewCellDelegateProtocol: AnyObject {
     func btnMoreTapped(cell: ExpandTableViewCell)
 }
 
@@ -19,7 +19,7 @@ class ExpandTableViewCell: UITableViewCell {
     @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var btnSeeMore: UIButton!
     
-    weak var delegate: ExpandTableViewCellDelegate?
+    weak var delegate: ExpandTableViewCellDelegateProtocol?
     
     /// using closure
 //    var btnClicked: (() -> (Void))!

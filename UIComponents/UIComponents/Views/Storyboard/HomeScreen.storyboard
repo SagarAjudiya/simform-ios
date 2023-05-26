@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6DU-nl-XxX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-Bp-vpu" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="245"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="201"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboardBubble" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-T5-LUk">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="245"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="201"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="4tE-9P-amI">
-                                        <rect key="frame" x="20" y="101" width="50" height="50"/>
+                                        <rect key="frame" x="20" y="57" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3hm-St-4au"/>
                                             <constraint firstAttribute="width" secondItem="4tE-9P-amI" secondAttribute="height" multiplier="1:1" id="RyH-iL-FMi"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-mu-473">
-                                        <rect key="frame" x="90" y="93.333333333333314" width="95.333333333333314" height="65.666666666666686"/>
+                                        <rect key="frame" x="90" y="49.333333333333336" width="95.333333333333314" height="65.666666666666657"/>
                                         <string key="text">Davis 
 Baptista</string>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
@@ -40,28 +40,28 @@ Baptista</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzz-vx-NgO" userLabel="Btn Notificatiom">
-                                        <rect key="frame" x="358" y="101" width="50" height="50"/>
+                                        <rect key="frame" x="358" y="57" width="50" height="50"/>
                                         <color key="backgroundColor" name="transback"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="notification"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfx-dE-pbd" userLabel="Btn Filter">
-                                        <rect key="frame" x="358" y="175" width="50" height="50"/>
+                                        <rect key="frame" x="358" y="131" width="50" height="50"/>
                                         <color key="backgroundColor" name="transback"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="filter"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Document" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-tz-aGn">
-                                        <rect key="frame" x="20" y="175" width="318" height="50"/>
+                                        <rect key="frame" x="20" y="131" width="318" height="50"/>
                                         <color key="backgroundColor" name="transback"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="qaN-OA-d1H">
-                                        <rect key="frame" x="35" y="190" width="24" height="20"/>
+                                        <rect key="frame" x="35" y="146" width="24" height="20"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="appBlue"/>
@@ -99,7 +99,7 @@ Baptista</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FMa-j1-G3h">
-                                <rect key="frame" x="20" y="245" width="388" height="647"/>
+                                <rect key="frame" x="20" y="201" width="388" height="691"/>
                                 <color key="backgroundColor" name="appbg"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="CN3-6k-7Gu" customClass="HomeCell" customModule="UIComponents" customModuleProvider="target">
@@ -259,24 +259,6 @@ Baptista</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="387.02290076335879" y="-27.464788732394368"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="rxw-s2-yRU">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6DU-nl-XxX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hke-6z-15K">
-                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="TQK-d7-2Kc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f0w-RW-MRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-340" y="-27"/>
         </scene>
     </scenes>
     <resources>

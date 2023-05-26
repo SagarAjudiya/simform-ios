@@ -38,6 +38,8 @@ class JobHomeScreenViewController: BaseViewController {
         
         setupTableView()
         
+        imgProfile.setCornerRadius(radius: 12)
+        
         redDot.makeRoundImage()
         redDot.setBorderWidth(width: 2)
         redDot.setBorderColor(color: Color.jWhite ?? .white)
@@ -76,6 +78,7 @@ extension JobHomeScreenViewController: UITableViewDelegate, UITableViewDataSourc
         }
         
         cell.setCellData(currentSection: indexPath.section)
+        
         return cell
     }
     
@@ -94,6 +97,7 @@ extension JobHomeScreenViewController: UITableViewDelegate, UITableViewDataSourc
         switch raw {
         case .featured:
             headerView.lblheaderTitle.text = Constant.String.featured
+            headerView.delegate = self
         case .popular:
             headerView.lblheaderTitle.text = Constant.String.popular
         }
@@ -112,6 +116,19 @@ extension JobHomeScreenViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+}
+
+// MARK: Extension JobHomeScreenViewController
+extension JobHomeScreenViewController: TableHederProtocol {
+    
+    func btnSeeAllTapped() {
+        guard let secondViewController = UIStoryboard(name: "HomeScreen", bundle: nil) .instantiateViewController(withIdentifier: HomeScreenViewController.identifier) as? HomeScreenViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     
 }

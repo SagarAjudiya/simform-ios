@@ -43,6 +43,9 @@
 		1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */; };
 		1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BA2A0BA96500BA32D5 /* Student.swift */; };
 		1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */; };
+		1B4E674E2A1F20C5006442F7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */; };
+		1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */; };
+		1B4E67542A1F9127006442F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67532A1F9127006442F7 /* Image.swift */; };
 		1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590782A1B9A9900C29C2D /* HeaderView.xib */; };
 		1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */; };
 		1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */; };
@@ -159,6 +162,9 @@
 		1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B44E2BA2A0BA96500BA32D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
+		1B4E67532A1F9127006442F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1B5590782A1B9A9900C29C2D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeHeader.swift; sourceTree = "<group>"; };
 		1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHomeHeader.xib; sourceTree = "<group>"; };
@@ -458,9 +464,9 @@
 				1B302E142A01215900C8674D /* WebKitViewController.swift */,
 				1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */,
 				1BD31C972A03854300C4DC4B /* TabViewController.swift */,
-				1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */,
 				1BF4C0EA2A0510BF00BB1D93 /* BlueViewController.swift */,
 				1BF4C0EC2A0510EE00BB1D93 /* RedViewController.swift */,
+				1BF4C0E82A05100200BB1D93 /* MainPageViewController.swift */,
 				1B5A33622A0A70240020F763 /* PickerViewController.swift */,
 				1B44E2B72A0B9BA100BA32D5 /* SearchViewController.swift */,
 				1B395C2B2A0CF4A8006EC970 /* ResultViewController.swift */,
@@ -472,6 +478,7 @@
 				1BD91EE92A1B42AE0047DD07 /* JobHomeScreenViewController.swift */,
 				1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */,
 				1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */,
+				1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -489,6 +496,7 @@
 				1BF52AE22A139687003B350C /* Color.swift */,
 				1BF52AE52A13ACFF003B350C /* Utility.swift */,
 				1B1B60A82A179EEE00CE4A1A /* Font.swift */,
+				1B4E67532A1F9127006442F7 /* Image.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -600,6 +608,7 @@
 				1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */,
 				1BD91EE52A1B38900047DD07 /* JobHomeScreen.storyboard */,
 				1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */,
+				1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -711,6 +720,7 @@
 				1BD91EDB2A1B371D0047DD07 /* Poppins-ExtraBold.ttf in Resources */,
 				1B2EA9542A0E36C00094E2B5 /* AvenirLTStd-BlackOblique.otf in Resources */,
 				1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */,
+				1B4E674E2A1F20C5006442F7 /* TabBar.storyboard in Resources */,
 				1B8EDBF32A093EC900651BFD /* ActivityIndicator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +763,7 @@
 				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
 				1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */,
+				1B4E67542A1F9127006442F7 /* Image.swift in Sources */,
 				1BE3CB532A0F76CD0067D2F4 /* HomeCell.swift in Sources */,
 				1BDE63B22A13432B00E02701 /* ExpandableView.swift in Sources */,
 				1B8EDBF52A093F0600651BFD /* CustomActivityindicator.swift in Sources */,
@@ -776,6 +787,7 @@
 				1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */,
 				1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */,
 				1B2EA93A2A0E2BB60094E2B5 /* LanguageCell.swift in Sources */,
+				1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */,
 				1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */,
 				1BD91EEA2A1B42AE0047DD07 /* JobHomeScreenViewController.swift in Sources */,
 				1BD963222A120D1600B0B014 /* UIButtonExtension.swift in Sources */,
