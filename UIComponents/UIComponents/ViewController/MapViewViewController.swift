@@ -52,18 +52,18 @@ class MapViewViewController: BaseViewController {
     // MARK: SetUp Views
     private func setupViews() {
         mapView.delegate = self
-        CLLocationHelper.shared.checkLocationServices(locationCompletionHandler: { [self] (location) in
+        CLLocationHelper.shared.checkLocationServices(locationCompletionHandler: { [weak self] (location) in
             let coordinate = location?.coordinate
             let spanDegree = MKCoordinateSpan(latitudeDelta: Latitude.latitudeDelta, longitudeDelta: Longitude.longitudeDelta)
             let region = MKCoordinateRegion(center: coordinate ?? CLLocationCoordinate2D(), span: spanDegree)
 
-            self.mapView.setRegion(region, animated: true)
-            mapView.showsUserLocation = true
+            self?.mapView.setRegion(region, animated: true)
+            self?.mapView.showsUserLocation = true
 
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate ?? CLLocationCoordinate2D()
             annotation.title = "You Are Here"
-            mapView.addAnnotation(annotation)
+            self?.mapView.addAnnotation(annotation)
         })
         centerLocation()
 //        cameraBoundary()  // comment because of show in one screen both location

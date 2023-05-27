@@ -22,6 +22,7 @@ class MainScreenViewController: BaseViewController {
         Utility.changeVC(self, "HomeScreen", "HomeScreenViewController")
     }
     
+    
     @IBAction func btnExpandTableViewTapped(_ sender: UIButton) {
         Utility.changeVC(self, "Main", "ExpandTableViewController")
     }
@@ -61,6 +62,10 @@ class MainScreenViewController: BaseViewController {
     
     @IBAction func btnNavigationTapped(_ sender: UIButton) {
         Utility.changeVC(self, "Navigation", "Navigation")
+    }
+    
+    @IBAction func btnChatScreenTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "Chat", "ChatViewController")
     }
     
 }
