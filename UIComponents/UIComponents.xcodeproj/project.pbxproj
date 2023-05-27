@@ -76,6 +76,9 @@
 		1BA446F22A20817E00B63689 /* PickChangeRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */; };
 		1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F32A20BD3D00B63689 /* DatePickerController.swift */; };
 		1BA446F62A20CC0000B63689 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F52A20CC0000B63689 /* DateExtension.swift */; };
+		1BA446F82A20E56600B63689 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA446F72A20E56600B63689 /* MapView.storyboard */; };
+		1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446F92A210C4B00B63689 /* MapViewViewController.swift */; };
+		1BA446FC2A210F1D00B63689 /* CLLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA446FB2A210F1D00B63689 /* CLLocationHelper.swift */; };
 		1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA05BC2A149761004F53AA /* ClcLangCell.swift */; };
 		1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05BD2A149761004F53AA /* ClcLangCell.xib */; };
 		1BAA05C12A14CA2E004F53AA /* JobScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */; };
@@ -87,6 +90,9 @@
 		1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */; };
 		1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE892E29FB831E0039B667 /* TextViewController.swift */; };
 		1BBE893229FB8AE90039B667 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE893129FB8AE90039B667 /* CustomTextField.swift */; };
+		1BCEBB6D2A21E6FC008DDF76 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */; };
+		1BCEBB6F2A220989008DDF76 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6E2A220989008DDF76 /* Location.swift */; };
+		1BCEBB712A221CCD008DDF76 /* PickLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */; };
 		1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */; };
 		1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C972A03854300C4DC4B /* TabViewController.swift */; };
 		1BD91BDC2A14E6CC00F953A5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */; };
@@ -203,6 +209,9 @@
 		1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickChangeRowViewController.swift; sourceTree = "<group>"; };
 		1BA446F32A20BD3D00B63689 /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
 		1BA446F52A20CC0000B63689 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1BA446F72A20E56600B63689 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		1BA446F92A210C4B00B63689 /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		1BA446FB2A210F1D00B63689 /* CLLocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationHelper.swift; sourceTree = "<group>"; };
 		1BAA05BC2A149761004F53AA /* ClcLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClcLangCell.swift; sourceTree = "<group>"; };
 		1BAA05BD2A149761004F53AA /* ClcLangCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClcLangCell.xib; sourceTree = "<group>"; };
 		1BAA05C02A14CA2E004F53AA /* JobScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobScreen.storyboard; sourceTree = "<group>"; };
@@ -214,6 +223,9 @@
 		1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1BBE892E29FB831E0039B667 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1BBE893129FB8AE90039B667 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		1BCEBB6E2A220989008DDF76 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLocationViewController.swift; sourceTree = "<group>"; };
 		1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
 		1BD31C972A03854300C4DC4B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -372,6 +384,7 @@
 				1BDE63B12A13432B00E02701 /* ExpandableView.swift */,
 				1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */,
 				1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */,
+				1BCEBB6E2A220989008DDF76 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +508,8 @@
 				1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */,
 				1BA446F12A20817E00B63689 /* PickChangeRowViewController.swift */,
 				1BA446F32A20BD3D00B63689 /* DatePickerController.swift */,
+				1BA446F92A210C4B00B63689 /* MapViewViewController.swift */,
+				1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -513,6 +528,7 @@
 				1BF52AE52A13ACFF003B350C /* Utility.swift */,
 				1B1B60A82A179EEE00CE4A1A /* Font.swift */,
 				1B4E67532A1F9127006442F7 /* Image.swift */,
+				1BA446FB2A210F1D00B63689 /* CLLocationHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -550,6 +566,7 @@
 				1B44E2BD2A0BC04700BA32D5 /* ActivityIndicator */,
 				1B44E2BC2A0BC02B00BA32D5 /* Slide */,
 				1BBE893129FB8AE90039B667 /* CustomTextField.swift */,
+				1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -627,6 +644,7 @@
 				1BB03C4B2A1CEF3000AAC4B1 /* ScrollView.storyboard */,
 				1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */,
 				1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */,
+				1BA446F72A20E56600B63689 /* MapView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -717,6 +735,7 @@
 				1BD91EDA2A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				1BD91ED32A1B371D0047DD07 /* Poppins-ExtraLight.ttf in Resources */,
 				1B2EA9502A0E36C00094E2B5 /* AvenirLTStd-LightOblique.otf in Resources */,
+				1BA446F82A20E56600B63689 /* MapView.storyboard in Resources */,
 				1B2EA94C2A0E36C00094E2B5 /* AvenirLTStd-Oblique.otf in Resources */,
 				1B92EB8429F944FE00A03E6F /* Task.storyboard in Resources */,
 				1BD91EE02A1B371D0047DD07 /* Poppins-Black.ttf in Resources */,
@@ -772,6 +791,7 @@
 				1B89707D29F8DEB80090CD4C /* AppDelegate.swift in Sources */,
 				1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */,
 				1B3A4E9829FFBA9300488999 /* SegmentViewController.swift in Sources */,
+				1BCEBB6D2A21E6FC008DDF76 /* CustomAnnotation.swift in Sources */,
 				1BF52AE62A13ACFF003B350C /* Utility.swift in Sources */,
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
@@ -784,6 +804,7 @@
 				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
 				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
+				1BCEBB712A221CCD008DDF76 /* PickLocationViewController.swift in Sources */,
 				1B4A42DC2A1FC44F00C663DF /* PickerModel.swift in Sources */,
 				1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */,
 				1B4E67542A1F9127006442F7 /* Image.swift in Sources */,
@@ -794,6 +815,7 @@
 				1BD963202A11EB6000B0B014 /* MainScreenViewController.swift in Sources */,
 				1BE3CB552A0F7A900067D2F4 /* Home.swift in Sources */,
 				1BDE63AE2A133B2100E02701 /* ExpandTableViewController.swift in Sources */,
+				1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */,
 				1B89709429F8E2FC0090CD4C /* LabelViewController.swift in Sources */,
 				1B5A33672A0A9A520020F763 /* ImagePickerHelper.swift in Sources */,
 				1B302E112A010AC600C8674D /* Slide.swift in Sources */,
@@ -801,12 +823,14 @@
 				1B44E2B62A0B738900BA32D5 /* UIImageViewExtension.swift in Sources */,
 				1B4A42DA2A1FC31A00C663DF /* PickScrollViewController.swift in Sources */,
 				1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */,
+				1BCEBB6F2A220989008DDF76 /* Location.swift in Sources */,
 				1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */,
 				1B302E152A01215900C8674D /* WebKitViewController.swift in Sources */,
 				1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */,
 				1BD91BDC2A14E6CC00F953A5 /* HeaderView.swift in Sources */,
 				1B283E222A1C707900940978 /* JobHomeScreenCell.swift in Sources */,
 				1BE3E54B2A08B6B90068BA7D /* UIViewExtension.swift in Sources */,
+				1BA446FC2A210F1D00B63689 /* CLLocationHelper.swift in Sources */,
 				1BAB918829FFF3D700384BFF /* ImageViewController.swift in Sources */,
 				1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */,
 				1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */,

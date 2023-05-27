@@ -54,4 +54,9 @@ class MainScreenViewController: BaseViewController {
     @IBAction func btnPickerView(_ sender: UIButton) {
         Utility.changeVC(self, "PickerView", "PickerView")
     }
+    
+    @IBAction func btnMapViewTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "MapView", "MapView")
+    }
+    
 }
