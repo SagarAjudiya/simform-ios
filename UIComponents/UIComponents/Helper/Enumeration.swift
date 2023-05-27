@@ -119,3 +119,47 @@ enum JobTypesHome: Int {
     }
     
 }
+
+// MARK: PickerView
+enum PickDateMonth: Int, CaseIterable {
+    
+    case date
+    case month
+    
+}
+
+enum SelectLanguageType:Int, CaseIterable {
+    
+    case programmingLang
+    case regionalLang
+    
+    func getLanguageType() -> String {
+        switch self {
+        case .programmingLang: return "Programming"
+        case .regionalLang: return "Regional"
+        }
+    }
+    
+}
+
+enum SetLanguageName: Int, CaseIterable {
+
+    case selectLangType
+    case setLang
+
+    
+    func rowsInComponent() -> Int {
+        switch self {
+        case .selectLangType: return PickerModel.pickLanguage["programmingLang"]?.count ?? 0
+        case .setLang: return PickerModel.pickLanguage["regionalLang"]?.count ?? 0
+        }
+    }
+    
+    func titleForRow() -> [String]? {
+        switch self {
+        case .selectLangType: return PickerModel.pickLanguage["programmingLang"]
+        case .setLang: return PickerModel.pickLanguage["regionalLang"]
+        }
+    }
+    
+}

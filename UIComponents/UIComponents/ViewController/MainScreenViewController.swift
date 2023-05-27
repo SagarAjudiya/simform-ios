@@ -40,7 +40,7 @@ class MainScreenViewController: BaseViewController {
     }
     
     @IBAction func btnScrollViewTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "ScrollView", "ScrollViewController")
+        Utility.changeVC(self, "ScrollView", "ScrollView")
     }
     
     @IBAction func btnTabBarProTapped(_ sender: UIButton) {
@@ -49,7 +49,9 @@ class MainScreenViewController: BaseViewController {
 
     @IBAction func btnTabBarTapped(_ sender: UIButton) {
         Utility.changeVC(self, "TabBar", "TabBar")
-
     }
 
+    @IBAction func btnPickerView(_ sender: UIButton) {
+        Utility.changeVC(self, "PickerView", "PickerView")
+    }
 }
