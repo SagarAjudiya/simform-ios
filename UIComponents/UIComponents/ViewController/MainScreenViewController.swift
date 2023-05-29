@@ -59,4 +59,8 @@ class MainScreenViewController: BaseViewController {
         Utility.changeVC(self, "MapView", "MapView")
     }
     
+    @IBAction func btnNavigationTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "Navigation", "Navigation")
+    }
+    
 }
