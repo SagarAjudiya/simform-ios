@@ -34,6 +34,7 @@ struct Constant {
         static let popular = "Popular Jobs"
         static let recommanded = "Recommanded Jobs"
         static let featured = "Featured Jobs"
+        static let annotationIdentifier = "annotationIdentifier"
         
     }
     
