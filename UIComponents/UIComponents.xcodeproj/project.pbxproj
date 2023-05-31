@@ -46,9 +46,12 @@
 		1B4A42D82A1FC0AF00C663DF /* PickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */; };
 		1B4A42DA2A1FC31A00C663DF /* PickScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */; };
 		1B4A42DC2A1FC44F00C663DF /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */; };
+		1B4CE90B2A25BFDB006B6B5D /* NavForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4CE90A2A25BFDB006B6B5D /* NavForthViewController.swift */; };
+		1B4CE90D2A25C4CC006B6B5D /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4CE90C2A25C4CC006B6B5D /* UINavigationControllerExtension.swift */; };
 		1B4E674E2A1F20C5006442F7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */; };
 		1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */; };
 		1B4E67542A1F9127006442F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67532A1F9127006442F7 /* Image.swift */; };
+		1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */; };
 		1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590782A1B9A9900C29C2D /* HeaderView.xib */; };
 		1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */; };
 		1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */; };
@@ -58,6 +61,10 @@
 		1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A33682A0A9BD80020F763 /* UITextFieldExtension.swift */; };
 		1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A336A2A0A9D1A0020F763 /* UITextViewExtension.swift */; };
 		1B5B3A282A13B32100DDCB82 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */; };
+		1B66DA412A248A710087BD63 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B66DA402A248A710087BD63 /* Navigation.storyboard */; };
+		1B66DA432A2497FA0087BD63 /* NavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA422A2497FA0087BD63 /* NavFirstViewController.swift */; };
+		1B66DA452A2498180087BD63 /* NavSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA442A2498180087BD63 /* NavSecondViewController.swift */; };
+		1B66DA472A24D5D10087BD63 /* NavThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA462A24D5D10087BD63 /* NavThirdViewController.swift */; };
 		1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */; };
 		1B89707D29F8DEB80090CD4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707C29F8DEB80090CD4C /* AppDelegate.swift */; };
 		1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707E29F8DEB80090CD4C /* SceneDelegate.swift */; };
@@ -177,9 +184,12 @@
 		1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerView.storyboard; sourceTree = "<group>"; };
 		1B4A42D92A1FC31A00C663DF /* PickScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickScrollViewController.swift; sourceTree = "<group>"; };
 		1B4A42DB2A1FC44F00C663DF /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		1B4CE90A2A25BFDB006B6B5D /* NavForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavForthViewController.swift; sourceTree = "<group>"; };
+		1B4CE90C2A25C4CC006B6B5D /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
 		1B4E67532A1F9127006442F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		1B5590782A1B9A9900C29C2D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeHeader.swift; sourceTree = "<group>"; };
 		1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHomeHeader.xib; sourceTree = "<group>"; };
@@ -189,6 +199,10 @@
 		1B5A33682A0A9BD80020F763 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		1B5A336A2A0A9D1A0020F763 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		1B5B3A272A13B32100DDCB82 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1B66DA402A248A710087BD63 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		1B66DA422A2497FA0087BD63 /* NavFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavFirstViewController.swift; sourceTree = "<group>"; };
+		1B66DA442A2498180087BD63 /* NavSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSecondViewController.swift; sourceTree = "<group>"; };
+		1B66DA462A24D5D10087BD63 /* NavThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavThirdViewController.swift; sourceTree = "<group>"; };
 		1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewCell.swift; sourceTree = "<group>"; };
 		1B89707929F8DEB80090CD4C /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B89707C29F8DEB80090CD4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -510,6 +524,10 @@
 				1BA446F32A20BD3D00B63689 /* DatePickerController.swift */,
 				1BA446F92A210C4B00B63689 /* MapViewViewController.swift */,
 				1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */,
+				1B66DA422A2497FA0087BD63 /* NavFirstViewController.swift */,
+				1B66DA442A2498180087BD63 /* NavSecondViewController.swift */,
+				1B66DA462A24D5D10087BD63 /* NavThirdViewController.swift */,
+				1B4CE90A2A25BFDB006B6B5D /* NavForthViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -517,6 +535,7 @@
 		1B8EDBE92A090F9A00651BFD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */,
 				1B8EDBEA2A090FAC00651BFD /* Validator.swift */,
 				1B90D12B2A0A1DFE002A04A0 /* Constants.swift */,
 				1B44E2BE2A0BC48E00BA32D5 /* Enumeration.swift */,
@@ -606,6 +625,7 @@
 				1BD963212A120D1600B0B014 /* UIButtonExtension.swift */,
 				1B9F04762A1E20770027B1A4 /* UIViewControllerExtension.swift */,
 				1BA446F52A20CC0000B63689 /* DateExtension.swift */,
+				1B4CE90C2A25C4CC006B6B5D /* UINavigationControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -645,6 +665,7 @@
 				1B4E674D2A1F20C5006442F7 /* TabBar.storyboard */,
 				1B4A42D72A1FC0AF00C663DF /* PickerView.storyboard */,
 				1BA446F72A20E56600B63689 /* MapView.storyboard */,
+				1B66DA402A248A710087BD63 /* Navigation.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -749,6 +770,7 @@
 				1BD91ED72A1B371D0047DD07 /* Poppins-Light.ttf in Resources */,
 				1BD91EDD2A1B371D0047DD07 /* Poppins-Regular.ttf in Resources */,
 				1BD91ED52A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				1B66DA412A248A710087BD63 /* Navigation.storyboard in Resources */,
 				1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */,
 				1B2EA94D2A0E36C00094E2B5 /* AvenirLTStd-BookOblique.otf in Resources */,
 				1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */,
@@ -771,6 +793,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDE63B02A13410400E02701 /* ExpandTableViewCell.swift in Sources */,
+				1B4CE90B2A25BFDB006B6B5D /* NavForthViewController.swift in Sources */,
 				1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */,
 				1BA446F62A20CC0000B63689 /* DateExtension.swift in Sources */,
 				1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */,
@@ -784,6 +807,7 @@
 				1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */,
 				1B90D12A2A0A1500002A04A0 /* BaseViewController.swift in Sources */,
 				1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */,
+				1B4CE90D2A25C4CC006B6B5D /* UINavigationControllerExtension.swift in Sources */,
 				1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */,
 				1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */,
 				1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */,
@@ -796,11 +820,13 @@
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */,
 				1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */,
 				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
 				1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */,
+				1B66DA432A2497FA0087BD63 /* NavFirstViewController.swift in Sources */,
 				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
 				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
@@ -817,11 +843,13 @@
 				1BDE63AE2A133B2100E02701 /* ExpandTableViewController.swift in Sources */,
 				1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */,
 				1B89709429F8E2FC0090CD4C /* LabelViewController.swift in Sources */,
+				1B66DA452A2498180087BD63 /* NavSecondViewController.swift in Sources */,
 				1B5A33672A0A9A520020F763 /* ImagePickerHelper.swift in Sources */,
 				1B302E112A010AC600C8674D /* Slide.swift in Sources */,
 				1B92EB8629F9461100A03E6F /* TaskViewController.swift in Sources */,
 				1B44E2B62A0B738900BA32D5 /* UIImageViewExtension.swift in Sources */,
 				1B4A42DA2A1FC31A00C663DF /* PickScrollViewController.swift in Sources */,
+				1B66DA472A24D5D10087BD63 /* NavThirdViewController.swift in Sources */,
 				1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */,
 				1BCEBB6F2A220989008DDF76 /* Location.swift in Sources */,
 				1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */,
