@@ -20,6 +20,7 @@ class ChatViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        setNavigationBar()
         setTxtViewMsg()
         setTableView()
     }
@@ -30,6 +31,21 @@ class ChatViewController: BaseViewController {
         tblChat.register(UINib(nibName: RightViewCell.identifier, bundle: nil), forCellReuseIdentifier: RightViewCell.identifier)
     }
     
+    // MARK: Setup NavigationBar
+    private func setNavigationBar() {
+        title = "pontus gager"
+        navigationController?.navigationBar.backIndicatorImage = UIImage(named: Image.chatBack)
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: Image.chatBack)
+        
+        let imageView = UIImageView(image: UIImage(named: Image.imgprofile2))
+        imageView.contentMode = .scaleAspectFit
+        let item = UIBarButtonItem(customView: imageView)
+        navigationItem.rightBarButtonItem = item
+        
+        navigationController?.navigationBar.barTintColor = Color.mainBackground
+    }
+    
+    // MARK: Setup TextView
     private func setTxtViewMsg() {
         txtViewMsg.delegate = self
         txtViewMsg.backgroundColor = Color.txtMsg
@@ -37,10 +53,13 @@ class ChatViewController: BaseViewController {
         txtViewMsg.textColor = .lightGray
     }
     
+    // MARK: Setup TableView
     private func setTableView() {
         tblChat.delegate = self
         tblChat.dataSource = self
         tblChat.backgroundColor = Color.mainBackground
+        tblChat.allowsSelection = false
+        tblChat.separatorStyle = .none
     }
     
 }
@@ -49,7 +68,10 @@ class ChatViewController: BaseViewController {
 extension ChatViewController: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
-        txtViewMsgHeight.constant = txtViewMsg.contentSize.height
+        let numberOfLines = textView.contentSize.height / (textView.font?.lineHeight ?? 1)
+        if Int(numberOfLines) < 6 {
+            txtViewMsgHeight.constant = txtViewMsg.contentSize.height
+        }
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -79,7 +101,8 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let row = Messenger(rawValue: indexPath.row) ?? .sender
+        let row = ChatModel.data[indexPath.row].messenger
+        
         switch row {
         case .sender:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RightViewCell.identifier, for: indexPath) as? RightViewCell else {
@@ -98,7 +121,9 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return UITableView.automaticDimension
     }
+    
+    
     
 }

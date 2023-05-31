@@ -27,5 +27,7 @@ struct Color {
     // MARK: Chat Screen
     static let mainBackground = UIColor(named: "mainBackground") ?? UIColor()
     static let txtMsg = UIColor(named: "txtMsg") ?? UIColor()
+    static let chatSender = UIColor(named: "chatSender") ?? UIColor()
+    static let chatReciver = UIColor(named: "chatReciver") ?? UIColor()
     
 }

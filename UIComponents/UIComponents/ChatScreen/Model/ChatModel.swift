@@ -25,9 +25,12 @@ struct ChatModel {
         ChatModel(image: UIImage(named: Image.imgprofile), text: "Here is a photo!", time: 1685537037, messenger: .sender),
         ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
         ChatModel(image: UIImage(named: Image.imgprofile), text: "Sunny today!", time: 1685537037, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgprofile), text: "Sunny today!", time: 1685537037, messenger: .sender),
         ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
         ChatModel(image: UIImage(named: Image.imgprofile), text: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor.", time: 1685537037, messenger: .sender),
         ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgprofile2), text: "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat.", time: 1685526706, messenger: .receiver),
     ]
+    
     
 }

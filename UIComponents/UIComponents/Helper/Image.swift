@@ -20,5 +20,6 @@ struct Image {
     static let imgprofile2 = "imgProfile2"
     static let attach = "attach"
     static let send = "send"
+    static let chatBack = "chatBack"
     
 }

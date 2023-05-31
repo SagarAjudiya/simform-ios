@@ -14,6 +14,7 @@ class LeftViewCell: UITableViewCell {
     @IBOutlet weak var imgReceiver: UIImageView!
     @IBOutlet weak var lblChatReciver: UILabel!
     @IBOutlet weak var lblTimeReceiver: UILabel!
+    @IBOutlet weak var msgViewReceiver: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +23,10 @@ class LeftViewCell: UITableViewCell {
 
     // MARK: SetUp Views
     private func setupViews() {
-        
+        mainLeftView.backgroundColor = Color.mainBackground
+        lblChatReciver.numberOfLines = 0
+        msgViewReceiver.backgroundColor = Color.chatReciver
+        msgViewReceiver.setCornerRadius(radius: 4)
     }
     
     func setLeftCellData(chat: ChatModel) {

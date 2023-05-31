@@ -14,7 +14,7 @@ class RightViewCell: UITableViewCell {
     @IBOutlet weak var imgSender: UIImageView!
     @IBOutlet weak var lblChatSender: UILabel!
     @IBOutlet weak var lblTimeSender: UILabel!
-    
+    @IBOutlet weak var msgViewSender: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +23,10 @@ class RightViewCell: UITableViewCell {
 
     // MARK: SetUp Views
     private func setupViews() {
-        
+        mainRightView.backgroundColor = Color.mainBackground
+        lblChatSender.numberOfLines = 0
+        msgViewSender.backgroundColor = Color.chatSender
+        msgViewSender.setCornerRadius(radius: 4)
     }
     
     func setRightCellData(chat: ChatModel) {
