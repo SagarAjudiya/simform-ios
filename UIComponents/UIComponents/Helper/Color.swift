@@ -24,4 +24,8 @@ struct Color {
     static let allWhite = UIColor(named: "allwhite")
     static let jgreybg = UIColor(named: "jgreybg")
     
+    // MARK: Chat Screen
+    static let mainBackground = UIColor(named: "mainBackground") ?? UIColor()
+    static let txtMsg = UIColor(named: "txtMsg") ?? UIColor()
+    
 }

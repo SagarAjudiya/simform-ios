@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */; };
+		1B0F342D2A277F7100E308A9 /* LeftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */; };
+		1B0F342E2A277F7100E308A9 /* LeftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */; };
+		1B0F34332A27891F00E308A9 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F34312A27891F00E308A9 /* RightViewCell.swift */; };
+		1B0F34342A27891F00E308A9 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F34322A27891F00E308A9 /* RightViewCell.xib */; };
 		1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */; };
 		1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B60A82A179EEE00CE4A1A /* Font.swift */; };
 		1B283E222A1C707900940978 /* JobHomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283E202A1C707900940978 /* JobHomeScreenCell.swift */; };
@@ -52,6 +56,9 @@
 		1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */; };
 		1B4E67542A1F9127006442F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67532A1F9127006442F7 /* Image.swift */; };
 		1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */; };
+		1B54CAFE2A27470700FA24E7 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CAFD2A27470700FA24E7 /* ChatModel.swift */; };
+		1B54CB002A274C1400FA24E7 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */; };
+		1B54CB022A274C2B00FA24E7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */; };
 		1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590782A1B9A9900C29C2D /* HeaderView.xib */; };
 		1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */; };
 		1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */; };
@@ -146,6 +153,10 @@
 
 /* Begin PBXFileReference section */
 		1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewCell.swift; sourceTree = "<group>"; };
+		1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftViewCell.xib; sourceTree = "<group>"; };
+		1B0F34312A27891F00E308A9 /* RightViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewCell.swift; sourceTree = "<group>"; };
+		1B0F34322A27891F00E308A9 /* RightViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightViewCell.xib; sourceTree = "<group>"; };
 		1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerHelper.swift; sourceTree = "<group>"; };
 		1B1B60A82A179EEE00CE4A1A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1B283E202A1C707900940978 /* JobHomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeScreenCell.swift; sourceTree = "<group>"; };
@@ -190,6 +201,9 @@
 		1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
 		1B4E67532A1F9127006442F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
+		1B54CAFD2A27470700FA24E7 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1B5590782A1B9A9900C29C2D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeHeader.swift; sourceTree = "<group>"; };
 		1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHomeHeader.xib; sourceTree = "<group>"; };
@@ -421,6 +435,52 @@
 			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
+		1B54CAFA2A27459F00FA24E7 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B54CB042A27663000FA24E7 /* Cell */,
+				1B54CAFB2A2746E700FA24E7 /* Model */,
+				1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */,
+				1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
+		1B54CAFB2A2746E700FA24E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B54CAFD2A27470700FA24E7 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B54CB042A27663000FA24E7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B54CB0A2A27672400FA24E7 /* LeftViewCell */,
+				1B54CB052A2766DA00FA24E7 /* RightViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B54CB052A2766DA00FA24E7 /* RightViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F34312A27891F00E308A9 /* RightViewCell.swift */,
+				1B0F34322A27891F00E308A9 /* RightViewCell.xib */,
+			);
+			path = RightViewCell;
+			sourceTree = "<group>";
+		};
+		1B54CB0A2A27672400FA24E7 /* LeftViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */,
+				1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */,
+			);
+			path = LeftViewCell;
+			sourceTree = "<group>";
+		};
 		1B55907B2A1BB03000C29C2D /* JobHomeTableHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +527,7 @@
 		1B89707B29F8DEB80090CD4C /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1B54CAFA2A27459F00FA24E7 /* ChatScreen */,
 				1BF4C0EE2A05407E00BB1D93 /* Resources */,
 				1B89709029F8DF080090CD4C /* AppDelegate */,
 				1B8EDBE92A090F9A00651BFD /* Helper */,
@@ -744,6 +805,7 @@
 				1B2EA9562A0E36C00094E2B5 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				1B30A7602A1290F200B26A30 /* Colors.xcassets in Resources */,
 				1B89708929F8DEB90090CD4C /* LaunchScreen.storyboard in Resources */,
+				1B0F342E2A277F7100E308A9 /* LeftViewCell.xib in Resources */,
 				1BD91ED62A1B371D0047DD07 /* Poppins-BoldItalic.ttf in Resources */,
 				1BD91ED92A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				1B2EA93B2A0E2BB60094E2B5 /* LanguageCell.xib in Resources */,
@@ -751,6 +813,8 @@
 				1B2EA94F2A0E36C00094E2B5 /* AvenirLTStd-Medium.otf in Resources */,
 				1B2EA9512A0E36C00094E2B5 /* AvenirLTStd-Heavy.otf in Resources */,
 				1B2EA9532A0E36C00094E2B5 /* AvenirLTStd-Light.otf in Resources */,
+				1B54CB002A274C1400FA24E7 /* Chat.storyboard in Resources */,
+				1B0F34342A27891F00E308A9 /* RightViewCell.xib in Resources */,
 				1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */,
 				1BD91EDC2A1B371D0047DD07 /* Poppins-BlackItalic.ttf in Resources */,
 				1BD91EDA2A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -809,6 +873,7 @@
 				1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */,
 				1B4CE90D2A25C4CC006B6B5D /* UINavigationControllerExtension.swift in Sources */,
 				1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */,
+				1B0F342D2A277F7100E308A9 /* LeftViewCell.swift in Sources */,
 				1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */,
 				1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */,
 				1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */,
@@ -820,11 +885,13 @@
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1B0F34332A27891F00E308A9 /* RightViewCell.swift in Sources */,
 				1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */,
 				1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */,
 				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
+				1B54CB022A274C2B00FA24E7 /* ChatViewController.swift in Sources */,
 				1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */,
 				1B66DA432A2497FA0087BD63 /* NavFirstViewController.swift in Sources */,
 				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
@@ -841,6 +908,7 @@
 				1BD963202A11EB6000B0B014 /* MainScreenViewController.swift in Sources */,
 				1BE3CB552A0F7A900067D2F4 /* Home.swift in Sources */,
 				1BDE63AE2A133B2100E02701 /* ExpandTableViewController.swift in Sources */,
+				1B54CAFE2A27470700FA24E7 /* ChatModel.swift in Sources */,
 				1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */,
 				1B89709429F8E2FC0090CD4C /* LabelViewController.swift in Sources */,
 				1B66DA452A2498180087BD63 /* NavSecondViewController.swift in Sources */,

@@ -163,3 +163,11 @@ enum SetLanguageName: Int, CaseIterable {
     }
     
 }
+
+// MARK: Chat Screen type
+enum Messenger: Int {
+    
+    case sender
+    case receiver
+    
+}
