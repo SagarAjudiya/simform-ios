@@ -1,32 +1,28 @@
 //
-//  RightViewCell.swift
+//  RightImageCell.swift
 //  UIComponents
 //
-//  Created by Sagar Ajudiya on 31/05/23.
+//  Created by Sagar Ajudiya on 01/06/23.
 //
 
 import UIKit
 
-class RightViewCell: UITableViewCell {
+class RightImageCell: UITableViewCell {
 
     // MARK: IBOutlets
     @IBOutlet weak var mainRightView: UIView!
     @IBOutlet weak var imgSenderProfile: UIImageView!
-    @IBOutlet weak var lblChatSender: UILabel!
+    @IBOutlet weak var imgChatSender: UIImageView!
     @IBOutlet weak var lblTimeSender: UILabel!
-    @IBOutlet weak var msgViewSender: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
     }
-
+    
     // MARK: SetUp Views
     private func setupViews() {
         mainRightView.backgroundColor = Color.mainBackground
-        lblChatSender.numberOfLines = 0
-        msgViewSender.backgroundColor = Color.chatSender
-        msgViewSender.setCornerRadius(radius: 4)
     }
     
     // MARK: Set Data in cell
@@ -36,7 +32,7 @@ class RightViewCell: UITableViewCell {
         let minute = Calendar.current.component(.minute, from: date)
         
         imgSenderProfile.image = chat.image
-        lblChatSender.text = chat.textMessage.getMessage() as? String
+        imgChatSender.image = chat.textMessage.getMessage() as? UIImage
         lblTimeSender.text = ("\(hour):\(minute)")
     }
     

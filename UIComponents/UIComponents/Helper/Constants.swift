@@ -35,6 +35,7 @@ struct Constant {
         static let recommanded = "Recommanded Jobs"
         static let featured = "Featured Jobs"
         static let annotationIdentifier = "annotationIdentifier"
+        static let chatScreenTitle = "pontus gager"
         
     }
     

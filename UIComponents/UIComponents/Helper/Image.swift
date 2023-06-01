@@ -16,8 +16,8 @@ struct Image {
     static let tabItem4 = "tab4"
     
     // MARK: Chat Screen
-    static let imgprofile = "imgprofile"
-    static let imgprofile2 = "imgProfile2"
+    static let imgSender = "imgprofile"
+    static let imgReceiver = "imgProfile2"
     static let attach = "attach"
     static let send = "send"
     static let chatBack = "chatBack"

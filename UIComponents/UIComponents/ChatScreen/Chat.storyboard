@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-P8-dqd">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="653"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Uq4-vu-ERI">
@@ -72,14 +73,14 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="mainBackground"/>
                         <constraints>
                             <constraint firstItem="zm6-P8-dqd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="72H-8W-dLb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zm6-P8-dqd" secondAttribute="trailing" id="7QC-6i-csd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Okd-pq-pkQ" secondAttribute="bottom" id="Hoc-Vg-y9W"/>
                             <constraint firstItem="Okd-pq-pkQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KgL-un-W0H"/>
+                            <constraint firstItem="Okd-pq-pkQ" firstAttribute="top" secondItem="zm6-P8-dqd" secondAttribute="bottom" constant="20" id="Zat-NO-ZDF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Okd-pq-pkQ" secondAttribute="trailing" constant="20" id="i8u-F9-PSE"/>
-                            <constraint firstAttribute="bottom" secondItem="zm6-P8-dqd" secondAttribute="bottom" id="oLP-xz-507"/>
                             <constraint firstItem="zm6-P8-dqd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tZw-wp-0lR"/>
                         </constraints>
                     </view>
@@ -87,8 +88,10 @@
                     <connections>
                         <outlet property="btnAttch" destination="OGx-aq-Lij" id="a2O-6Z-Yvm"/>
                         <outlet property="btnSend" destination="Pmf-SC-tZn" id="FYQ-i7-p7c"/>
+                        <outlet property="msgView" destination="Okd-pq-pkQ" id="qxQ-E3-gmu"/>
                         <outlet property="tblChat" destination="zm6-P8-dqd" id="vc7-hC-76a"/>
                         <outlet property="txtViewMsg" destination="HOM-2g-w7S" id="Z8H-k7-kmz"/>
+                        <outlet property="txtViewMsgBottom" destination="Hoc-Vg-y9W" id="lVL-ro-HwY"/>
                         <outlet property="txtViewMsgHeight" destination="yNw-Wo-H0G" id="Z6I-Ka-Nlg"/>
                     </connections>
                 </viewController>
@@ -118,6 +121,9 @@
     <resources>
         <image name="attach" width="22" height="23"/>
         <image name="send" width="22" height="22"/>
+        <namedColor name="mainBackground">
+            <color red="0.9570000171661377" green="0.94499999284744263" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

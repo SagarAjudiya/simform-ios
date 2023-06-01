@@ -16,4 +16,14 @@ struct Utility {
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
+    static func unixTimestampToDate(timestamp: Double) -> Date {
+        return Date(timeIntervalSince1970: timestamp)
+    }
+
+    static func formatDate(date: Date, format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: date)
+    }
+    
 }

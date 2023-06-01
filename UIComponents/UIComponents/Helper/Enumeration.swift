@@ -164,10 +164,26 @@ enum SetLanguageName: Int, CaseIterable {
     
 }
 
-// MARK: Chat Screen type
+// MARK: Chat Screen
 enum Messenger: Int {
     
     case sender
     case receiver
+    
+}
+
+enum MessageType {
+    
+    case text(String)
+    case image(UIImage?)
+    
+    func getMessage() -> Any {
+        switch self {
+        case .text(let str):
+            return str
+        case .image(let img):
+            return img
+        }
+    }
     
 }

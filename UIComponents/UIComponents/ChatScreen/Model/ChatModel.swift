@@ -10,27 +10,35 @@ import UIKit
 struct ChatModel {
     
     let image: UIImage?
-    let text: String
+    let textMessage: MessageType
     let time: TimeInterval
     let messenger: Messenger
     
-    init(image: UIImage? = nil, text: String, time: TimeInterval, messenger: Messenger) {
+    init(image: UIImage?, textMessage: MessageType, time: TimeInterval, messenger: Messenger) {
         self.image = image
-        self.text = text
+        self.textMessage = textMessage
         self.time = time
         self.messenger = messenger
     }
     
     static var data = [
-        ChatModel(image: UIImage(named: Image.imgprofile), text: "Here is a photo!", time: 1685537037, messenger: .sender),
-        ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
-        ChatModel(image: UIImage(named: Image.imgprofile), text: "Sunny today!", time: 1685537037, messenger: .sender),
-        ChatModel(image: UIImage(named: Image.imgprofile), text: "Sunny today!", time: 1685537037, messenger: .sender),
-        ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
-        ChatModel(image: UIImage(named: Image.imgprofile), text: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor.", time: 1685537037, messenger: .sender),
-        ChatModel(image: UIImage(named: Image.imgprofile2), text: "Lorem ipsum dolore!", time: 1685526706, messenger: .receiver),
-        ChatModel(image: UIImage(named: Image.imgprofile2), text: "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat.", time: 1685526706, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Lorem exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat."), time: 1685625164, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), time: 1685632274, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Hi, How are you?"), time: 1685664000, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .text("Here is a photo!"), time: 1685877030, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .image(UIImage(named: Image.imgReceiver)), time: 1685750399, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .image(UIImage(named: Image.imgSender)), time: 1685614316, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .text("Receiver side"), time: 1685632497, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Here is a photo!"), time: 1685632517, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .image(UIImage(named: Image.imgSender)), time: 1685963350, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), time: 1685632274, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Hi, How are you?"), time: 1685664000, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .text("Here is a photo!"), time: 1685877030, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .image(UIImage(named: Image.imgReceiver)), time: 1685750399, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .image(UIImage(named: Image.imgSender)), time: 1685614316, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgReceiver), textMessage: .image(UIImage(named: Image.chatBack)), time: 1685617916, messenger: .receiver),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Lorem ipsum dolore!"), time: 1685625164, messenger: .sender),
+        ChatModel(image: UIImage(named: Image.imgSender), textMessage: .text("Exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat."), time: 1685625116, messenger: .sender),
     ]
-    
     
 }
