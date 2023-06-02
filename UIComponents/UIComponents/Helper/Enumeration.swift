@@ -187,3 +187,11 @@ enum MessageType {
     }
     
 }
+
+// MARK: SignUp Screen
+enum UserType: Int {
+    
+    case traveler
+    case local
+    
+}

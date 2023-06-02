@@ -34,7 +34,7 @@ class BaseViewController: UIViewController {
         if endFrameY >= UIScreen.main.bounds.size.height {
             keyboardHeightLayoutConstraint?.constant = 0.0
         } else {
-            keyboardHeightLayoutConstraint?.constant = endFrame?.size.height ?? 0.0
+            keyboardHeightLayoutConstraint?.constant = (endFrame?.size.height ?? 0.0) - 50
         }
         UIView.animate(
             withDuration: duration,

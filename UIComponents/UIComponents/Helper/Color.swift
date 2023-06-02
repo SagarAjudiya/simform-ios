@@ -30,4 +30,11 @@ struct Color {
     static let chatSender = UIColor(named: "chatSender") ?? UIColor()
     static let chatReciver = UIColor(named: "chatReciver") ?? UIColor()
     
+    // MARK: SignUp Screen
+    static let signPrimary = UIColor(named: "signPrimary") ?? UIColor()
+    static let signWhite = UIColor(named: "signWhite") ?? UIColor()
+    static let signGrey = UIColor(named: "signGrey") ?? UIColor()
+    static let signBtnbg = UIColor(named: "SignBtnbg") ?? UIColor()
+    static let signRadio = UIColor(named: "signRadio") ?? UIColor()
+    
 }

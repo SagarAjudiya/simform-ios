@@ -22,4 +22,12 @@ struct Image {
     static let send = "send"
     static let chatBack = "chatBack"
     
+    // MARK: SignUp Screen
+    static let calendar = "calendar"
+    static let down = "down"
+    static let next = "next"
+    static let arrowback = "arrowback"
+    static let unselect = "unselect"
+    static let select = "select"
+    
 }
