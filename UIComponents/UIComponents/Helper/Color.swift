@@ -24,4 +24,8 @@ struct Color {
     static let allWhite = UIColor(named: "allwhite")
     static let jgreybg = UIColor(named: "jgreybg")
     
+    // MARK: Golf Screen
+    static let golfWhite = UIColor(named: "golfWhite") ?? UIColor()
+    static let golfGreen = UIColor(named: "golfGreen") ?? UIColor()
+    
 }

@@ -90,6 +90,15 @@
 		1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */; };
 		1BBE892F29FB831E0039B667 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE892E29FB831E0039B667 /* TextViewController.swift */; };
 		1BBE893229FB8AE90039B667 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE893129FB8AE90039B667 /* CustomTextField.swift */; };
+		1BCB821D2A2DA6BB007030BB /* Golf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCB821C2A2DA6BB007030BB /* Golf.storyboard */; };
+		1BCB821F2A2DA6DE007030BB /* GolfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB821E2A2DA6DE007030BB /* GolfViewController.swift */; };
+		1BCB82222A2DBCAA007030BB /* GolfHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB82212A2DBCAA007030BB /* GolfHeader.swift */; };
+		1BCB82242A2DBCC2007030BB /* GolfHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCB82232A2DBCC2007030BB /* GolfHeader.xib */; };
+		1BCB82272A2DD49B007030BB /* GolfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB82262A2DD49B007030BB /* GolfModel.swift */; };
+		1BCB822C2A2DDA03007030BB /* GolfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB822A2A2DDA03007030BB /* GolfCell.swift */; };
+		1BCB822D2A2DDA03007030BB /* GolfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCB822B2A2DDA03007030BB /* GolfCell.xib */; };
+		1BCB82302A2E1B22007030BB /* GolfSectionHeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB822E2A2E1B22007030BB /* GolfSectionHeder.swift */; };
+		1BCB82312A2E1B22007030BB /* GolfSectionHeder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCB822F2A2E1B22007030BB /* GolfSectionHeder.xib */; };
 		1BCEBB6D2A21E6FC008DDF76 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */; };
 		1BCEBB6F2A220989008DDF76 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6E2A220989008DDF76 /* Location.swift */; };
 		1BCEBB712A221CCD008DDF76 /* PickLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */; };
@@ -223,6 +232,15 @@
 		1BB03C4D2A1CEF5200AAC4B1 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1BBE892E29FB831E0039B667 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1BBE893129FB8AE90039B667 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1BCB821C2A2DA6BB007030BB /* Golf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Golf.storyboard; sourceTree = "<group>"; };
+		1BCB821E2A2DA6DE007030BB /* GolfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfViewController.swift; sourceTree = "<group>"; };
+		1BCB82212A2DBCAA007030BB /* GolfHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfHeader.swift; sourceTree = "<group>"; };
+		1BCB82232A2DBCC2007030BB /* GolfHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GolfHeader.xib; sourceTree = "<group>"; };
+		1BCB82262A2DD49B007030BB /* GolfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfModel.swift; sourceTree = "<group>"; };
+		1BCB822A2A2DDA03007030BB /* GolfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCell.swift; sourceTree = "<group>"; };
+		1BCB822B2A2DDA03007030BB /* GolfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GolfCell.xib; sourceTree = "<group>"; };
+		1BCB822E2A2E1B22007030BB /* GolfSectionHeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfSectionHeder.swift; sourceTree = "<group>"; };
+		1BCB822F2A2E1B22007030BB /* GolfSectionHeder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GolfSectionHeder.xib; sourceTree = "<group>"; };
 		1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		1BCEBB6E2A220989008DDF76 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLocationViewController.swift; sourceTree = "<group>"; };
@@ -453,6 +471,7 @@
 		1B89707B29F8DEB80090CD4C /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1BCB821B2A2DA69B007030BB /* Golf Screen */,
 				1BF4C0EE2A05407E00BB1D93 /* Resources */,
 				1B89709029F8DF080090CD4C /* AppDelegate */,
 				1B8EDBE92A090F9A00651BFD /* Helper */,
@@ -569,6 +588,38 @@
 				1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */,
 			);
 			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		1BCB821B2A2DA69B007030BB /* Golf Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB82252A2DD47A007030BB /* Model */,
+				1BCB82202A2DBC74007030BB /* Cell */,
+				1BCB821C2A2DA6BB007030BB /* Golf.storyboard */,
+				1BCB821E2A2DA6DE007030BB /* GolfViewController.swift */,
+			);
+			path = "Golf Screen";
+			sourceTree = "<group>";
+		};
+		1BCB82202A2DBC74007030BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB82212A2DBCAA007030BB /* GolfHeader.swift */,
+				1BCB82232A2DBCC2007030BB /* GolfHeader.xib */,
+				1BCB822A2A2DDA03007030BB /* GolfCell.swift */,
+				1BCB822B2A2DDA03007030BB /* GolfCell.xib */,
+				1BCB822E2A2E1B22007030BB /* GolfSectionHeder.swift */,
+				1BCB822F2A2E1B22007030BB /* GolfSectionHeder.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1BCB82252A2DD47A007030BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB82262A2DD49B007030BB /* GolfModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1BD91EC02A1B371D0047DD07 /* Poppins */ = {
@@ -709,6 +760,7 @@
 			files = (
 				1B2EA9522A0E36C00094E2B5 /* AvenirLTStd-HeavyOblique.otf in Resources */,
 				1B283E272A1C901100940978 /* TableHeader.xib in Resources */,
+				1BCB82312A2E1B22007030BB /* GolfSectionHeder.xib in Resources */,
 				1BD91EE42A1B371D0047DD07 /* Poppins-MediumItalic.ttf in Resources */,
 				1BD91EE12A1B371D0047DD07 /* Poppins-Thin.ttf in Resources */,
 				1BE703602A09473A002E3F17 /* Main.storyboard in Resources */,
@@ -729,6 +781,8 @@
 				1BD91EE22A1B371D0047DD07 /* Poppins-SemiBold.ttf in Resources */,
 				1B2EA94F2A0E36C00094E2B5 /* AvenirLTStd-Medium.otf in Resources */,
 				1B2EA9512A0E36C00094E2B5 /* AvenirLTStd-Heavy.otf in Resources */,
+				1BCB821D2A2DA6BB007030BB /* Golf.storyboard in Resources */,
+				1BCB82242A2DBCC2007030BB /* GolfHeader.xib in Resources */,
 				1B2EA9532A0E36C00094E2B5 /* AvenirLTStd-Light.otf in Resources */,
 				1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */,
 				1BD91EDC2A1B371D0047DD07 /* Poppins-BlackItalic.ttf in Resources */,
@@ -742,6 +796,7 @@
 				1B30A7622A12914D00B26A30 /* Images.xcassets in Resources */,
 				1BB03C4C2A1CEF3000AAC4B1 /* ScrollView.storyboard in Resources */,
 				1B2EA94E2A0E36C00094E2B5 /* Avenir-Roman.otf in Resources */,
+				1BCB822D2A2DDA03007030BB /* GolfCell.xib in Resources */,
 				1BD91EE32A1B371D0047DD07 /* Poppins-Italic.ttf in Resources */,
 				1B89708629F8DEB90090CD4C /* Assets.xcassets in Resources */,
 				1BB03C452A1CE2EF00AAC4B1 /* JobHomeScreenCell.xib in Resources */,
@@ -781,6 +836,7 @@
 				1B5A33632A0A70240020F763 /* PickerViewController.swift in Sources */,
 				1BA446F22A20817E00B63689 /* PickChangeRowViewController.swift in Sources */,
 				1BAA05C92A14D265004F53AA /* ClcJobViewCell.swift in Sources */,
+				1BCB822C2A2DDA03007030BB /* GolfCell.swift in Sources */,
 				1B5A336B2A0A9D1A0020F763 /* UITextViewExtension.swift in Sources */,
 				1B90D12A2A0A1500002A04A0 /* BaseViewController.swift in Sources */,
 				1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */,
@@ -797,6 +853,7 @@
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
 				1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */,
+				1BCB821F2A2DA6DE007030BB /* GolfViewController.swift in Sources */,
 				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
@@ -816,6 +873,7 @@
 				1BE3CB552A0F7A900067D2F4 /* Home.swift in Sources */,
 				1BDE63AE2A133B2100E02701 /* ExpandTableViewController.swift in Sources */,
 				1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */,
+				1BCB82222A2DBCAA007030BB /* GolfHeader.swift in Sources */,
 				1B89709429F8E2FC0090CD4C /* LabelViewController.swift in Sources */,
 				1B5A33672A0A9A520020F763 /* ImagePickerHelper.swift in Sources */,
 				1B302E112A010AC600C8674D /* Slide.swift in Sources */,
@@ -835,7 +893,9 @@
 				1B5A33692A0A9BD80020F763 /* UITextFieldExtension.swift in Sources */,
 				1BF4C0E92A05100200BB1D93 /* MainPageViewController.swift in Sources */,
 				1B2EA93A2A0E2BB60094E2B5 /* LanguageCell.swift in Sources */,
+				1BCB82272A2DD49B007030BB /* GolfModel.swift in Sources */,
 				1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */,
+				1BCB82302A2E1B22007030BB /* GolfSectionHeder.swift in Sources */,
 				1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */,
 				1BD91EEA2A1B42AE0047DD07 /* JobHomeScreenViewController.swift in Sources */,
 				1BD963222A120D1600B0B014 /* UIButtonExtension.swift in Sources */,
