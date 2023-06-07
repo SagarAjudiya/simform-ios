@@ -45,6 +45,7 @@ struct Constant {
         static let jobScreen = "JobScreen"
         static let jobHomeScreen = "JobHomeScreen"
         static let task = "Task"
+        static let navigation = "Navigation"
         
     }
      

@@ -28,7 +28,6 @@ class CLLocationHelper: NSObject {
         DispatchQueue.global().async { [weak self] in
             if CLLocationManager.locationServicesEnabled() {
                 self?.checkLocationAuth()
-                self?.locationCompletionHandler = locationCompletionHandler
             } else {
                 print("Plaese enable location")
             }
