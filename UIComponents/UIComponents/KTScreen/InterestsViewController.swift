@@ -14,9 +14,9 @@ protocol InterestsViewControllerProtocol: AnyObject {
 class InterestsViewController: BaseViewController {
 
     // MARK: IBOutlets
-    @IBOutlet weak var interestsClcView: UICollectionView!
-    @IBOutlet weak var btnDone: UIButton!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak private var interestsClcView: UICollectionView!
+    @IBOutlet weak private var btnDone: UIButton!
+    @IBOutlet weak private var contentView: UIView!
     
     // MARK: Variables
     private var selectItem = [String]()

@@ -10,30 +10,30 @@ import UIKit
 class SignUPViewController: BaseViewController {
 
     // MARK: IBOutlets
-    @IBOutlet weak var imgProfile: UIImageView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var txtName: UITextField!
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtViewBio: UITextView!
-    @IBOutlet weak var btnTraveler: UIButton!
-    @IBOutlet weak var btnLocal: UIButton!
-    @IBOutlet weak var btnMale: UIButton!
-    @IBOutlet weak var btnFemale: UIButton!
-    @IBOutlet weak var txtDOB: UITextField!
-    @IBOutlet weak var txtCountry: UITextField!
-    @IBOutlet weak var txtHometown: UITextField!
-    @IBOutlet weak var txtViewIceBreaker: UITextView!
-    @IBOutlet weak var btnSubmit: UIButton!
-    @IBOutlet weak var txtViewBioHeight: NSLayoutConstraint!
-    @IBOutlet weak var txtViewiceBreakerHeight: NSLayoutConstraint!
-    @IBOutlet weak var btnImgChange: UIButton!
-    @IBOutlet weak var btnNext: UIButton!
-    @IBOutlet weak var interestView: UIView!
-    @IBOutlet weak var selectInterestClcView: UICollectionView!
-    @IBOutlet weak var lblInterestPlaceHolder: UILabel!
-    @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var scrollViewBottom: NSLayoutConstraint!
+    @IBOutlet weak private var imgProfile: UIImageView!
+    @IBOutlet weak private var scrollView: UIScrollView!
+    @IBOutlet weak private var contentView: UIView!
+    @IBOutlet weak private var txtName: UITextField!
+    @IBOutlet weak private var txtEmail: UITextField!
+    @IBOutlet weak private var txtViewBio: UITextView!
+    @IBOutlet weak private var btnTraveler: UIButton!
+    @IBOutlet weak private var btnLocal: UIButton!
+    @IBOutlet weak private var btnMale: UIButton!
+    @IBOutlet weak private var btnFemale: UIButton!
+    @IBOutlet weak private var txtDOB: UITextField!
+    @IBOutlet weak private var txtCountry: UITextField!
+    @IBOutlet weak private var txtHometown: UITextField!
+    @IBOutlet weak private var txtViewIceBreaker: UITextView!
+    @IBOutlet weak private var btnSubmit: UIButton!
+    @IBOutlet weak private var txtViewBioHeight: NSLayoutConstraint!
+    @IBOutlet weak private var txtViewiceBreakerHeight: NSLayoutConstraint!
+    @IBOutlet weak private var btnImgChange: UIButton!
+    @IBOutlet weak private var btnNext: UIButton!
+    @IBOutlet weak private var interestView: UIView!
+    @IBOutlet weak private var selectInterestClcView: UICollectionView!
+    @IBOutlet weak private var lblInterestPlaceHolder: UILabel!
+    @IBOutlet weak private var mainView: UIView!
+    @IBOutlet weak private var scrollViewBottom: NSLayoutConstraint!
    
     
     // MARK: Variables
