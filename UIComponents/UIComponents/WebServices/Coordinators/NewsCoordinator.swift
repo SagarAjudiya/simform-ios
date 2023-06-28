@@ -30,5 +30,4 @@ class NewsCoordinator: Coordinator {
         
     }
     
-
 }

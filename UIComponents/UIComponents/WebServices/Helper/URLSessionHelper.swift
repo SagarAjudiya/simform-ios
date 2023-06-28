@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 import Reachability
 
 // MARK: struct
@@ -36,6 +37,7 @@ protocol EndPointType {
     var httpMethod: String { get }
     var url: URL { get }
     var apiKey: String { get }
+    var encoding: ParameterEncoding { get }
     
 }
 
@@ -122,7 +124,7 @@ extension RequestItemsType: EndPointType {
     var baseURL: String {
         switch self {
         case .getNews:           
-            return "https://newsapi.org/"
+            return "https://newsapi.org"
         case .uploadImage:
             return "https://api.imgbb.com"
         }
@@ -176,9 +178,16 @@ extension RequestItemsType: EndPointType {
     var url: URL {
         switch self {
         case .getNews:
-            return URL(string: self.baseURL + self.version + self.path + "?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=485e790acd814aee899bb5f0ea24482c")!
+            return URL(string: self.baseURL + self.version + self.path + "?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=\(apiKey)")!
         case .uploadImage:
             return URL(string: self.baseURL + self.version + self.path)! 
+        }
+    }
+    
+    var encoding: ParameterEncoding {
+        switch self {
+        case .getNews, .uploadImage:
+            return URLEncoding.default
         }
     }
     

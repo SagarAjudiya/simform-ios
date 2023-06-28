@@ -15,7 +15,7 @@ class NewsViewController: BaseViewController, Storyboarded {
     var viewModel = NewsViewModel()
 
     // MARK: IBOutlets
-    @IBOutlet weak var tblNews: UITableView!
+    @IBOutlet weak private var tblNews: UITableView!
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
@@ -28,21 +28,30 @@ class NewsViewController: BaseViewController, Storyboarded {
         tblNews.delegate = self
         tblNews.dataSource = self
         tblNews.register(UINib(nibName: NewsCell.identifier, bundle: nil), forCellReuseIdentifier: NewsCell.identifier)
-        viewModel.getNews()
+//        viewModel.getNews()        // Get using URLSession
         bindViewModel()
+        viewModel.getNewsAlamofire() // Get using Alamofire
     }
     
     // MARK: Bind ViewModel
     private func bindViewModel() {
-        viewModel.onAPIError = { [weak self] error in
+        viewModel.onAPIError = { error in
             print(error)
         }
         
         viewModel.onSuceess = { [weak self] in
-            DispatchQueue.main.async {
-                self?.tblNews.reloadData()
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.tblNews.reloadData()
             }
         }
+        viewModel.afNewsSuccess.bind({ [weak self] article in
+            guard let self = self else { return }
+            self.viewModel.article.append(contentsOf: article ?? [Article]())
+            DispatchQueue.main.async {
+                self.tblNews.reloadData()
+            }
+        })
     }
         
 }
@@ -59,6 +68,22 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configCell(article: viewModel.article[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: NewsDetailsViewController.identifier) as? NewsDetailsViewController else { return }
+        vc.article = viewModel.article[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastItem = viewModel.article.count - 1
+         if indexPath.row == lastItem {
+             if APIManager.shared.currentPage < APIManager.shared.totalPage {
+                 APIManager.shared.currentPage += 1
+                 viewModel.getNewsAlamofire()
+             }
+         }
     }
     
 }
