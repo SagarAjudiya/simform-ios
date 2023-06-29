@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import Reachability
 
-class MethodsViewController: UIViewController {
-    
+class MethodsViewController: BaseViewController {
+
     // MARK: IBOutlets
-    
     @IBOutlet weak var imgURL: UIImageView!
     @IBOutlet weak var pvLine: UIProgressView!
     @IBOutlet weak var lblProgress: UILabel!
     @IBOutlet weak var btnDownload: UIButton!
     @IBOutlet weak var avIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var imgUpload: UIImageView!
+    @IBOutlet weak var btnUpload: UIButton!
+    @IBOutlet weak var btnPickImage: UIButton!
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
@@ -29,12 +32,21 @@ class MethodsViewController: UIViewController {
         avIndicator.isHidden = true
     }
     
+    // MARK: Functions
     private func downloadData() {
-        let urlString = "https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+        let urlString =  "https://images.unsplash.com/photo-1421091242698-34f6ad7fc088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
         guard let url = URL(string: urlString) else { return }
         
-        let session = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue())
-        session.downloadTask(with: url).resume()
+        let config = URLSessionConfiguration.background(withIdentifier: urlString)
+        let session = URLSession(configuration: config, delegate: self, delegateQueue: OperationQueue())
+        let task = session.downloadTask(with: url)
+        task.resume()
+    
+    }
+    
+    private func uploadData() {
+        ImageUploadViewModel.shared.delegate = self
+        ImageUploadViewModel.shared.uploadImaggeUsingBinary(image: imgUpload)
     }
     
     // MARK: IBActions
@@ -46,7 +58,35 @@ class MethodsViewController: UIViewController {
         downloadData()
     }
     
+    @IBAction func btnPickImageTapped(_ sender: UIButton) {
+        openPickerView(sender)
+    }
+    
+    @IBAction func btnUploadTapped(_ sender: UIButton) {
+        uploadData()
+    }
+    
+    private func openPickerView(_ sender: UIView) {
+        ImagePickerHelper.shared.pick(sender, viewController: self, completionHandler: { [weak self] (image, _) in
+            if let image {
+                    self?.imgUpload.image = image
+            }
+        }, cancelHandler: { [weak self] in
+            guard self != nil else { return }
+        })
+    }
+    
 }
+
+// MARK: Extension MethodsViewController
+extension MethodsViewController: URLSessionTaskDelegate {
+    
+    func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
+        print("\(totalBytesSent) \(totalBytesExpectedToSend)")
+    }
+    
+}
+
 
 // MARK: Extension MethodsViewController
 extension MethodsViewController: URLSessionDownloadDelegate {

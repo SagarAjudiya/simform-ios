@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import Alamofire
 
-class NewsViewController: UIViewController {
+class NewsViewController: BaseViewController {
     
     // MARK: Variables
-    let url = "https://newsapi.org/v2/everything?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=485e790acd814aee899bb5f0ea24482c"
     var newsData: News?
     var article = [Article]()
 
@@ -26,7 +26,6 @@ class NewsViewController: UIViewController {
     
     // MARK: SetUp Views
     private func setupViews() {
-//        getDataFromServer()
         tblNews.delegate = self
         tblNews.dataSource = self
         tblNews.register(UINib(nibName: NewsCell.identifier, bundle: nil), forCellReuseIdentifier: NewsCell.identifier)
@@ -35,7 +34,7 @@ class NewsViewController: UIViewController {
     
     // Get News From URL
     private func getNews() {
-        URLSessionHelper.shared.call(url: url, httpMethod: .get, params: nil) { (res: Result<News, Error>) in
+        URLSessionHelper.shared.call(baseURL: .getNews, httpMethod: .get, params: nil) { (res: Result<News, Error>) in
             switch res {
             case .success(let newsData):
                 self.article = newsData.articles
@@ -44,34 +43,6 @@ class NewsViewController: UIViewController {
                 }
             case .failure(_): break
             }
-        }
-    }
-    
-    // Get Data Using JSONSerialization
-    private func getDataFromServer() {
-        if let url = URL(string: url) {
-            let urlRequest = URLRequest(url: url)
-            let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, urlResponse, error) in
-                guard let responseData = data else { return }
-                print("data: \(responseData)")
-                
-                if let urlResponse = urlResponse {
-                    print("URL Response: \(urlResponse)")
-                }
-                
-                if let error = error {
-                    print("error: \(error)")
-                }
-                
-                do {
-                    let jsonData = try JSONSerialization.jsonObject(with: responseData)
-                    print("jsonData: \(jsonData)")
-                    
-                } catch let error {
-                    print("json error: \(error)")
-                }
-            }
-            dataTask.resume()
         }
     }
     

@@ -7,6 +7,32 @@
 
 import Foundation
 
+struct URLS {
+    
+    static let baseScheme = "https://"
+    static let newsBaseURL = "newsapi.org"
+    static let newsVersion = "/v2"
+    static let apiKey = "485e790acd814aee899bb5f0ea24482c"
+    
+}
+
+struct APIParams {
+    
+    struct NewsAPI: URLParams {
+        
+        var q = "q"
+        static let apiKey = "apiKey"
+        
+        func getParams() -> [URLQueryItem] {
+            let defParams = NewsAPI()
+            return [
+                URLQueryItem(name: defParams.q, value: q),
+                URLQueryItem(name: APIParams.NewsAPI.apiKey, value: URLS.apiKey),
+            ]
+        }
+    }
+}
+
 protocol EndPointType {
     
     var baseURL: String { get }
@@ -32,28 +58,28 @@ enum HTTPMethod: String {
 }
 
 enum RequestItemsType {
-
+    
     case getNews
     
 }
 
+
 enum APIError: Error {
-    case invalide
+    
+    case invalidURL
+    case requestFailed
+    
 }
 
 class URLSessionHelper {
-    
     static let shared = URLSessionHelper()
-    let url = "https://newsapi.org/v2/everything?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=485e790acd814aee899bb5f0ea24482c"
 
-    
-    func call<T: Codable>(url: String, httpMethod: HTTPMethod, params: URLParams?, completionHandler: @escaping (Result<T, Error>) -> Void) {
-        guard let url = URL(string: url) else {
-            completionHandler(.failure(APIError.invalide))
-            return
-        }
-        var urlRequset = URLRequest(url: url)
+    func call<T: Codable>(baseURL: RequestItemsType, httpMethod: HTTPMethod, params: URLParams?, completionHandler: @escaping (Result<T, Error>) -> Void) {
+        
+        var urlRequset = URLRequest(url: baseURL.url)
         urlRequset.httpMethod = httpMethod.rawValue
+        print(baseURL.url)
+        
         
         let task = URLSession.shared.dataTask(with: urlRequset) { data, response, error in
             if let error = error {
@@ -84,27 +110,45 @@ extension RequestItemsType: EndPointType {
     
     //Bundle.main.object(forInfoDictionaryKey: "BaseURL")
     var baseURL: String {
-        return "https://newsapi.org/"
+        switch self {
+        case .getNews:
+            return URLS.newsBaseURL
+        }
     }
     
     var version: String {
-        return "v2/"
+        switch self {
+        case .getNews:
+            return URLS.newsVersion
+        }
     }
     
     var api: String {
-        return "api"
+        switch self {
+        case .getNews:
+            return "/api"
+        }
     }
     
     var path: String {
-        return "everything"
+        switch self {
+        case .getNews:
+            return "/everything"
+        }
     }
     
     var httpMethod: HTTPMethod {
-        return .get
+        switch self {
+        case .getNews:
+            return .get
+        }
     }
-    
+        
     var url: URL {
-        return URL(string: self.baseURL + self.version + self.path + "?" + "key=f8fe9a449ea4b2a9b7387b9e0d3d59c7")!
+        switch self {
+        case .getNews:
+            return URL(string: URLS.baseScheme + self.baseURL + self.version + self.path + "?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=485e790acd814aee899bb5f0ea24482c")!
+        }
     }
     
 }
