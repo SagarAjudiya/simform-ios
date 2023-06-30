@@ -7,7 +7,10 @@
 
 import UIKit
 
-class WebMainViewController: BaseViewController {
+class WebMainViewController: BaseViewController, Storyboarded {
+    
+    // MARK: Variables
+    var coordinator : MainScreenCoordinatoor?
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
@@ -30,3 +33,5 @@ class WebMainViewController: BaseViewController {
     }
     
 }
+
+

@@ -91,3 +91,4 @@ iOSInjectionProject/
 UIComponents/Pods
 R.generated.swift
 *.xcworkspacedata
+*.plist

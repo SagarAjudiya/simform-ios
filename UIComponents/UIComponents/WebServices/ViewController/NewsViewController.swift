@@ -8,11 +8,11 @@
 import UIKit
 import Alamofire
 
-class NewsViewController: BaseViewController {
+class NewsViewController: BaseViewController, Storyboarded {
     
     // MARK: Variables
-    var newsData: News?
-    var article = [Article]()
+    var coordinator: NewsCoordinator?
+    var viewModel = NewsViewModel()
 
     // MARK: IBOutlets
     @IBOutlet weak var tblNews: UITableView!
@@ -23,43 +23,41 @@ class NewsViewController: BaseViewController {
         setupViews()
     }
     
-    
     // MARK: SetUp Views
     private func setupViews() {
         tblNews.delegate = self
         tblNews.dataSource = self
         tblNews.register(UINib(nibName: NewsCell.identifier, bundle: nil), forCellReuseIdentifier: NewsCell.identifier)
-        getNews()
+        viewModel.getNews()
+        bindViewModel()
     }
     
-    // Get News From URL
-    private func getNews() {
-        URLSessionHelper.shared.call(baseURL: .getNews, httpMethod: .get, params: nil) { (res: Result<News, Error>) in
-            switch res {
-            case .success(let newsData):
-                self.article = newsData.articles
-                DispatchQueue.main.async {
-                    self.tblNews.reloadData()
-                }
-            case .failure(_): break
+    // MARK: Bind ViewModel
+    private func bindViewModel() {
+        viewModel.onAPIError = { [weak self] error in
+            print(error)
+        }
+        
+        viewModel.onSuceess = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tblNews.reloadData()
             }
         }
     }
-    
+        
 }
 
 // MARK: Extension NewsViewController
 extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        article.count
+        viewModel.article.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.identifier, for: indexPath) as? NewsCell else { return UITableViewCell() }
         
-        cell.configCell(article: article[indexPath.row])
-        
+        cell.configCell(article: viewModel.article[indexPath.row])
         return cell
     }
     

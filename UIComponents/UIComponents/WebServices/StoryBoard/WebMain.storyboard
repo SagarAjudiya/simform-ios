@@ -27,7 +27,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-He-JyU">
                                 <rect key="frame" x="30" y="158" width="333" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Download Image"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Upload Download"/>
                                 <connections>
                                     <action selector="btnDownload:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qsk-C4-jmN"/>
                                 </connections>

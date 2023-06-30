@@ -1283,10 +1283,10 @@ ttps://www.swift.org/documentation/
                                 <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbU-jy-zvS" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="666.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="715.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-Xi-wAs">
-                                                <rect key="frame" x="20" y="20" width="390" height="626.33333333333337"/>
+                                                <rect key="frame" x="20" y="20" width="390" height="675.66666666666663"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stg-ue-fVS">
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
@@ -1403,6 +1403,15 @@ ttps://www.swift.org/documentation/
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="btnNavigationTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="JtA-vB-cUF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-do-Mbu">
+                                                        <rect key="frame" x="0.0" y="641.33333333333337" width="390" height="34.333333333333371"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Web Service" cornerStyle="medium">
+                                                            <color key="baseBackgroundColor" red="0.1305310428" green="0.69056147339999996" blue="0.85412526129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="btnWebServiceTapped:" destination="ZYJ-FO-2bg" eventType="touchUpInside" id="vho-Ph-5T6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

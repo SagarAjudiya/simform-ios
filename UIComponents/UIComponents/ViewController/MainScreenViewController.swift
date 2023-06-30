@@ -7,9 +7,10 @@
 
 import UIKit
 
-class MainScreenViewController: BaseViewController {
+class MainScreenViewController: BaseViewController, Storyboarded {
 
-    // MARK: IBOutlets
+    // MARK: Variables
+    var coordinator: MainScreenCoordinatoor?
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
@@ -61,6 +62,10 @@ class MainScreenViewController: BaseViewController {
     
     @IBAction func btnNavigationTapped(_ sender: UIButton) {
         Utility.changeVC(self, "Navigation", "Navigation")
+    }
+    
+    @IBAction func btnWebServiceTapped(_ sender: UIButton) {
+        Utility.changeVC(self, "WebMain", WebMainViewController.identifier)
     }
     
 }
