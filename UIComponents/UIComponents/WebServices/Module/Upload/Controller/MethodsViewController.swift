@@ -14,16 +14,16 @@ class MethodsViewController: BaseViewController {
     var viewModel = MethodsViewModel()
     
     // MARK: IBOutlets
-    @IBOutlet weak var imgURL: UIImageView!
-    @IBOutlet weak var pvLine: UIProgressView!
-    @IBOutlet weak var lblProgress: UILabel!
-    @IBOutlet weak var btnDownload: UIButton!
-    @IBOutlet weak var avIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var imgUpload: UIImageView!
-    @IBOutlet weak var btnUpload: UIButton!
-    @IBOutlet weak var btnPickImage: UIButton!
-    @IBOutlet weak var tfURL: UITextField!
-    @IBOutlet weak var lblUploadProgress: UILabel!
+    @IBOutlet weak private var imgURL: UIImageView!
+    @IBOutlet weak private var pvLine: UIProgressView!
+    @IBOutlet weak private var lblProgress: UILabel!
+    @IBOutlet weak private var btnDownload: UIButton!
+    @IBOutlet weak private var avIndicator: UIActivityIndicatorView!
+    @IBOutlet weak private var imgUpload: UIImageView!
+    @IBOutlet weak private var btnUpload: UIButton!
+    @IBOutlet weak private var btnPickImage: UIButton!
+    @IBOutlet weak private var tfURL: UITextField!
+    @IBOutlet weak private var lblUploadProgress: UILabel!
     
     // MARK: View Controller lifecycle
     override func viewDidLoad() {

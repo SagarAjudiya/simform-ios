@@ -16,32 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouX-2q-oUe">
-                                <rect key="frame" x="30" y="103" width="333" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Get Data"/>
-                                <connections>
-                                    <action selector="btnNextTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eud-Oz-c9M"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-He-JyU">
-                                <rect key="frame" x="30" y="158" width="333" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Upload Download"/>
-                                <connections>
-                                    <action selector="btnDownload:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qsk-C4-jmN"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GEg-f5-Axe">
+                                <rect key="frame" x="20" y="123" width="353" height="143"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouX-2q-oUe">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Get Data"/>
+                                        <connections>
+                                            <action selector="btnNextTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eud-Oz-c9M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-He-JyU">
+                                        <rect key="frame" x="0.0" y="54.333333333333343" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Upload Download"/>
+                                        <connections>
+                                            <action selector="btnDownload:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qsk-C4-jmN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCv-cm-qQR">
+                                        <rect key="frame" x="0.0" y="108.66666666666666" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Upload Download AF"/>
+                                        <connections>
+                                            <action selector="btnUploadAF:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QhO-Wo-ZXt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ouX-2q-oUe" secondAttribute="trailing" constant="30" id="DYV-Qm-m4u"/>
-                            <constraint firstItem="RIY-He-JyU" firstAttribute="trailing" secondItem="ouX-2q-oUe" secondAttribute="trailing" id="HjV-jp-5vW"/>
-                            <constraint firstItem="RIY-He-JyU" firstAttribute="top" secondItem="ouX-2q-oUe" secondAttribute="bottom" constant="20" id="Us6-jq-YDa"/>
-                            <constraint firstItem="ouX-2q-oUe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Vt5-PW-kCR"/>
-                            <constraint firstItem="RIY-He-JyU" firstAttribute="leading" secondItem="ouX-2q-oUe" secondAttribute="leading" id="ffA-WW-v3C"/>
-                            <constraint firstItem="ouX-2q-oUe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="ljb-Dw-nTJ"/>
+                            <constraint firstItem="GEg-f5-Axe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="65m-Wm-1jX"/>
+                            <constraint firstItem="GEg-f5-Axe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="HrE-uX-iqI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GEg-f5-Axe" secondAttribute="trailing" constant="20" id="Xig-vO-ybE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="izh-3h-vdB"/>

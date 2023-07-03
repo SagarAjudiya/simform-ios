@@ -5,7 +5,9 @@
 //  Created by Sagar Ajudiya on 28/06/23.
 //
 
+//https://newsapi.org/v2/everything?q=apple&from=2023-07-02&to=2023-07-02&apiKey=485e790acd814aee899bb5f0ea24482c&page=1&pageSize=10
 import Foundation
+import Alamofire
 import Reachability
 
 // MARK: struct
@@ -36,6 +38,7 @@ protocol EndPointType {
     var httpMethod: String { get }
     var url: URL { get }
     var apiKey: String { get }
+    var encoding: ParameterEncoding { get }
     
 }
 
@@ -176,9 +179,16 @@ extension RequestItemsType: EndPointType {
     var url: URL {
         switch self {
         case .getNews:
-            return URL(string: self.baseURL + self.version + self.path + "?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=485e790acd814aee899bb5f0ea24482c")!
+            return URL(string: self.baseURL + self.version + self.path + "?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=eda6154a62744b7bbad849130a7f7b6f")!
         case .uploadImage:
             return URL(string: self.baseURL + self.version + self.path)! 
+        }
+    }
+    
+    var encoding: ParameterEncoding {
+        switch self {
+        case .getNews, .uploadImage:
+            return URLEncoding.default
         }
     }
     

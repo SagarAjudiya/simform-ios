@@ -32,6 +32,10 @@ class WebMainViewController: BaseViewController, Storyboarded {
         Utility.changeVC(self, "News", MethodsViewController.identifier)
     }
     
+    @IBAction func btnUploadAF(_ sender: UIButton) {
+        Utility.changeVC(self, "News", UploadAFViewController.identifier)
+    }
+    
 }
 
 

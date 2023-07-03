@@ -9,4 +9,5 @@ target 'UIComponents' do
   pod 'R.swift', '~>7.3.2'
   pod 'ReachabilitySwift', '~>5.0.0'
   pod 'Alamofire', '~>5.7.0'
+  pod 'Kingfisher', '~>7.0'
 end
