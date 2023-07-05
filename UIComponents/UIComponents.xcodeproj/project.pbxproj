@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1B0577AE2A14F1B000E6F0B1 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */; };
+		1B0F342D2A277F7100E308A9 /* LeftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */; };
+		1B0F342E2A277F7100E308A9 /* LeftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */; };
+		1B0F34332A27891F00E308A9 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F34312A27891F00E308A9 /* RightViewCell.swift */; };
+		1B0F34342A27891F00E308A9 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F34322A27891F00E308A9 /* RightViewCell.xib */; };
 		1B1869E82A0D2C470063FA92 /* AVPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */; };
 		1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B60A82A179EEE00CE4A1A /* Font.swift */; };
 		1B283E222A1C707900940978 /* JobHomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283E202A1C707900940978 /* JobHomeScreenCell.swift */; };
 		1B283E252A1C8FC100940978 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283E242A1C8FC100940978 /* TableHeader.swift */; };
 		1B283E272A1C901100940978 /* TableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B283E262A1C901100940978 /* TableHeader.xib */; };
+		1B2B50CE2A4ADB280048464B /* InterestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B50CD2A4ADB280048464B /* InterestsModel.swift */; };
 		1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA92B2A0E00600094E2B5 /* TableViewController.swift */; };
 		1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA92D2A0E02400094E2B5 /* Languages.swift */; };
 		1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA9312A0E17010094E2B5 /* Print.swift */; };
@@ -52,6 +57,9 @@
 		1B4E67522A1F3AD9006442F7 /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */; };
 		1B4E67542A1F9127006442F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E67532A1F9127006442F7 /* Image.swift */; };
 		1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */; };
+		1B54CAFE2A27470700FA24E7 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CAFD2A27470700FA24E7 /* ChatModel.swift */; };
+		1B54CB002A274C1400FA24E7 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */; };
+		1B54CB022A274C2B00FA24E7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */; };
 		1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590782A1B9A9900C29C2D /* HeaderView.xib */; };
 		1B55907F2A1BB13A00C29C2D /* JobHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */; };
 		1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */; };
@@ -65,6 +73,12 @@
 		1B66DA432A2497FA0087BD63 /* NavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA422A2497FA0087BD63 /* NavFirstViewController.swift */; };
 		1B66DA452A2498180087BD63 /* NavSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA442A2498180087BD63 /* NavSecondViewController.swift */; };
 		1B66DA472A24D5D10087BD63 /* NavThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66DA462A24D5D10087BD63 /* NavThirdViewController.swift */; };
+		1B764E9F2A286C3300041EDC /* ChatSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B764E9E2A286C3300041EDC /* ChatSectionHeader.swift */; };
+		1B764EA12A286CAE00041EDC /* ChatSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B764EA02A286CAE00041EDC /* ChatSectionHeader.xib */; };
+		1B764EA42A28B62C00041EDC /* LeftImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B764EA22A28B62C00041EDC /* LeftImageCell.swift */; };
+		1B764EA52A28B62C00041EDC /* LeftImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B764EA32A28B62C00041EDC /* LeftImageCell.xib */; };
+		1B764EA82A28B64F00041EDC /* RightImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B764EA62A28B64F00041EDC /* RightImageCell.swift */; };
+		1B764EA92A28B64F00041EDC /* RightImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B764EA72A28B64F00041EDC /* RightImageCell.xib */; };
 		1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */; };
 		1B89707D29F8DEB80090CD4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707C29F8DEB80090CD4C /* AppDelegate.swift */; };
 		1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89707E29F8DEB80090CD4C /* SceneDelegate.swift */; };
@@ -100,6 +114,10 @@
 		1BCEBB6D2A21E6FC008DDF76 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */; };
 		1BCEBB6F2A220989008DDF76 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB6E2A220989008DDF76 /* Location.swift */; };
 		1BCEBB712A221CCD008DDF76 /* PickLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */; };
+		1BCF03542A29B3C100EE57F4 /* SignUP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF03532A29B3C100EE57F4 /* SignUP.storyboard */; };
+		1BCF03562A29B3FC00EE57F4 /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF03552A29B3FC00EE57F4 /* SignUPViewController.swift */; };
+		1BCF03582A2A025A00EE57F4 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF03572A2A025A00EE57F4 /* InterestsViewController.swift */; };
+		1BCF035E2A2A0C9100EE57F4 /* InterestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF035D2A2A0C9100EE57F4 /* InterestsCell.swift */; };
 		1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */; };
 		1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD31C972A03854300C4DC4B /* TabViewController.swift */; };
 		1BD91BDC2A14E6CC00F953A5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */; };
@@ -134,6 +152,7 @@
 		1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3CB562A0F7C820067D2F4 /* HomeScreenViewController.swift */; };
 		1BE3E54B2A08B6B90068BA7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3E54A2A08B6B90068BA7D /* UIViewExtension.swift */; };
 		1BE703602A09473A002E3F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7035F2A09473A002E3F17 /* Main.storyboard */; };
+		1BEAA2042A2A386500D2B016 /* SelectInterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAA2032A2A386500D2B016 /* SelectInterestCell.swift */; };
 		1BEAEF602A1CD02500A57747 /* FeaturedViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */; };
 		1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */; };
 		1BF2674A2A1E5ED500DFE47C /* HoriScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */; };
@@ -146,11 +165,16 @@
 
 /* Begin PBXFileReference section */
 		1B0577AD2A14F1B000E6F0B1 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewCell.swift; sourceTree = "<group>"; };
+		1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftViewCell.xib; sourceTree = "<group>"; };
+		1B0F34312A27891F00E308A9 /* RightViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewCell.swift; sourceTree = "<group>"; };
+		1B0F34322A27891F00E308A9 /* RightViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightViewCell.xib; sourceTree = "<group>"; };
 		1B1869E72A0D2C470063FA92 /* AVPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerHelper.swift; sourceTree = "<group>"; };
 		1B1B60A82A179EEE00CE4A1A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1B283E202A1C707900940978 /* JobHomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeScreenCell.swift; sourceTree = "<group>"; };
 		1B283E242A1C8FC100940978 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		1B283E262A1C901100940978 /* TableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeader.xib; sourceTree = "<group>"; };
+		1B2B50CD2A4ADB280048464B /* InterestsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsModel.swift; sourceTree = "<group>"; };
 		1B2EA92B2A0E00600094E2B5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1B2EA92D2A0E02400094E2B5 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		1B2EA9312A0E17010094E2B5 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
@@ -190,6 +214,9 @@
 		1B4E67512A1F3AD9006442F7 /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
 		1B4E67532A1F9127006442F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1B54CAF82A2743D200FA24E7 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
+		1B54CAFD2A27470700FA24E7 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1B5590782A1B9A9900C29C2D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1B55907E2A1BB13A00C29C2D /* JobHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHomeHeader.swift; sourceTree = "<group>"; };
 		1B5590802A1BB15700C29C2D /* JobHomeHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobHomeHeader.xib; sourceTree = "<group>"; };
@@ -203,6 +230,12 @@
 		1B66DA422A2497FA0087BD63 /* NavFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavFirstViewController.swift; sourceTree = "<group>"; };
 		1B66DA442A2498180087BD63 /* NavSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSecondViewController.swift; sourceTree = "<group>"; };
 		1B66DA462A24D5D10087BD63 /* NavThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavThirdViewController.swift; sourceTree = "<group>"; };
+		1B764E9E2A286C3300041EDC /* ChatSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSectionHeader.swift; sourceTree = "<group>"; };
+		1B764EA02A286CAE00041EDC /* ChatSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatSectionHeader.xib; sourceTree = "<group>"; };
+		1B764EA22A28B62C00041EDC /* LeftImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftImageCell.swift; sourceTree = "<group>"; };
+		1B764EA32A28B62C00041EDC /* LeftImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftImageCell.xib; sourceTree = "<group>"; };
+		1B764EA62A28B64F00041EDC /* RightImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightImageCell.swift; sourceTree = "<group>"; };
+		1B764EA72A28B64F00041EDC /* RightImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightImageCell.xib; sourceTree = "<group>"; };
 		1B7676B82A1B937B0038E93B /* FeaturedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewCell.swift; sourceTree = "<group>"; };
 		1B89707929F8DEB80090CD4C /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B89707C29F8DEB80090CD4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +273,10 @@
 		1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		1BCEBB6E2A220989008DDF76 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1BCEBB702A221CCD008DDF76 /* PickLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLocationViewController.swift; sourceTree = "<group>"; };
+		1BCF03532A29B3C100EE57F4 /* SignUP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUP.storyboard; sourceTree = "<group>"; };
+		1BCF03552A29B3FC00EE57F4 /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		1BCF03572A2A025A00EE57F4 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		1BCF035D2A2A0C9100EE57F4 /* InterestsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCell.swift; sourceTree = "<group>"; };
 		1BD31C952A036C1A00C4DC4B /* ToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarViewController.swift; sourceTree = "<group>"; };
 		1BD31C972A03854300C4DC4B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		1BD91BDA2A14E6CC00F953A5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -274,6 +311,7 @@
 		1BE3CB562A0F7C820067D2F4 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		1BE3E54A2A08B6B90068BA7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1BE7035F2A09473A002E3F17 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1BEAA2032A2A386500D2B016 /* SelectInterestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInterestCell.swift; sourceTree = "<group>"; };
 		1BEAEF5E2A1CD02500A57747 /* FeaturedViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewCell.xib; sourceTree = "<group>"; };
 		1BEAEF5F2A1CD02500A57747 /* ClcJobViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClcJobViewCell.xib; sourceTree = "<group>"; };
 		1BF267492A1E5ED400DFE47C /* HoriScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoriScrollViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +333,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1B958E2A2B4F3E00D55404 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF035D2A2A0C9100EE57F4 /* InterestsCell.swift */,
+				1BEAA2032A2A386500D2B016 /* SelectInterestCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B1B958F2A2B4F5900D55404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B2B50CD2A4ADB280048464B /* InterestsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1B283E2A2A1CCD9200940978 /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +476,57 @@
 			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
+		1B54CAFA2A27459F00FA24E7 /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B54CB042A27663000FA24E7 /* Cell */,
+				1B54CAFB2A2746E700FA24E7 /* Model */,
+				1B54CAFF2A274C1400FA24E7 /* Chat.storyboard */,
+				1B54CB012A274C2B00FA24E7 /* ChatViewController.swift */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
+		1B54CAFB2A2746E700FA24E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B54CAFD2A27470700FA24E7 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B54CB042A27663000FA24E7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B764E9D2A286B3700041EDC /* SectionHeder */,
+				1B54CB0A2A27672400FA24E7 /* LeftViewCell */,
+				1B54CB052A2766DA00FA24E7 /* RightViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B54CB052A2766DA00FA24E7 /* RightViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F34312A27891F00E308A9 /* RightViewCell.swift */,
+				1B0F34322A27891F00E308A9 /* RightViewCell.xib */,
+				1B764EA62A28B64F00041EDC /* RightImageCell.swift */,
+				1B764EA72A28B64F00041EDC /* RightImageCell.xib */,
+			);
+			path = RightViewCell;
+			sourceTree = "<group>";
+		};
+		1B54CB0A2A27672400FA24E7 /* LeftViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F342B2A277F7100E308A9 /* LeftViewCell.swift */,
+				1B0F342C2A277F7100E308A9 /* LeftViewCell.xib */,
+				1B764EA22A28B62C00041EDC /* LeftImageCell.swift */,
+				1B764EA32A28B62C00041EDC /* LeftImageCell.xib */,
+			);
+			path = LeftViewCell;
+			sourceTree = "<group>";
+		};
 		1B55907B2A1BB03000C29C2D /* JobHomeTableHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +543,15 @@
 				1B283E202A1C707900940978 /* JobHomeScreenCell.swift */,
 			);
 			path = JobScreen;
+			sourceTree = "<group>";
+		};
+		1B764E9D2A286B3700041EDC /* SectionHeder */ = {
+			isa = PBXGroup;
+			children = (
+				1B764E9E2A286C3300041EDC /* ChatSectionHeader.swift */,
+				1B764EA02A286CAE00041EDC /* ChatSectionHeader.xib */,
+			);
+			path = SectionHeder;
 			sourceTree = "<group>";
 		};
 		1B7676BC2A1B99C60038E93B /* JobScreenClcHeader */ = {
@@ -467,6 +582,8 @@
 		1B89707B29F8DEB80090CD4C /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1BCF03502A29ADA500EE57F4 /* KTScreen */,
+				1B54CAFA2A27459F00FA24E7 /* ChatScreen */,
 				1BF4C0EE2A05407E00BB1D93 /* Resources */,
 				1B89709029F8DF080090CD4C /* AppDelegate */,
 				1B8EDBE92A090F9A00651BFD /* Helper */,
@@ -588,6 +705,18 @@
 				1BCEBB6C2A21E6FC008DDF76 /* CustomAnnotation.swift */,
 			);
 			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		1BCF03502A29ADA500EE57F4 /* KTScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B1B958F2A2B4F5900D55404 /* Model */,
+				1B1B958E2A2B4F3E00D55404 /* Cell */,
+				1BCF03532A29B3C100EE57F4 /* SignUP.storyboard */,
+				1BCF03552A29B3FC00EE57F4 /* SignUPViewController.swift */,
+				1BCF03572A2A025A00EE57F4 /* InterestsViewController.swift */,
+			);
+			path = KTScreen;
 			sourceTree = "<group>";
 		};
 		1BD91EC02A1B371D0047DD07 /* Poppins */ = {
@@ -740,10 +869,14 @@
 				1BEAEF602A1CD02500A57747 /* FeaturedViewCell.xib in Resources */,
 				1B5590792A1B9A9900C29C2D /* HeaderView.xib in Resources */,
 				1BD91ED82A1B371D0047DD07 /* Poppins-Medium.ttf in Resources */,
+				1B764EA92A28B64F00041EDC /* RightImageCell.xib in Resources */,
 				1BD91ED42A1B371D0047DD07 /* Poppins-ThinItalic.ttf in Resources */,
 				1B2EA9562A0E36C00094E2B5 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				1B30A7602A1290F200B26A30 /* Colors.xcassets in Resources */,
+				1BCF03542A29B3C100EE57F4 /* SignUP.storyboard in Resources */,
+				1B764EA52A28B62C00041EDC /* LeftImageCell.xib in Resources */,
 				1B89708929F8DEB90090CD4C /* LaunchScreen.storyboard in Resources */,
+				1B0F342E2A277F7100E308A9 /* LeftViewCell.xib in Resources */,
 				1BD91ED62A1B371D0047DD07 /* Poppins-BoldItalic.ttf in Resources */,
 				1BD91ED92A1B371D0047DD07 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				1B2EA93B2A0E2BB60094E2B5 /* LanguageCell.xib in Resources */,
@@ -751,6 +884,8 @@
 				1B2EA94F2A0E36C00094E2B5 /* AvenirLTStd-Medium.otf in Resources */,
 				1B2EA9512A0E36C00094E2B5 /* AvenirLTStd-Heavy.otf in Resources */,
 				1B2EA9532A0E36C00094E2B5 /* AvenirLTStd-Light.otf in Resources */,
+				1B54CB002A274C1400FA24E7 /* Chat.storyboard in Resources */,
+				1B0F34342A27891F00E308A9 /* RightViewCell.xib in Resources */,
 				1B5590812A1BB15700C29C2D /* JobHomeHeader.xib in Resources */,
 				1BD91EDC2A1B371D0047DD07 /* Poppins-BlackItalic.ttf in Resources */,
 				1BD91EDA2A1B371D0047DD07 /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -771,6 +906,7 @@
 				1BD91EDD2A1B371D0047DD07 /* Poppins-Regular.ttf in Resources */,
 				1BD91ED52A1B371D0047DD07 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				1B66DA412A248A710087BD63 /* Navigation.storyboard in Resources */,
+				1B764EA12A286CAE00041EDC /* ChatSectionHeader.xib in Resources */,
 				1BAA05BF2A149761004F53AA /* ClcLangCell.xib in Resources */,
 				1B2EA94D2A0E36C00094E2B5 /* AvenirLTStd-BookOblique.otf in Resources */,
 				1BEAEF612A1CD02500A57747 /* ClcJobViewCell.xib in Resources */,
@@ -796,6 +932,7 @@
 				1B4CE90B2A25BFDB006B6B5D /* NavForthViewController.swift in Sources */,
 				1BD31C982A03854300C4DC4B /* TabViewController.swift in Sources */,
 				1BA446F62A20CC0000B63689 /* DateExtension.swift in Sources */,
+				1BCF03582A2A025A00EE57F4 /* InterestsViewController.swift in Sources */,
 				1B2EA9322A0E17010094E2B5 /* Print.swift in Sources */,
 				1BD31C962A036C1A00C4DC4B /* ToolBarViewController.swift in Sources */,
 				1BAA05BE2A149761004F53AA /* ClcLangCell.swift in Sources */,
@@ -809,6 +946,7 @@
 				1B9F04772A1E20770027B1A4 /* UIViewControllerExtension.swift in Sources */,
 				1B4CE90D2A25C4CC006B6B5D /* UINavigationControllerExtension.swift in Sources */,
 				1B5A33652A0A8C990020F763 /* PHImagePickerHelper.swift in Sources */,
+				1B0F342D2A277F7100E308A9 /* LeftViewCell.swift in Sources */,
 				1B44E2B82A0B9BA100BA32D5 /* SearchViewController.swift in Sources */,
 				1B2EA92C2A0E00600094E2B5 /* TableViewController.swift in Sources */,
 				1B44E2BF2A0BC48E00BA32D5 /* Enumeration.swift in Sources */,
@@ -819,28 +957,38 @@
 				1BF52AE62A13ACFF003B350C /* Utility.swift in Sources */,
 				1B302E0D2A01000C00C8674D /* PageControlViewController.swift in Sources */,
 				1BDA93D729FA499F00ED2031 /* TextFieldViewController.swift in Sources */,
+				1B764E9F2A286C3300041EDC /* ChatSectionHeader.swift in Sources */,
 				1BF4C0ED2A0510EE00BB1D93 /* RedViewController.swift in Sources */,
+				1BEAA2042A2A386500D2B016 /* SelectInterestCell.swift in Sources */,
+				1B0F34332A27891F00E308A9 /* RightViewCell.swift in Sources */,
 				1B54CAF92A2743D800FA24E7 /* UserDefaultHelper.swift in Sources */,
 				1BA446F42A20BD3D00B63689 /* DatePickerController.swift in Sources */,
+				1BCF035E2A2A0C9100EE57F4 /* InterestsCell.swift in Sources */,
 				1BB03C4E2A1CEF5200AAC4B1 /* ScrollViewController.swift in Sources */,
 				1BAA05C32A14CA6A004F53AA /* JobScreenViewController.swift in Sources */,
 				1B89707F29F8DEB80090CD4C /* SceneDelegate.swift in Sources */,
+				1B54CB022A274C2B00FA24E7 /* ChatViewController.swift in Sources */,
+				1B2B50CE2A4ADB280048464B /* InterestsModel.swift in Sources */,
 				1BE3CB572A0F7C820067D2F4 /* HomeScreenViewController.swift in Sources */,
+				1B764EA42A28B62C00041EDC /* LeftImageCell.swift in Sources */,
 				1B66DA432A2497FA0087BD63 /* NavFirstViewController.swift in Sources */,
 				1B7676BA2A1B937B0038E93B /* FeaturedViewCell.swift in Sources */,
 				1B1B60A92A179EEE00CE4A1A /* Font.swift in Sources */,
 				1B44E2BB2A0BA96500BA32D5 /* Student.swift in Sources */,
 				1BCEBB712A221CCD008DDF76 /* PickLocationViewController.swift in Sources */,
+				1BCF03562A29B3FC00EE57F4 /* SignUPViewController.swift in Sources */,
 				1B4A42DC2A1FC44F00C663DF /* PickerModel.swift in Sources */,
 				1B2EA92E2A0E02400094E2B5 /* Languages.swift in Sources */,
 				1B4E67542A1F9127006442F7 /* Image.swift in Sources */,
 				1BE3CB532A0F76CD0067D2F4 /* HomeCell.swift in Sources */,
+				1B764EA82A28B64F00041EDC /* RightImageCell.swift in Sources */,
 				1BDE63B22A13432B00E02701 /* ExpandableView.swift in Sources */,
 				1B8EDBF52A093F0600651BFD /* CustomActivityindicator.swift in Sources */,
 				1B89709829F91C980090CD4C /* ButtonViewController.swift in Sources */,
 				1BD963202A11EB6000B0B014 /* MainScreenViewController.swift in Sources */,
 				1BE3CB552A0F7A900067D2F4 /* Home.swift in Sources */,
 				1BDE63AE2A133B2100E02701 /* ExpandTableViewController.swift in Sources */,
+				1B54CAFE2A27470700FA24E7 /* ChatModel.swift in Sources */,
 				1BA446FA2A210C4B00B63689 /* MapViewViewController.swift in Sources */,
 				1B89709429F8E2FC0090CD4C /* LabelViewController.swift in Sources */,
 				1B66DA452A2498180087BD63 /* NavSecondViewController.swift in Sources */,

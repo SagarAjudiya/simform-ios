@@ -44,7 +44,7 @@ class DatePickerController: UIViewController {
     
     // Date Picker In TextField
     func datePickerProgrammatically() {
-        txtDate.setDatePickerAsInputViewFor(target: self, selector: #selector(dateIsSelected))
+        txtDate.setDatePickerAsInputViewFor(target: self, selector: #selector(dateIsSelected), max: 0, min: -16)
     }
     
     @objc func dateIsSelected() {

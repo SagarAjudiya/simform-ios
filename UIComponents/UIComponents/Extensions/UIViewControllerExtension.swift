@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     // MARK: Variable Declarations
-     class var identifier: String {
+    class var identifier: String {
         return String(describing: self)
     }
     
@@ -22,7 +22,7 @@ extension UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    @objc func dismissKeyboard() {
+    @objc private func dismissKeyboard() {
         view.endEditing(true)
     }
                                                                  

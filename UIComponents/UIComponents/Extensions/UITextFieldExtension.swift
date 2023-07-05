@@ -85,12 +85,23 @@ extension UITextField {
 // MARK: Extension For Open DatePicker
 extension UITextField {
     
-    func setDatePickerAsInputViewFor(target: Any, selector: Selector) {
+    func setDatePickerAsInputViewFor(target: Any, selector: Selector, max: Int, min: Int) {
         
         let datePicker = UIDatePicker()
+        let calendar = Calendar.current
+        var components = DateComponents()
+        components.calendar = calendar
+        
+        components.year = max
+        let maxDate: Date = calendar.date(byAdding: components, to: Date())!
+        components.year = min
+        let minDate: Date = calendar.date(byAdding: components, to: Date())!
+        
         datePicker.sizeToFit()
         datePicker.preferredDatePickerStyle = .inline
         datePicker.datePickerMode = .dateAndTime
+        datePicker.minimumDate = minDate
+        datePicker.maximumDate = maxDate
         self.inputView = datePicker
         
         let toolBar = UIToolbar()
@@ -105,6 +116,25 @@ extension UITextField {
     
     @objc func tapCancel() {
         self.resignFirstResponder()
+    }
+    
+    func addPaddingAndIcon(_ image: UIImage, padding: CGFloat,isLeftView: Bool) {
+      let frame = CGRect(x: 0, y: 0, width: image.size.width + padding, height: image.size.height)
+      
+      let outerView = UIView(frame: frame)
+      let iconView  = UIImageView(frame: frame)
+      iconView.image = image
+      iconView.contentMode = .center
+      outerView.addSubview(iconView)
+      
+      if isLeftView {
+        leftViewMode = .always
+        leftView = outerView
+      } else {
+        rightViewMode = .always
+        rightView = outerView
+      }
+      
     }
     
 }

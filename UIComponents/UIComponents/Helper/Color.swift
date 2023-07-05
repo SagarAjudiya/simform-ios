@@ -24,4 +24,17 @@ struct Color {
     static let allWhite = UIColor(named: "allwhite")
     static let jgreybg = UIColor(named: "jgreybg")
     
+    // MARK: Chat Screen
+    static let mainBackground = UIColor(named: "mainBackground") ?? UIColor()
+    static let txtMsg = UIColor(named: "txtMsg") ?? UIColor()
+    static let chatSender = UIColor(named: "chatSender") ?? UIColor()
+    static let chatReciver = UIColor(named: "chatReciver") ?? UIColor()
+    
+    // MARK: SignUp Screen
+    static let signPrimary = UIColor(named: "signPrimary") ?? UIColor()
+    static let signWhite = UIColor(named: "signWhite") ?? UIColor()
+    static let signGrey = UIColor(named: "signGrey") ?? UIColor()
+    static let signBtnbg = UIColor(named: "SignBtnbg") ?? UIColor()
+    static let signRadio = UIColor(named: "signRadio") ?? UIColor()
+    
 }
