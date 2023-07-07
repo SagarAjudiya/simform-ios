@@ -20,9 +20,7 @@ class TabBarViewController: UITabBarController {
 
 // MARK: Extension TabBarViewController
 extension TabBarViewController: UITabBarControllerDelegate {
-    
-    // MARK: TabBar Delegate
-    
+        
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         return true
     }

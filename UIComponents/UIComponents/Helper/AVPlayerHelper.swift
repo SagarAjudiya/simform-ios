@@ -15,7 +15,7 @@ class AVPlayerHelper {
     // MARK: Variables
     static let shared = AVPlayerHelper()
     
-    let playerViewController = AVPlayerViewController()
+    private let playerViewController = AVPlayerViewController()
     
     // MARK: AVPlayerHelper Methods
     func playVideo(_ sender: UIViewController, url: URL) {
@@ -26,7 +26,6 @@ class AVPlayerHelper {
             print("Playing Video")
             self?.playerViewController.player?.play()
         }
-        
     }
     
 }

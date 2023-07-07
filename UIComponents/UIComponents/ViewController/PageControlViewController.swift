@@ -9,8 +9,6 @@ import UIKit
 
 class PageControlViewController: BaseViewController {
     
-    private var slides = [Slide]()
-    
     // MARK: IBOutlets
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var pageControl: UIPageControl!
@@ -18,13 +16,15 @@ class PageControlViewController: BaseViewController {
     @IBOutlet private weak var btnBack: UIButton!
     @IBOutlet private weak var btnNext: UIButton!
     
+    // MARK: - Variable
+    private var slides = [Slide]()
+    
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.delegate = self
         setupViews()
-        
     }
     
     // MARK: SetUp Views
@@ -66,7 +66,7 @@ class PageControlViewController: BaseViewController {
     }
     
     // set Slide Images and Titles
-    func setSlide(title: String, description: String, imageName: String) -> Slide {
+    private func setSlide(title: String, description: String, imageName: String) -> Slide {
       let slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
       slide.imageView.image = UIImage(named: imageName)
       slide.labelTitle.text = title
@@ -105,7 +105,6 @@ extension PageControlViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
-
     }
     
 }

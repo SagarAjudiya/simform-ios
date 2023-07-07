@@ -62,7 +62,7 @@ class NavFirstViewController: BaseViewController {
         let btnNavAdd = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
         btnNavAdd.tintColor = .red
         let btnNavCancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil)
-        navigationItem.leftBarButtonItems = [btnNavBookmark, btnNavAdd]
+        navigationItem.rightBarButtonItems = [btnNavBookmark, btnNavAdd]
         
         /// change back button image
         navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back")

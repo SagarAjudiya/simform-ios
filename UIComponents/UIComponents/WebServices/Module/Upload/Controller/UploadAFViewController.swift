@@ -26,7 +26,7 @@ class UploadAFViewController: UIViewController {
     // MARK: Setup Views
     private func setUpViews() {
         bindViewModel()
-        imgUpload.image = UIImage(named: "swift")
+        imgUpload.image = UIImage(resource: R.image.swift)
     }
     
     // MARK: Bind ViewModel
@@ -58,6 +58,5 @@ class UploadAFViewController: UIViewController {
     @IBAction func btnDownloadTapped(_ sender: UIImage) {
         viewModel.downloadImage(url: tfUrl.text ?? "")
     }
-    
     
 }

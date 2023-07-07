@@ -13,6 +13,7 @@ class ToolBarViewController: BaseViewController {
     @IBOutlet private weak var lblText: UILabel!
     @IBOutlet private weak var playPauseBtn: UIBarButtonItem!
     
+    // MARK: - Variable
     private var isPlay = true
     
     // MARK: View Controller lifecycle

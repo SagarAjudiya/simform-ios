@@ -17,6 +17,8 @@ class TableHeader: UITableViewHeaderFooterView {
     // MARK: IBOutlets
     @IBOutlet weak var lblheaderTitle: UILabel!
     @IBOutlet weak var btnSeeAll: UIButton!
+    
+    // MARK: - Variable
     weak var delegate: TableHederProtocol?
     
     // MARK: SetUp Views

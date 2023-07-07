@@ -12,7 +12,6 @@ class MainPageViewController: UIPageViewController {
     // MARK: Variables
     // array of ViewControllers
     private lazy var orderedViewController: [UIViewController] = [viewControllerWith(name: "BlueViewController"), viewControllerWith(name: "RedViewController")]
-    
     private var currentIndex: Int = 0
     private var pageControl = UIPageControl()
 
@@ -61,9 +60,7 @@ class MainPageViewController: UIPageViewController {
 
 // MARK: Extension MainPageViewController
 extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
-    // MARK: Delegates
-    
+        
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let viewControllerIndex = orderedViewController.firstIndex(of: viewController) else {

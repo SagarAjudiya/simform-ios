@@ -16,7 +16,6 @@ class NavSecondViewController: BaseViewController {
     // MARK: IBOutlets
     @IBOutlet weak private var lblName: UILabel!
     @IBOutlet weak private var txtCompany: UITextField!
-    
     @IBOutlet weak private var txtRUserName: UITextField!
     @IBOutlet weak private var txtREmail: UITextField!
     @IBOutlet weak private var txtRPassword: UITextField!

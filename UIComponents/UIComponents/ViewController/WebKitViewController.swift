@@ -20,7 +20,6 @@ class WebKitViewController: BaseViewController {
         super.viewDidLoad()
         
         setupViews()
-
     }
     
     // MARK: SetUp Views
@@ -57,8 +56,6 @@ class WebKitViewController: BaseViewController {
 // MARK: Extension WebKitViewController
 extension WebKitViewController: WKNavigationDelegate, WKUIDelegate {
     
-    // MARK: WebView Delegates
-
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print(#function)
         progress.stopAnimating()
@@ -100,10 +97,7 @@ extension WebKitViewController: WKNavigationDelegate, WKUIDelegate {
 }
 
 // MARK: Extension WebKitViewController
-
 extension WebKitViewController: UISearchBarDelegate {
-    
-    // MARK: SearchView Delegate
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(#function)

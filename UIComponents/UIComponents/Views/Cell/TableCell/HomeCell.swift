@@ -23,6 +23,7 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var btnApproval: UIButton!
     @IBOutlet weak var viewCard: UIView!
     
+    // MARK: - Variable
     weak var delegate: HomeCellDelegate?
     
     // MARK: Cell lifecycle

@@ -78,13 +78,13 @@ class MapViewViewController: BaseViewController {
     }
     
     // set camera zomm boundary
-    func cameraBoundary() {
+    private func cameraBoundary() {
         let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: CLConst.maxCenterCoordinateDistance)
         mapView.setCameraZoomRange(zoomRange, animated: true)
     }
     
     // add annotation for location
-    func addAnnotation() {
+    private func addAnnotation() {
         let annotations = Location.locations.map { location -> MKAnnotation in
             let annotation = MKPointAnnotation()
             annotation.title = location.title

@@ -15,61 +15,63 @@ class MainScreenViewController: BaseViewController, Storyboarded {
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     // MARK: IBActions
     @IBAction func btnHomeScreenTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "HomeScreen", "HomeScreenViewController")
+        Utility.changeVC(self, R.storyboard.homeScreen.name, HomeScreenViewController.identifier)
     }
     
     @IBAction func btnExpandTableViewTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "Main", "ExpandTableViewController")
+        Utility.changeVC(self, R.storyboard.main.name, ExpandTableViewController.identifier)
     }
     
-    
     @IBAction func btnCollectionViewTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "Main", "CollectionViewController")
+        Utility.changeVC(self, R.storyboard.main.name, CollectionViewController.identifier)
     }
     
     @IBAction func btnJobScreenTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "JobScreen", "JobScreenViewController")
+        Utility.changeVC(self, R.storyboard.jobScreen.name, JobScreenViewController.identifier)
     }
     
     @IBAction func btnJobHomeScreenTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "JobHomeScreen", "JobHomeScreenViewController")
+        Utility.changeVC(self, R.storyboard.jobHomeScreen.name, JobHomeScreenViewController.identifier)
     }
     
     @IBAction func btnScrollViewTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "ScrollView", "ScrollView")
+        Utility.changeVC(self, R.storyboard.scrollView.name, "ScrollView")
     }
     
     @IBAction func btnTabBarProTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "TabBar", "TabMainViewController")
+        Utility.changeVC(self, R.storyboard.tabBar.name, TabMainViewController.identifier)
     }
 
     @IBAction func btnTabBarTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "TabBar", "TabBar")
+        Utility.changeVC(self, R.storyboard.tabBar.name, "TabBar")
     }
 
     @IBAction func btnPickerView(_ sender: UIButton) {
-        Utility.changeVC(self, "PickerView", "PickerView")
+        Utility.changeVC(self, R.storyboard.pickerView.name, "PickerView")
     }
     
     @IBAction func btnMapViewTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "MapView", "MapView")
+        Utility.changeVC(self, R.storyboard.mapView.name, "MapView")
     }
     
     @IBAction func btnNavigationTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "Navigation", "Navigation")
+        Utility.changeVC(self, R.storyboard.navigation.name, "Navigation")
     }
     
     @IBAction func btnChatScreenTapped(_ sender: Any) {
-        Utility.changeVC(self, "Chat", ChatViewController.identifier)
+        Utility.changeVC(self, R.storyboard.chat.name, ChatViewController.identifier)
     }
     
     @IBAction func btnWebServiceTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "WebMain", WebMainViewController.identifier)
+        Utility.changeVC(self, R.storyboard.webMain.name, WebMainViewController.identifier)
+    }
+    
+    @IBAction func btnSignUpTapped(_ sender: UIButton) {
+        Utility.changeVC(self, R.storyboard.signUP.name, SignUPViewController.identifier)
     }
     
 }

@@ -12,7 +12,6 @@ class BlueViewController: BaseViewController {
     // MARK: View Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
 }

@@ -46,6 +46,7 @@ class SignUPViewController: BaseViewController {
     
     private var selectInterest = [String]()
     
+    // MARK: Cell Constant
     private enum CellConst {
         static let itemSpace = 8.0
         static let lineSpace = 10.0
@@ -139,6 +140,7 @@ class SignUPViewController: BaseViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor: Color.signWhite]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.backgroundColor = Color.signPrimary
+        navigationController?.navigationBar.barTintColor = Color.signPrimary
         navigationController?.navigationBar.isTranslucent = false
         
         /// Set back Icon
@@ -298,7 +300,7 @@ class SignUPViewController: BaseViewController {
     
     // Open Collection view for interest
     @IBAction func btnNextTapped(_ sender: UIButton) {
-        guard let viewController = UIStoryboard(name: "SignUP", bundle: nil).instantiateViewController(withIdentifier: InterestsViewController.identifier) as? InterestsViewController else { return }
+        guard let viewController = UIStoryboard(name: R.storyboard.signUP.name, bundle: nil).instantiateViewController(withIdentifier: InterestsViewController.identifier) as? InterestsViewController else { return }
         viewController.delegate = self
         viewController.clcview = selectInterestClcView
         navigationController?.pushViewController(viewController, animated: true)

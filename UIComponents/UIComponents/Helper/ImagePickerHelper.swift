@@ -110,7 +110,6 @@ extension ImagePickerHelper: ImageAndUINavigationDelegate {
             
         default:
             print("Mismatched type: \(mediaType ?? "")")
-            
         }
         
         picker.dismiss(animated: true)
