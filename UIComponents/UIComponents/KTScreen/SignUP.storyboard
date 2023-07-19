@@ -14,6 +14,7 @@
         <!--Navigation Controller-->
         <scene sceneID="B7T-UX-gaa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V62-I4-c4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Czy-6l-GFv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrowback" backIndicatorTransitionMaskImage="arrowback" id="Nlz-7a-kdg">
@@ -27,14 +28,13 @@
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xOa-Fm-xva"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V62-I4-c4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="11.450381679389313" y="-55.633802816901408"/>
         </scene>
         <!--Create Profile-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SignUPViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUPViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SignUPViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,7 +445,7 @@
                             <constraint firstItem="s5T-dh-TXX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="x4k-Ls-waO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Zj5-ex-30o"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Item" id="Zj5-ex-30o"/>
                     <navigationItem key="navigationItem" title="Create Profile" id="Lrv-Ij-aMh"/>
                     <connections>
                         <outlet property="btnFemale" destination="xO4-h1-eTv" id="ukX-oa-elP"/>

@@ -40,7 +40,7 @@ class ImageViewController: BaseViewController {
     }
     
     // open picker with ImagePickerHelper Class
-    func openPickerView(_ sender: UIView) {
+    private func openPickerView(_ sender: UIView) {
         ImagePickerHelper.shared.pick(sender, viewController: self, completionHandler: { [weak self] (image, image2) in
             if let image, let image2 {
                     self?.imgOriginal.image = image

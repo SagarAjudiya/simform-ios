@@ -13,11 +13,13 @@ class HeaderView: UICollectionReusableView {
     @IBOutlet weak var lblheaderTitle: UILabel!
     @IBOutlet weak var btnSeeAll: UIButton!
     
+    // MARK: - Cell Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
     }
     
+    // MARK: - SetUp Views
     private func setupViews() {
         btnSeeAll.configuration?.baseForegroundColor = Color.jGrey
     }
@@ -25,6 +27,5 @@ class HeaderView: UICollectionReusableView {
     func setHeaderTitle(title: String) {
         lblheaderTitle.text = title
     }
-    
     
 }

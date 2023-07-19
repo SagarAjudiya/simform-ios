@@ -134,7 +134,6 @@ extension UITextField {
         rightViewMode = .always
         rightView = outerView
       }
-      
     }
     
 }

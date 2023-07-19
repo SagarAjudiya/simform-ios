@@ -19,7 +19,7 @@ class HomeScreenViewController: BaseViewController {
     @IBOutlet weak private var imgSearch: UIImageView!
     
     // MARK: Variables
-    var searchResult = [Home]()
+    private var searchResult = [Home]()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent

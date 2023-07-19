@@ -9,10 +9,10 @@ import UIKit
 struct Color {
 
     // MARK: Home Screen
-    static let appGreen = UIColor(named: "appGreen")
-    static let appGreenBack = UIColor(named: "appGreenBack")
-    static let appOrange = UIColor(named: "appOrange")
-    static let appOrangeBack = UIColor(named: "appOrangeBack")
+    static let appGreen = UIColor(resource: R.color.appGreen)
+    static let appGreenBack = UIColor(resource: R.color.appGreenBack)
+    static let appOrange = UIColor(resource: R.color.appOrange)
+    static let appOrangeBack = UIColor(resource: R.color.appOrangeBack)
     
     // MARK: Job Screen
     static let jbg = UIColor(named: "jbg")

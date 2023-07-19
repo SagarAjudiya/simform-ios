@@ -13,6 +13,7 @@ class JobHomeScreenCell: UITableViewCell {
     @IBOutlet weak private var clcView: UICollectionView!
     @IBOutlet weak private var pageControl: UIPageControl!
     
+    // MARK: - Variable
     private var sectionCurrent = 0
     
     // MARK: Cell Constant

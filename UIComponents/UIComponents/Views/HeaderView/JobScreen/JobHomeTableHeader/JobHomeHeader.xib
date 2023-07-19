@@ -28,7 +28,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="jfilter"/>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsearch" translatesAutoresizingMaskIntoConstraints="NO" id="heo-94-Xtb">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsearch" translatesAutoresizingMaskIntoConstraints="NO" id="heo-94-Xtb" customClass="search">
                     <rect key="frame" x="50" y="75" width="20" height="16"/>
                 </imageView>
             </subviews>

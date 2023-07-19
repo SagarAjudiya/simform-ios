@@ -13,9 +13,4 @@ class LanguageCell: UITableViewCell {
     @IBOutlet weak var imgViewCell: UIImageView!
     @IBOutlet weak var lblCell: UILabel!
     
-    // MARK: Cell LifeCycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
 }

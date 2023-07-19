@@ -19,15 +19,11 @@ class ExpandTableViewCell: UITableViewCell {
     @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var btnSeeMore: UIButton!
     
+    // MARK: - Variable
     weak var delegate: ExpandTableViewCellDelegateProtocol?
     
     /// using closure
 //    var btnClicked: (() -> (Void))!
-    
-    // MARK: Cell lifecycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
     func setExpandTableViewCellData(data: ExpandableView) {
         lblName.text = data.name

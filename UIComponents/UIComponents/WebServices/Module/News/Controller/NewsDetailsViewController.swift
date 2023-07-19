@@ -37,7 +37,7 @@ class NewsDetailsViewController: BaseViewController {
         lblDesc.text = "\(article.description)"
         
         let imgUrl = URL(string: article.urlToImage ?? "")
-        imgNews.kf.setImage(with: imgUrl, placeholder: UIImage(named: "swift"))
+        imgNews.kf.setImage(with: imgUrl, placeholder: UIImage(resource: R.image.swift))
         
         lblPublishedAt.text = "PublishedAt: \(String(article.publishedAt.prefix(10)))"
         lblContent.text = article.content

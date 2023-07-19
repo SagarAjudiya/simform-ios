@@ -158,12 +158,6 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.setRightCellData(chat: data[indexPath.row])
                 return cell
             }
-//            if indexPath.row != 0 {
-//                if let lastData = groupByTime[arrayOfDate[indexPath.section]]?.last {
-//                    print("lastdata", lastData)
-//                }
-//                cell.imgSenderProfile.isHidden = true
-//            }
 
         case .receiver:
             

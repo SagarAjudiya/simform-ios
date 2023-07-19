@@ -16,7 +16,7 @@ class ResultViewController: BaseViewController {
     }
     
     // MARK: SetUp Views
-    func setupViews() {
+    private func setupViews() {
         view.backgroundColor = .yellow
     }
     

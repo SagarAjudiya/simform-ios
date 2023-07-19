@@ -21,13 +21,13 @@ class FeaturedViewCell: UICollectionViewCell {
     @IBOutlet weak var lblSalary: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
     
-    
     // MARK: View Controller lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         setupviews()
     }
 
+    // MARK: - SetUp Views
     private func setupviews() {
         imgView.setCornerRadius(radius: 12)
         imgView.backgroundColor = .white

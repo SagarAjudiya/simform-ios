@@ -13,7 +13,6 @@ class RedViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
     }
     
     // MARK: SetUp Views
