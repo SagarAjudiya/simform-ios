@@ -16,7 +16,7 @@ class WebMainViewController: BaseViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-        
+    
     // MARK: IBActions
     @IBAction func btnNextTapped(_ sender: UIButton) {
         Utility.changeVC(self, R.storyboard.news.name, NewsViewController.identifier)
@@ -24,6 +24,10 @@ class WebMainViewController: BaseViewController, Storyboarded {
     
     @IBAction func btnDownload(_ sender: UIButton) {
         Utility.changeVC(self, R.storyboard.news.name, MethodsViewController.identifier)
+    }
+    
+    @IBAction func btnUploadAF(_ sender: UIButton) {
+        Utility.changeVC(self, R.storyboard.news.name, UploadAFViewController.identifier)
     }
     
 }

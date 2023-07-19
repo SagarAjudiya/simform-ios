@@ -27,6 +27,7 @@ class MainScreenViewController: BaseViewController, Storyboarded {
         Utility.changeVC(self, "Main", "ExpandTableViewController")
     }
     
+    
     @IBAction func btnCollectionViewTapped(_ sender: UIButton) {
         Utility.changeVC(self, "Main", "CollectionViewController")
     }
@@ -63,8 +64,8 @@ class MainScreenViewController: BaseViewController, Storyboarded {
         Utility.changeVC(self, "Navigation", "Navigation")
     }
     
-    @IBAction func btnChatScreenTapped(_ sender: UIButton) {
-        Utility.changeVC(self, "Chat", "ChatViewController")
+    @IBAction func btnChatScreenTapped(_ sender: Any) {
+        Utility.changeVC(self, "Chat", ChatViewController.identifier)
     }
     
     @IBAction func btnWebServiceTapped(_ sender: UIButton) {

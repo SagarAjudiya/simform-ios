@@ -30,7 +30,8 @@ class MethodsViewModel {
     
     func uploadData(image: UIImageView) {
         URLSessionHelper.shared.uploadImaggeUsingBinary(image: image){ [weak self] progress in
-            self?.uploadProgress.value = progress
+            guard let self = self else { return }
+            self.uploadProgress.value = progress
         }
     }
     
