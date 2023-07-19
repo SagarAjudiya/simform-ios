@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var appCoordinator: AppCoordinator?
 
     // MARK: SceneDelegate LifeCycle
     
@@ -19,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
 //        setInitialRoot(windowScene: windowScene)
+//        setUpCoordinator(scene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -49,6 +51,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
     
+    // MARK: Set initial Root
     func setInitialRoot(windowScene: UIWindowScene) {
         var viewController = UIStoryboard(name: Constant.StoryBoard.navigation, bundle: nil).instantiateViewController(withIdentifier: Constant.StoryBoard.navigation)
 
@@ -60,6 +63,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    }
+    
+    // MARK: Set Coordinators
+    private func setUpCoordinator(_ scene: UIScene) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        appWindow.windowScene = windowScene
+
+        let navController = UINavigationController()
+        appCoordinator = AppCoordinator(navigationController: navController)
+        appCoordinator?.start()
+
+        appWindow.rootViewController = navController
+        appWindow.makeKeyAndVisible()
+
+        window = appWindow
     }
 
 }
