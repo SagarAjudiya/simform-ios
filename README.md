@@ -115,12 +115,11 @@
 | :--: | :-----: | :---: |
 | <img src="https://github.com/SagarAjudiya/swift/assets/125466955/59cb3f2c-646d-47e8-884c-f8639e092cea" width="200" height="400"> | <img src="https://github.com/SagarAjudiya/swift/assets/125466955/67cd1ccb-f7d2-4ff3-ad16-d125b4a4a7f8" width="200" height="400"> | <img src="https://github.com/SagarAjudiya/swift/assets/125466955/0b0bd566-1a33-4843-807a-761374c82ac4" width="200" height="400"> |
 
-### TableView
+### TableView and CollectionView
 | Expand Cell | Light | Dark |
 | :--: | :-----: | :---: |
 | <img src="SS/1.png" width="200" height="400"> | <img src="SS/4.png" width="200" height="400"> | <img src="SS/5.png" width="200" height="400"> |
 
-### CollectionView
 | Light | Dark | Chat |
 | :--: | :-----: | :---: |
 | <img src="SS/8.png" width="200" height="400"> | <img src="SS/2.png" width="200" height="400"> | <img src="SS/3.png" width="200" height="400"> |
@@ -134,3 +133,12 @@
 | Home | Details | 
 | :--: | :-----: | 
 | <img src="SS/9.png" width="200" height="400"> | <img src="SS/10.png" width="200" height="400"> | 
+
+### Movie App
+| Home | Home | 
+| :--: | :-----: | 
+| <img src="SS/11.png" width="200" height="400"> | <img src="SS/12.png" width="200" height="400"> | 
+
+| Details | Details | 
+| :--: | :-----: | 
+| <img src="SS/13.png" width="200" height="400"> | <img src="SS/14.png" width="200" height="400"> | 
