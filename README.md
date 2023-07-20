@@ -93,6 +93,23 @@
 - Change Back Button title and image
 - add BarButtonItems in Navigation Bar
 
+### Web-Services
+- URLSession
+- Alamofire
+
+### Architecture
+- MVC
+- MVVM
+- Coordinator
+
+### Dependency
+- R.Swift
+- Alamofire
+- Rechability
+- Kingfisher
+- Cosmos
+- YT video Helper
+
 ### Reverse KT-Screen
 | Sign Up | Sign Up | Interest |
 | :--: | :-----: | :---: |
@@ -101,12 +118,12 @@
 ### TableView
 | Expand Cell | Light | Dark |
 | :--: | :-----: | :---: |
-| <img src="SS/1.png" width="200" height="400"> | <img src="SS/2.png" width="200" height="400"> | <img src="SS/3.png" width="200" height="400"> |
+| <img src="SS/1.png" width="200" height="400"> | <img src="SS/4.png" width="200" height="400"> | <img src="SS/5.png" width="200" height="400"> |
 
 ### CollectionView
 | Light | Dark | Chat |
 | :--: | :-----: | :---: |
-| <img src="SS/4.png" width="200" height="400"> | <img src="SS/5.png" width="200" height="400"> | <img src="SS/8.png" width="200" height="400"> |
+| <img src="SS/8.png" width="200" height="400"> | <img src="SS/2.png" width="200" height="400"> | <img src="SS/3.png" width="200" height="400"> |
 
 ### MapView
 | Light | Dark | 
