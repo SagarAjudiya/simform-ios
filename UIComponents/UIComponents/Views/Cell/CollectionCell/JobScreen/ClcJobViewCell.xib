@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ClcJobViewCell" customModule="UIComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rP2-lh-yH7" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="164"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jdribble" translatesAutoresizingMaskIntoConstraints="NO" id="88n-Pe-4dE">
+                                <rect key="frame" x="58" y="21" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="88n-Pe-4dE" secondAttribute="height" multiplier="1:1" id="oVF-Tf-wVT"/>
+                                    <constraint firstAttribute="height" constant="40" id="qyx-5i-4Ht"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UX Designer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmW-rJ-saT">
+                                <rect key="frame" x="10" y="73" width="136" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dribbble" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qp-Xq-Z4z">
+                                <rect key="frame" x="10" y="94" width="136" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000/y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCs-yM-u6k">
+                                <rect key="frame" x="10" y="116.33333333333333" width="136" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7qp-Xq-Z4z" firstAttribute="leading" secondItem="qmW-rJ-saT" secondAttribute="leading" id="7nE-ns-kEd"/>
+                            <constraint firstItem="7qp-Xq-Z4z" firstAttribute="trailing" secondItem="qmW-rJ-saT" secondAttribute="trailing" id="8b6-Sg-RlC"/>
+                            <constraint firstItem="UCs-yM-u6k" firstAttribute="trailing" secondItem="7qp-Xq-Z4z" secondAttribute="trailing" id="Bxt-pH-Zaf"/>
+                            <constraint firstItem="qmW-rJ-saT" firstAttribute="leading" secondItem="rP2-lh-yH7" secondAttribute="leading" constant="10" id="G2X-ya-0rF"/>
+                            <constraint firstItem="88n-Pe-4dE" firstAttribute="top" secondItem="rP2-lh-yH7" secondAttribute="top" constant="21" id="HfF-wM-a5O"/>
+                            <constraint firstAttribute="trailing" secondItem="qmW-rJ-saT" secondAttribute="trailing" constant="10" id="bva-NS-7sQ"/>
+                            <constraint firstItem="qmW-rJ-saT" firstAttribute="top" secondItem="88n-Pe-4dE" secondAttribute="bottom" constant="12" id="faA-mH-Xbk"/>
+                            <constraint firstItem="UCs-yM-u6k" firstAttribute="leading" secondItem="7qp-Xq-Z4z" secondAttribute="leading" id="ihc-bA-Hfv"/>
+                            <constraint firstItem="7qp-Xq-Z4z" firstAttribute="top" secondItem="qmW-rJ-saT" secondAttribute="bottom" constant="4" id="nNn-2V-dqQ"/>
+                            <constraint firstItem="UCs-yM-u6k" firstAttribute="top" secondItem="7qp-Xq-Z4z" secondAttribute="bottom" constant="8" id="tLa-Rl-unk"/>
+                            <constraint firstItem="88n-Pe-4dE" firstAttribute="centerX" secondItem="rP2-lh-yH7" secondAttribute="centerX" id="vaG-55-hK6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="oGd-dK-pAc"/>
+            <constraints>
+                <constraint firstItem="rP2-lh-yH7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3tf-Ue-P4D"/>
+                <constraint firstAttribute="bottom" secondItem="rP2-lh-yH7" secondAttribute="bottom" id="EAu-1K-Udd"/>
+                <constraint firstAttribute="trailing" secondItem="rP2-lh-yH7" secondAttribute="trailing" id="cRd-Tk-GD3"/>
+                <constraint firstItem="rP2-lh-yH7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sgM-sh-9Hs"/>
+            </constraints>
+            <size key="customSize" width="597" height="464"/>
+            <connections>
+                <outlet property="imgLogo" destination="88n-Pe-4dE" id="sgN-gS-Pj3"/>
+                <outlet property="lblCompany" destination="7qp-Xq-Z4z" id="Kv4-10-moJ"/>
+                <outlet property="lblJobName" destination="qmW-rJ-saT" id="vXC-Iz-HZ7"/>
+                <outlet property="lblSalary" destination="UCs-yM-u6k" id="Lao-A6-fZi"/>
+                <outlet property="viewContainer" destination="rP2-lh-yH7" id="ZsU-lG-IcB"/>
+            </connections>
+            <point key="canvasLocation" x="374.80916030534348" y="157.74647887323945"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jdribble" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
